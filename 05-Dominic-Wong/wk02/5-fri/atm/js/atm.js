@@ -16,37 +16,45 @@
 //     }
 // }
 
+// global balance variables in integer with $ sign removed
+let checkBalance = Number($('#checking-balance').text().substring(1));
+let savingBalance = Number($('#savings-balance').text().substring(1));
+
+$('.balance').addClass('zero'); // make background red, atm default 0 at load
+
 const depositChecking = function () {
-    let checkBalance = Number($('#checking-balance').text().substring(1));
     const input = Number($('#checking-amount').val());
-    const sum = `$ ${input + checkBalance}`;
-    $('#checking-balance').text(sum);
+    checkBalance += input;
+    $('#checking-balance').text(`$${checkBalance}`).removeClass('zero');
 }
 
 const withdrawChecking = function () {
-    let checkBalance = Number($('#checking-balance').text().substring(1));
     const input = Number($('#checking-amount').val());
 
     if ( input <= checkBalance) {
-        const sum = `$${ checkBalance - input }`;
-        $('#checking-balance').text(sum);
+        checkBalance -= input
+        if ( checkBalance === 0 ) {
+            $('#checking-balance').addClass('zero');
+        }
+        $('#checking-balance').text(`$${checkBalance}`);
     }
 }
 
 const depositSavings = function () {
-    let checkBalance = Number($('#savings-balance').text().substring(1));
     const input = Number($('#savings-amount').val());
-    const sum = `$ ${input + checkBalance}`;
-    $('#savings-balance').text(sum);
+    savingBalance += input;
+    $('#savings-balance').text(`$${savingBalance}`).removeClass('zero');
 }
 
 const withdrawSavings = function () {
-    let checkBalance = Number($('#savings-balance').text().substring(1));
     const input = Number($('#savings-amount').val());
 
-    if ( input <= checkBalance) {
-        const sum = `$${ checkBalance - input }`;
-        $('#savings-balance').text(sum);
+    if ( input <= savingBalance) {
+        savingBalance -= input;
+        if ( savingBalance === 0 ) {
+            $('#savings-balance').addClass('zero');
+        }
+        $('#savings-balance').text(`$${savingBalance}`);
     }
 }
 
