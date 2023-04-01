@@ -1,13 +1,11 @@
 $(document).ready(function () {
 
 
-    // global balance variables in integer with $ sign removed
+    // global - balance variables in integer with $ sign removed
     let checkBalance = Number($('#checking-balance').text().substring(1));
     let savingBalance = Number($('#savings-balance').text().substring(1));
 
-    $('.balance').addClass('zero'); // make background red, atm default 0 at load
-
-    // function to evaluate balance to see if its 0 and add or remove class zero depending.
+    // function to evaluate balance to see if its 0 and add or remove class 'zero' depending.
     const evalBalance = function () {
         if ( checkBalance === 0 ) {
             $('#checking-balance').addClass('zero');
@@ -20,13 +18,6 @@ $(document).ready(function () {
         } else {
             $('#savings-balance').removeClass('zero');
         }
-    }
-
-    const depositChecking = function () {
-        const input = Number($('#checking-amount').val());
-        checkBalance += input;
-        $('#checking-balance').text(`$${checkBalance}`)
-        evalBalance();
     }
 
     const withdrawChecking = function () {
@@ -53,13 +44,6 @@ $(document).ready(function () {
         }
     }
 
-    const depositSavings = function () {
-        const input = Number($('#savings-amount').val());
-        savingBalance += input;
-        $('#savings-balance').text(`$${savingBalance}`)
-        evalBalance();
-    }
-
     const withdrawSavings = function () {
         let input = Number($('#savings-amount').val());
 
@@ -84,15 +68,29 @@ $(document).ready(function () {
         }
     }
 
-    $('#checking-deposit').on('click', depositChecking);
-    $('#checking-withdraw').on('click', withdrawChecking);
-    $('#savings-deposit').on('click', depositSavings);
-    $('#savings-withdraw').on('click', withdrawSavings);
+    const deposit = function () {
 
-    // overdraft protection 
-    // user inputs value to be withdrawn
-    // current - evaluates the account button is attached to and determine whether balance will go to 0 to allow withdrawl. e===
-    // goal - same as above but if 0 will further evaluate the other account to see if sufficient balance and take remainder out of that account.
-    // update both balances
+        const input = Number($(this).siblings(".user-input").val()); // get user input 
+
+        // check which deposit button user clicked and add dollaroos to appro balance
+        if ( $(this).attr("id") === "checking-deposit") {
+            checkBalance += input;
+            $(this).siblings("#checking-balance").html(`$${checkBalance}`)
+
+        } else if ( $(this).attr("id") === "savings-deposit" ) {
+            savingBalance += input;
+            $(this).siblings("#savings-balance").html(`$${savingBalance}`)
+        }
+
+        evalBalance();
+    }
+
+    
+    evalBalance(); // run at load for default values.
+    
+    $('#checking-deposit').on('click', deposit);
+    $('#checking-withdraw').on('click', withdrawChecking);
+    $('#savings-deposit').on('click', deposit);
+    $('#savings-withdraw').on('click', withdrawSavings);
 
 });

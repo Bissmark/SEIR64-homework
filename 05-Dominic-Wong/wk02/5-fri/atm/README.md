@@ -31,3 +31,10 @@ balance down to $0 and take the rest of the withdrawal from the savings account.
 If the withdrawal amount is more than the combined account balance, ignore it.
 * Make sure there is overdraft protection going both ways.
 * Are there ways to refactor your code to make it DRYer?
+
+* my notes
+    // overdraft protection 
+    // user inputs value to be withdrawn
+    // current - evaluates the account button is attached to and determine whether balance will go to 0 to allow withdrawl. e===
+    // goal - same as above but if 0 will further evaluate the other account to see if sufficient balance and take remainder out of that account.
+    // update both balances
