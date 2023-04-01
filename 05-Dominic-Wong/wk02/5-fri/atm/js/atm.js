@@ -7,10 +7,26 @@ $(document).ready(function () {
 
     $('.balance').addClass('zero'); // make background red, atm default 0 at load
 
+    // function to evaluate balance to see if its 0 and add or remove class zero depending.
+    const evalBalance = function () {
+        if ( checkBalance === 0 ) {
+            $('#checking-balance').addClass('zero');
+        } else {
+            $('#checking-balance').removeClass('zero');
+        }
+
+        if ( savingBalance === 0 ) {
+            $('#savings-balance').addClass('zero');
+        } else {
+            $('#savings-balance').removeClass('zero');
+        }
+    }
+
     const depositChecking = function () {
         const input = Number($('#checking-amount').val());
         checkBalance += input;
-        $('#checking-balance').text(`$${checkBalance}`).removeClass('zero');
+        $('#checking-balance').text(`$${checkBalance}`)
+        evalBalance();
     }
 
     const withdrawChecking = function () {
@@ -22,10 +38,8 @@ $(document).ready(function () {
                 input -= checkBalance; // reduce input by checkBalance
                 checkBalance = 0; // reduce balance to 0 
                 savingBalance -= input; // reduce savingBalance by remaining input
-                if ( savingBalance === 0 ) {
-                    $('#savings-balance').addClass('zero');
-                }
-                $('#checking-balance').addClass('zero');
+
+                evalBalance();
                 $('#checking-balance').text(`$${checkBalance}`)
                 $('#savings-balance').text(`$${savingBalance}`)
             }
@@ -33,9 +47,8 @@ $(document).ready(function () {
         // normal withdrawl
         if ( input <= checkBalance) {
             checkBalance -= input
-            if ( checkBalance === 0 ) {
-                $('#checking-balance').addClass('zero');
-            }
+
+            evalBalance();
             $('#checking-balance').text(`$${checkBalance}`);
         }
     }
@@ -43,7 +56,8 @@ $(document).ready(function () {
     const depositSavings = function () {
         const input = Number($('#savings-amount').val());
         savingBalance += input;
-        $('#savings-balance').text(`$${savingBalance}`).removeClass('zero');
+        $('#savings-balance').text(`$${savingBalance}`)
+        evalBalance();
     }
 
     const withdrawSavings = function () {
@@ -55,10 +69,8 @@ $(document).ready(function () {
                 input -= savingBalance; // reduce input by savingBalance
                 savingBalance = 0; // reduce balance to 0 
                 checkBalance -= input; // reduce savingBalance by remaining input
-                if ( checkBalance === 0 ) { // if checkBalance gets reduced to 0 too give zero class
-                    $('#checking-balance').addClass('zero');
-                }
-                $('#savings-balance').addClass('zero');
+
+                evalBalance();
                 $('#checking-balance').text(`$${checkBalance}`)
                 $('#savings-balance').text(`$${savingBalance}`)
             }
@@ -67,9 +79,7 @@ $(document).ready(function () {
         // normal withdrawl
         if ( input <= savingBalance) {
             savingBalance -= input;
-            if ( savingBalance === 0 ) {
-                $('#savings-balance').addClass('zero');
-            }
+            evalBalance();
             $('#savings-balance').text(`$${savingBalance}`);
         }
     }
