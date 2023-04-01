@@ -29,8 +29,23 @@ const depositChecking = function () {
 }
 
 const withdrawChecking = function () {
-    const input = Number($('#checking-amount').val());
+    let input = Number($('#checking-amount').val());
 
+    // overdraft withdrawl
+    if ( input > checkBalance) {
+        if ( input <= checkBalance + savingBalance ) {
+            input -= checkBalance; // reduce input by checkBalance
+            checkBalance = 0; // reduce balance to 0 
+            savingBalance -= input; // reduce savingBalance by remaining input
+            if ( savingBalance === 0 ) {
+                $('#savings-balance').addClass('zero');
+            }
+            $('#checking-balance').addClass('zero');
+            $('#checking-balance').text(`$${checkBalance}`)
+            $('#savings-balance').text(`$${savingBalance}`)
+        }
+    }
+    // normal withdrawl
     if ( input <= checkBalance) {
         checkBalance -= input
         if ( checkBalance === 0 ) {
@@ -47,8 +62,24 @@ const depositSavings = function () {
 }
 
 const withdrawSavings = function () {
-    const input = Number($('#savings-amount').val());
+    let input = Number($('#savings-amount').val());
 
+    //overdraft withdrawl
+    if ( input > savingBalance) {
+        if ( input <= checkBalance + savingBalance ) {
+            input -= savingBalance; // reduce input by savingBalance
+            savingBalance = 0; // reduce balance to 0 
+            checkBalance -= input; // reduce savingBalance by remaining input
+            if ( checkBalance === 0 ) { // if checkBalance gets reduced to 0 too give zero class
+                $('#checking-balance').addClass('zero');
+            }
+            $('#savings-balance').addClass('zero');
+            $('#checking-balance').text(`$${checkBalance}`)
+            $('#savings-balance').text(`$${savingBalance}`)
+        }
+    }
+
+    // normal withdrawl
     if ( input <= savingBalance) {
         savingBalance -= input;
         if ( savingBalance === 0 ) {
@@ -62,3 +93,9 @@ $('#checking-deposit').on('click', depositChecking);
 $('#checking-withdraw').on('click', withdrawChecking);
 $('#savings-deposit').on('click', depositSavings);
 $('#savings-withdraw').on('click', withdrawSavings);
+
+// overdraft protection 
+// user inputs value to be withdrawn
+// current - evaluates the account button is attached to and determine whether balance will go to 0 to allow withdrawl. e===
+// goal - same as above but if 0 will further evaluate the other account to see if sufficient balance and take remainder out of that account.
+// update both balances
