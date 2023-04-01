@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     // global - balance variables in integer with $ sign removed
     let checkBalance = Number($('#checking-balance').text().substring(1));
     let savingBalance = Number($('#savings-balance').text().substring(1));
@@ -19,78 +18,59 @@ $(document).ready(function () {
             $('#savings-balance').removeClass('zero');
         }
     }
-
-    const withdrawChecking = function () {
-        let input = Number($('#checking-amount').val());
-
-        // overdraft withdrawl
-        if ( input > checkBalance) {
-            if ( input <= checkBalance + savingBalance ) {
-                input -= checkBalance; // reduce input by checkBalance
-                checkBalance = 0; // reduce balance to 0 
-                savingBalance -= input; // reduce savingBalance by remaining input
-
-                evalBalance();
-                $('#checking-balance').text(`$${checkBalance}`)
-                $('#savings-balance').text(`$${savingBalance}`)
-            }
-        }
-        // normal withdrawl
-        if ( input <= checkBalance) {
-            checkBalance -= input
-
-            evalBalance();
-            $('#checking-balance').text(`$${checkBalance}`);
-        }
-    }
-
-    const withdrawSavings = function () {
-        let input = Number($('#savings-amount').val());
-
-        //overdraft withdrawl
-        if ( input > savingBalance) {
-            if ( input <= checkBalance + savingBalance ) {
-                input -= savingBalance; // reduce input by savingBalance
-                savingBalance = 0; // reduce balance to 0 
-                checkBalance -= input; // reduce savingBalance by remaining input
-
-                evalBalance();
-                $('#checking-balance').text(`$${checkBalance}`)
-                $('#savings-balance').text(`$${savingBalance}`)
-            }
-        }
-
-        // normal withdrawl
-        if ( input <= savingBalance) {
-            savingBalance -= input;
-            evalBalance();
-            $('#savings-balance').text(`$${savingBalance}`);
-        }
-    }
-
+    
     const deposit = function () {
 
-        const input = Number($(this).siblings(".user-input").val()); // get user input 
+        const input = Number($(this).siblings(".user-input").val()); // get user input
+        const isCheckBalance = $(this).attr("id") === "checking-deposit"; // see which account the input is related to
 
         // check which deposit button user clicked and add dollaroos to appro balance
-        if ( $(this).attr("id") === "checking-deposit") {
+        if ( isCheckBalance ) {
             checkBalance += input;
-            $(this).siblings("#checking-balance").html(`$${checkBalance}`)
+            $("#checking-balance").html(`$${checkBalance}`)
 
-        } else if ( $(this).attr("id") === "savings-deposit" ) {
+        } else {
             savingBalance += input;
-            $(this).siblings("#savings-balance").html(`$${savingBalance}`)
+            $("#savings-balance").html(`$${savingBalance}`)
         }
 
         evalBalance();
     }
 
-    
+    const withdraw = function () {
+        
+        let input = Number($(this).siblings(".user-input").val()); // get user input
+        const isCheckBalance = $(this).attr("id") === "checking-withdraw"; // see what account input is related to
+        const totalBalance = checkBalance + savingBalance;
+
+        if ( isCheckBalance ) {
+            if ( input <= checkBalance ) {
+                checkBalance -= input;
+            } else if ( input <= totalBalance ) {
+                const remaining = input - checkBalance
+                checkBalance = 0;
+                savingBalance -= remaining;
+            }
+        } else {
+            if ( input <= savingBalance ) {
+                savingBalance -= input;
+            } else if ( input <= totalBalance ) {
+                const remaining = input - savingBalance;
+                savingBalance = 0;
+                checkBalance -= remaining;
+            }
+        }
+        
+        $("#checking-balance").html(`$${checkBalance}`)
+        $("#savings-balance").html(`$${savingBalance}`)
+        evalBalance();
+    }
+
     evalBalance(); // run at load for default values.
     
     $('#checking-deposit').on('click', deposit);
-    $('#checking-withdraw').on('click', withdrawChecking);
+    $('#checking-withdraw').on('click', withdraw);
     $('#savings-deposit').on('click', deposit);
-    $('#savings-withdraw').on('click', withdrawSavings);
+    $('#savings-withdraw').on('click', withdraw);
 
 });
