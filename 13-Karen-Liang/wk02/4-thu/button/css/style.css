@@ -1,0 +1,46 @@
+/* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+</style> 
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+</style>*/
+
+.container { 
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-top: 10%;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-family: 'Righteous', cursive, sans-serif;
+    font-size: 50px;
+    color: rgb(162, 176, 216)
+    
+}
+
+.light {
+    text-align: center;
+    display: line-block;
+    margin: 0 auto;
+    font-family: 'Righteous', cursive, sans-serif;
+    font-size: 20px;
+    line-height: 25pt;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px lightslategray;
+}
+
+
+button:hover {
+    background: rgb(216, 162, 216);
+    color: white;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 4px 4px lightslategray;
+
+}
