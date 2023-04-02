@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana&display=swap');
+
+body {
+    background-color: rosybrown;
+    font-family: 'Tillana', cursive;  
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: rebeccapurple;
+}
+
+h1 {
+    text-align: right;
+    background-color: rebeccapurple;
+    color: black;
+    font-size: 200%;
+    padding: 0.5em;
+    text-shadow: 10px 10px 10px black;
+}
+
+main {
+    display: inline-block;
+    width: 50%;
+    padding: 2em;
+}
+
+main img {
+    width: 75%;
+    margin: 0 auto;
+}
+aside {
+    width: 30%;
+    vertical-align: top;
+    display: inline-block;
+    background-color: rebeccapurple;
+    padding: 1em;
+    border-radius: 0.5em;
+    text-shadow: 20px 10px 5px rebeccapurple;
+    margin: 2em;
+}
+
+aside ul {
+    padding-left: 15px;
+}

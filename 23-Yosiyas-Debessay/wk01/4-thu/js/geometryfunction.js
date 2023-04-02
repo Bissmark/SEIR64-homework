@@ -80,3 +80,99 @@ const cartForParty = {
  const year = prompt("Enter a year to test: ");
  console.log(leapYear(year));
 
+
+
+ const timeConverter = function(time){
+	let hours = parseInt(time.substring(0, 2));
+    let minutes = parseInt(time.substring(3, 5));
+    let amPm = time.substring(6);
+
+    if (amPm === "AM" && hours === 12) {
+        hours = 0;
+    } else if (amPm === "PM" && hours < 12) {
+        hours += 12;
+    }
+
+
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minture = "0" + hours;
+    }
+    let timeConverter = hours + ":" + minutes;
+    return militaryTime;
+ }
+ console.log(timeConverter("12:00:00pm"))
+
+ const timeConvert = function(time) {
+    let hours = Number(time.slice(0, 2));
+    const minutes = time.slice(2, -2);
+    const isAfternoon = time[time.length - 2] === 'P'
+
+
+    if (isAfternoon) {
+        hours += 12
+
+    if (hours === 12) {
+        hours -= 12
+    }
+
+    if (hours === 24) {
+        hours -= 12
+    }
+
+    if (hours < 10) {
+        hours = '0' + hours
+    }
+
+    console.log(hours + minutes)
+
+ }
+}
+
+console.log(timeConverter("12:00:00pm"))
+
+
+const week = [
+    {
+    name: 'monday',
+    temp: 20,
+    rian: 12
+    },
+    {
+    name: 'tuesday',
+    temp: 20,
+    rian: 12
+    },
+    {
+    name: 'wednesday',
+    temp: 20,
+    rian: 12
+    },
+    {
+    name: 'thursday',
+    temp: 20,
+    rian: 12
+    },
+    {
+    name: 'friday',
+    temp: 20,
+    rian: 12
+    },
+]
+
+const planTrip = function (minTemp, maxRain) {
+    const days = [];
+
+    for (let i = 0; i < week.length; i++) {
+    const day = week[i];
+    if(day.temp >= minTemp && day.rain <= maxRain) {
+        day.push(day.name);
+    }
+    
+    }
+    if(days.length < 1) {
+        return 'No days suitable';
+    }
+}

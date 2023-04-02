@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg);
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+nav {
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    
+    
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+p {
+    color: #fff;
+    font-size: 13px;
+}
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.card {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 50%;
+    background-image: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/04/Knuth-Zapf_Painter-Stanford_2000_v2-1720x1251.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+}
+.card2 {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 80%;
+    background-image: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/04/Knuth-Zapf_Painter-Stanford_2000_v2-1720x1251.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -540px; 
+    transition: 0.5s;
+}
+.cardWord {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: #000000 0px 0px 20px;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.card:hover{
+    transform: translateY(-10px);
+} 
+.card2:hover{
+    transform: translateY(-10px);
+}
+.card3 {
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 13%;
+    background-image: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/04/Knuth-Zapf_Painter-Stanford_2000_v2-1720x1251.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -810px; 
+    transition: 0.5s;
+}
+.card3:hover{
+    transform: translateY(-10px);
+}
+.card4 {
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 13%;
+    background-image: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/04/Knuth-Zapf_Painter-Stanford_2000_v2-1720x1251.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -1351px; 
+    transition: 0.5s;
+}
+.card4:hover{
+    transform: translateY(-10px);
+}

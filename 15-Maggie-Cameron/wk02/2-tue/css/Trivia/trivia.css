@@ -1,0 +1,75 @@
+font-family: 'Alkatra', cursive;
+font-family: 'Montserrat', sans-serif;
+
+body {
+    /* #123 expands to #112233 */
+    background-color:black;  /* #222222 */
+    margin: 0;
+    padding: 0;
+    font-family: 'Alkatra', cursive;
+}
+
+.container {
+    max-width: 960px; /* poor person's lazy responsive container */
+    margin: 0 auto; /* center */
+    background-color:#ececec; ; 
+    padding: 1em; /* a chunky pixel */
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-family: 'Alkatra', cursive;
+    
+}
+
+nav {
+    color: white;
+    text-align: center;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    background-color: #9fd3c7;
+    margin-inline: -16px;
+}
+
+h1 {
+    text-align: center;
+    background-color:#385170; 
+    color:#9fd3c7;
+    font-size: 300%;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+}
+
+h2 {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 200%;
+    color: #385170;
+  }
+
+
+img {
+    width: 300px;
+    border-radius: 25px 25px 25px 25px;
+    border: solid #142d4c;
+    margin-left: 65px;
+    margin-bottom: 65px;
+    border-width: 5px;
+ /* Can't set margins on display: inline (which is the default for image) */
+}
+
+p {
+    display: inline-block;
+    width: 45%;
+    color: #142d4c;
+    font-size: 20px;
+    padding-inline: 50px;
+}
+
+.trivia {
+    padding-left: 100px;
+    padding-right: 100px;
+}

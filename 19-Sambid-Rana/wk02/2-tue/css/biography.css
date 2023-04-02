@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Sawarabi Mincho', serif;
+}
+/* Nav Bar */
+nav {
+    background-color: rgba(16, 8, 8, 0.766);
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.nav-li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+.nav-li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0 6.5em;
+}
+
+.nav-li > a:hover {
+    color: gray;
+    transition: .5s;
+}
+
+/* Container */
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(189, 189, 86);
+}
+h1.header-text {
+    font-size: 6em;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+h2.header-text {
+    font-size: 34px;
+    font-weight: 100;
+    margin: 0 20px;
+}
+header img {
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+/* Biography */
+#biography, #early-life, #fortran{
+    /* width: 480px; */
+    height: 450px;
+    margin-top: 40px;
+    position: relative;
+}
+
+article#biography h3 {
+    font-size: 38px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+
+
+}
+article#biography p {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    padding: 20px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    width: 700px;
+}
+
+/* Early Life */
+#early-life{
+    height: 500px;
+}
+article#early-life h3 {
+    font-size: 38px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+}
+article#early-life p {
+    position: absolute;
+    left: 70px;
+    right: 70px;
+    top: 410px;
+    padding: 20px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+}
+article#early-life img {
+    max-width: 200px;
+    position: absolute;
+    transition: .2s;
+}
+
+article#early-life img:hover {
+    transform: scale(1.2);
+  }
+#early-life-1 {
+    left: 470px;
+    top: 100px;
+}
+#early-life-2 {
+    left: 250px;
+    top: 140px
+}
+#el-span {
+    display: block;
+    font-size: 22px;
+    color: darkslategrey;
+}
+
+/* fortran */
+article#fortran img {
+    width: 250px;
+    transition: .2s;
+}
+
+article#fortran img:hover {
+    transform: scale(1.2);
+    margin-bottom: 40px;
+  }
+#fortran{
+    /* width: 480px; */
+    height: 550px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    vertical-align: top;
+}
+figcaption {
+    font-size: 12px;
+}
+article#fortran p {
+    height: 500px;
+    letter-spacing: 1px;
+    padding: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* CSS Positioning Practice */
