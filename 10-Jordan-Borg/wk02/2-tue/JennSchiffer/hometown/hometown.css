@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap');
+
+body {
+    background-color: #5d4cdc;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #f2f2f2;
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ccc;
+    padding: 1em;
+    border-radius: 100px;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+nav {
+    text-align: right;
+    background-color: #ffffff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    color: rgb(77, 78, 134);
+}
+
+h1 {
+    text-align: center;
+    background-color: #222;
+    color: #97a6e1;
+    font-size: 320%;
+    padding: 0.5em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main {
+    display: inline-block;
+    width: 75%;
+    padding: 1em;
+}
+
+img {
+    width: 910px;
+    height: 480px;
+}
+
+aside {
+    display: inline-block;
+    width: 97%;
+    vertical-align: top;
+    background-color: rgb(20, 26, 149);
+    padding: 1em;
+    border-radius: 10%;
+    box-shadow: 0px 15px 15px purple;
+    font-family: Alkatra;
+    tex
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 1em;
+}
+
+nav a {
+    color: #8d64ff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+ 
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: #af7b7b;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
