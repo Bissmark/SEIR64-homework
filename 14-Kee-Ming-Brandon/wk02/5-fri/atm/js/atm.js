@@ -87,9 +87,9 @@ $( document ).ready( function () {
         $savingsAmount.val( '' );                                            // Clear input box (savings)
         totalNumb = checkingNumb + savingsNumb;                              // Get account total balance
         // Update background (checking)
-        checkingNumb === 0 ? $( '#checking' ).addClass( 'zero' ) : $( '#checking' ).removeClass( 'zero' );
+        checkingNumb === 0 ? $( '#checking-balance' ).addClass( 'zero' ) : $( '#checking-balance' ).removeClass( 'zero' );
         // update background (savings)
-        savingsNumb === 0 ? $( '#savings' ).addClass( 'zero' ) : $( '#savings' ).removeClass( 'zero' );
+        savingsNumb === 0 ? $( '#savings-balance' ).addClass( 'zero' ) : $( '#savings-balance' ).removeClass( 'zero' );
         $('.clear').fadeIn(300).delay(8000).fadeOut(300);
     });
 
