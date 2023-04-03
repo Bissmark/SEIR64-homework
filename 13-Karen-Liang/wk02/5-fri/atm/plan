@@ -1,0 +1,83 @@
+There are 2 accounts: 
+- CHECKING
+- SAVINGS
+
+
+- choose account to deposit into. 
+
+- if inputvalue has value, choose that account
+
+------------------------------
+DEPOSIT
+------------------------------
+
+- use jQuery to activate function. if user clicks <deposit>.check whether it is Checking or Savings account.Run the function.  
+
+- function 
+const deposit = function (amount);
+
+- check if <input value > 0 ?
+
+- get <input value> and add to <account value>
+
+- <input value> clears to 0 and <account value> updates. jQuery html() to update account balance?
+
+
+
+------------------------------
+WITHDRAWAL
+------------------------------
+- use jQuery to activate function. if user clicks <withdrawal>. check whether it is Checking or Savings account.
+
+Run the function 
+
+- function 
+const withdraw = function (amount);
+
+- check if <input value > 0 ?
+
+- get balance of ATM
+
+- if <account balance> > 0, allow transaction 
+- if <acount blanace> < 0, ignore transation. 
+
+- get <account value> - <input value> 
+
+- <input value> clears to 0
+- <account value> jQuery html() to update account balance?
+
+
+------------------------------
+ADDITIONAL
+------------------------------
+
+ADDING RED BACKGROUND
+
+- if accountValue = 0, addClass - background-color, red.
+
+if accountValue > 0, removeClass - background-color, grey
+
+OVERDRAFT PROTECTION
+- if <withdrawal amount> is less than checking + savings, allow withdrawls.
+- udpdate <input value> and <checking and savings value>
+
+------------------------------
+GUIDE
+------------------------------
+
+1. Build deposit function into checking account. [DONE]
+
+2. Build deposit function into savings account [DONE]
+
+3. Build withdrawal function into checking account [DONE]
+
+4. Build withdrawal function in savings account [DONE]
+
+
+5. Overdraft protection [DONE]
+
+6. Add newClass, if value is < 0 make red, if > 0 make original color.
+** may need to build into withdrawl and deposit functions  [DONE]
+** all parameters and buttons tested [DONE]
+
+7. combine .text and .replace for all the functions [DONE]
