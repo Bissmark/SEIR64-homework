@@ -94,5 +94,5 @@ def show_menu
     menu_choice = gets.chomp.downcase
   end
   
-  puts "Thanks for using this calculator!"
+  puts "Thanks for using this amazing calculator!"
   
