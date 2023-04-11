@@ -67,39 +67,50 @@ until menu_choice == 'q'
         puts "You chose addition!"
         puts "What numbers would you like to add? "
         num1 = gets.chomp.to_i
+        puts "+"
         num2 = gets.chomp.to_i
+        puts "="
         a(num1, num2)
        
     when 's'
         puts "You chose subtraction!"
         puts "What numbers would you like to subtract?"
         num1 = gets.chomp.to_i
+        puts "-"
         num2 = gets.chomp.to_i
+        puts "="
         s(num1, num2)
         
     when 'd'
         puts "You chose division!"
         puts "What numbers would you like to divide?"
         num1 = gets.chomp.to_i
+        puts "/"
         num2 = gets.chomp.to_i
+        puts "="
         d(num1, num2)
     
     when 'm'
         puts "You chose multiplication!"
         puts "What numbers would you like to multiply?"
         num1 = gets.chomp.to_i
+        puts "x"
         num2 = gets.chomp.to_i
+        puts "="
         m(num1, num2)
     when 'e'
         puts "You chose exponent!"
         puts "What numbers would you like to exponentiate?" 
         num1 = gets.chomp.to_i
+        puts "to the power of"
         num2 = gets.chomp.to_i
+        puts "="
         e(num1, num2)
     when 'sq'
         puts "You chose square root!"
         puts "What number would you like the square root of?"
         num1 = gets.chomp.to_i
+        puts "="
         sq(num1)
     else 
         puts "Invalid selection. Zap zeep zub zeeeeeeep."
