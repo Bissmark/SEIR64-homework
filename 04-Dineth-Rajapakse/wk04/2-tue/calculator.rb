@@ -19,15 +19,15 @@
 # - Calculator should be able to do basic arithmetic (exponents, square roots)
 
 def show_menu
-    puts "Calculator" # TODO: check out the .center method to make this look nicer 
+    puts "Calculator".center(75) 
     puts "-=" * 40 # Budget horizontol dividing line
     puts "[a] - Addition"
     puts "[s] - Subtract"
     puts "[d] - Divide"
     puts "[m] - Multiply"
+    puts "Advanced Functions"
     puts "[e] - Exponent"
     puts "[sq] - Square root"
-    #TODO: add other operations here (multiply, divide, subtract)
     puts "[q] - Quit"
     print "Enter your choice: "
 end
