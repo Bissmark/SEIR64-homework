@@ -25,6 +25,8 @@ def show_menu
     puts "[s] - Subtract"
     puts "[d] - Divide"
     puts "[m] - Multiply"
+    puts "[e] - Exponent"
+    puts "[sq] - Square root"
     #TODO: add other operations here (multiply, divide, subtract)
     puts "[q] - Quit"
     print "Enter your choice: "
@@ -45,6 +47,15 @@ end
 def m(num1, num2)
     puts num1 * num2
 end 
+#exponent function 
+def e(num1, num2)
+    puts num1 ** num2
+end 
+#square root function
+def sq(num1)
+    puts Math.sqrt(num1)
+end 
+
 show_menu
 
 menu_choice = gets.chomp.downcase
@@ -79,6 +90,17 @@ until menu_choice == 'q'
         num1 = gets.chomp.to_i
         num2 = gets.chomp.to_i
         m(num1, num2)
+    when 'e'
+        puts "You chose exponent!"
+        puts "What numbers would you like to exponentiate?" 
+        num1 = gets.chomp.to_i
+        num2 = gets.chomp.to_i
+        e(num1, num2)
+    when 'sq'
+        puts "You chose square root!"
+        puts "What number would you like the square root of?"
+        num1 = gets.chomp.to_i
+        sq(num1)
     else 
         puts "Invalid selection. Zap zeep zub zeeeeeeep."
     end 
