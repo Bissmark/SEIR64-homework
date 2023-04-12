@@ -18,6 +18,8 @@ def show_menu
     puts "[s] - Subtraction"
     puts "[m] - Multiplication"
     puts "[d] - Division"
+    puts "[e] - exponents"
+    puts "[sq]- square"
     puts "[q] - Quit"
 end
 
@@ -36,7 +38,12 @@ end
 def division(a,b)
     a / b
 end
-
+def exponents(a,b)
+    a ** b
+end
+def square (a, b)
+    a * b
+end
 def user_chooses_operation
     print "Enter your operation choice: "
     gets.chomp.downcase
@@ -74,7 +81,13 @@ until menu_choice == "q"
             puts "you chose division"
             puts "the result is #{division(a,b)}"
         
+        when "e"
+            puts "your chose exponents"
+            puts "the result is #{exponents(a,b)}"
 
+        when "sq"
+            puts "you chose square"
+            puts "the result is #{square(a,b)}"
         else
             puts "invalid Selection"
             
@@ -83,4 +96,4 @@ until menu_choice == "q"
     menu_choice=gets.chomp.downcase
 end
 
-puts "thank you for using this calculator "
+# puts "thank you for using this calculator"
