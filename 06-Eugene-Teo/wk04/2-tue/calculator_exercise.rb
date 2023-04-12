@@ -27,6 +27,9 @@ def show_menu
     puts "[s] - Subtraction"
     puts "[m] - Multiplication"
     puts "[d] - Division"
+    puts "[e] - Exponential"
+    puts "[r] - Square Root"
+    puts "[c] - Cube Root"
     puts "[q] - Quit"
     print "Enter your choice: "
 end
@@ -71,6 +74,29 @@ until menu_choice == 'q'
         b = gets.to_i
         result = a / b
         puts "The result of #{a} divided by #{b} is #{ result }."
+
+    when 'e'
+        puts "You choose exponential!"          
+        print "What is the first number: "
+        a = gets.to_i
+        print "What is the second number you would like to exponent from the first: "
+        b = gets.to_i
+        result = a ** b
+        puts "The result of #{a} to the power of #{b} is #{ result }."
+    
+    when 'r'
+        puts "You choose square root!"          
+        print "What is the number to be rooted: " #english?
+        a = gets.to_i
+        result = Math.sqrt(a)
+        puts "The square root of #{a} is #{ result }."
+
+    when 'c'
+        puts "You choose cube root!"          
+        print "What is the number to be rooted: "
+        a = gets.to_i
+        result = Math.cbrt(a)
+        puts "The cube root of #{a} is #{ result }."
         
     else 
         puts "Invalid selection. You idiot."
