@@ -1,3 +1,4 @@
+
 def plan_trip(origin_line, origin_station, destination_line, destination_station) 
     
     lines = {
@@ -9,23 +10,23 @@ def plan_trip(origin_line, origin_station, destination_line, destination_station
     origin_index = lines[origin_line].index(origin_station)
     destination_index = lines[destination_line].index(destination_station)
     
-    # if origin_line == destination_line  #single-line trip
+    if origin_line == destination_line  #single-line trip
         
-    #     if origin_index < destination_index # if index increment
+        if origin_index < destination_index # if index increment
             
-    #         trip = lines[origin_line][origin_index..destination_index]
-    #         # puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
+            trip = lines[origin_line][origin_index..destination_index]
+            # puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
             
-    #     else 
+        else 
             
-    #         trip = lines[origin_line][destination_index..origin_index].reverse
+            trip = lines[origin_line][destination_index..origin_index].reverse
             
-    #     end 
+        end 
 
-    #     puts "Your trip will have #{trip.size} stops in total"
-    #     puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
+        puts "Your trip will have #{trip.size} stops in total"
+        puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
         
-    # else # multi-line trip
+    else # multi-line trip
         
         intersection = "Union Square" # intersection variable
         origin_int_index = lines[origin_line].index(intersection)
@@ -61,7 +62,7 @@ def plan_trip(origin_line, origin_station, destination_line, destination_station
         puts "Continue your journey through these stops on the #{destination_line} line: #{d_trip.join(', ')}"
     
     
-    # end
+    end
     
 end
 
@@ -69,8 +70,8 @@ end
 # plan_trip(:N, 'Times Square', :N, 'Union Square')
 # plan_trip(:N, 'Union Square', :N, 'Times Square')
 
-# plan_trip(:N, 'Times Square', :L, '1st')
-# plan_trip(:N, 'Times Square', 6, 'Grand Central')
+plan_trip(:N, 'Times Square', :L, '1st')
+plan_trip(:N, 'Times Square', 6, 'Grand Central')
 
-# plan_trip(:N, 'Times Square', :L, '1st')
-# plan_trip(:N, 'Times Square', 6, 'Grand Central')
+plan_trip(:N, 'Times Square', :L, '1st')
+plan_trip(:N, 'Times Square', 6, 'Grand Central')
