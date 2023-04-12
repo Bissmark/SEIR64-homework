@@ -1,8 +1,3 @@
-
-# Line validation function
-
-# example is N line USquare to TSquare
-
 def plan_trip(origin_line, origin_station, destination_line, destination_station) 
     
     lines = {
@@ -13,27 +8,60 @@ def plan_trip(origin_line, origin_station, destination_line, destination_station
 
     origin_index = lines[origin_line].index(origin_station)
     destination_index = lines[destination_line].index(destination_station)
-    intersection = "Union Square"
     
-    if origin_line == destination_line  #single-line trip
+    # if origin_line == destination_line  #single-line trip
+        
+    #     if origin_index < destination_index # if index increment
+            
+    #         trip = lines[origin_line][origin_index..destination_index]
+    #         # puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
+            
+    #     else 
+            
+    #         trip = lines[origin_line][destination_index..origin_index].reverse
+            
+    #     end 
 
-        if origin_index < destination_index # if index increment
+    #     puts "Your trip will have #{trip.size} stops in total"
+    #     puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
+        
+    # else # multi-line trip
+        
+        intersection = "Union Square" # intersection variable
+        origin_int_index = lines[origin_line].index(intersection)
+        destination_int_index = lines[destination_line].index(intersection)
 
-            trip = lines[origin_line][origin_index..destination_index]
-            puts "You must travel through these stops on the #{origin_line} line: #{trip.join(', ')}"
+        if origin_index < lines[origin_line].index(intersection)
 
-        else 
+            o_trip = lines[origin_line][origin_index..origin_int_index]
+          
 
-            trip = lines[origin_line][destination_index..origin_index]
-            puts "You must travel through these stops on the #{origin_line} line: #{trip.reverse.join(', ')}"
+        else
 
-        end 
+            o_trip = lines[origin_line][origin_int_index..origin_index].reverse
+          
 
-    else # multi-line trip
+        end
 
-        if 
+        if destination_int_index  < destination_index
+
+            d_trip = lines[destination_line][destination_int_index..destination_index].drop(1) # call drop to remove first element which is Union Square
+          
+
+        else
+
+            d_trip = lines[destination_line][destination_index..destination_int_index].reverse.drop(1)
+          
+
+        end
+
+        puts "Your trip will have #{o_trip.size + d_trip.size} stops in total."
+        puts "You must travel through these stops on the #{origin_line} line: #{o_trip.join(', ')}"
+        puts "Change at #{intersection}"
+        puts "Continue your journey through these stops on the #{destination_line} line: #{d_trip.join(', ')}"
     
-    end
+    
+    # end
     
 end
 
@@ -41,6 +69,8 @@ end
 # plan_trip(:N, 'Times Square', :N, 'Union Square')
 # plan_trip(:N, 'Union Square', :N, 'Times Square')
 
-plan_trip(:N, 'Times Square', :L, '1st')
+# plan_trip(:N, 'Times Square', :L, '1st')
+# plan_trip(:N, 'Times Square', 6, 'Grand Central')
 
-
+# plan_trip(:N, 'Times Square', :L, '1st')
+# plan_trip(:N, 'Times Square', 6, 'Grand Central')
