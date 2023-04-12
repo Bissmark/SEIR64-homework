@@ -66,12 +66,44 @@ def plan_trip(origin_line, origin_station, destination_line, destination_station
     
 end
 
+def input_cleaner( input ) # input is get 
+    
+    if input.match?(/\A-?\d+\Z/)
+        input.chomp.to_i
+    else
+        input.chomp.upcase.to_sym
+    end
 
-# plan_trip(:N, 'Times Square', :N, 'Union Square')
+end
+
+# Main #
+
+print "What is your origin line: "
+origin_line = input_cleaner(gets)
+p origin_line
+
+print "What is your origin station: "
+origin_station = gets.chomp
+p origin_station
+
+print "What is your destination line: "
+destination_line = input_cleaner(gets)
+p destination_line
+
+print "What is your destination station: "
+destination_station = gets.chomp
+p destination_station
+
+puts "-=" * 25
+
+plan_trip(origin_line, origin_station, destination_line, destination_station)
+
+
+# plan_trip(:N, "Times Square", :N, 'Union Square')
 # plan_trip(:N, 'Union Square', :N, 'Times Square')
 
-plan_trip(:N, 'Times Square', :L, '1st')
-plan_trip(:N, 'Times Square', 6, 'Grand Central')
+# plan_trip(:N, 'Times Square', :L, '1st')
+# plan_trip(:N, 'Times Square', 6, 'Grand Central')
 
-plan_trip(:N, 'Times Square', :L, '1st')
-plan_trip(:N, 'Times Square', 6, 'Grand Central')
+# plan_trip(:N, 'Times Square', :L, '1st')
+# plan_trip(:N, 'Times Square', 6, 'Grand Central')
