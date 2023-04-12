@@ -18,7 +18,7 @@ $('#checking-deposit').on('click', function(){
 $('#checking-withdraw').on('click', function(){
     let witVal = Number($('#checking-amount').val());
     if (checkingBal - witVal < 0){
-        if (checkingBal + savingsBal > witVal){
+        if (checkingBal + savingsBal >= witVal){
             witVal = witVal - checkingBal;
             savingsBal = savingsBal - witVal;
             checkingBal = 0;
@@ -26,7 +26,6 @@ $('#checking-withdraw').on('click', function(){
             checkingBalanceCheck(checkingBal);
             $('#savings-balance').html(`$${savingsBal}`);
             savingsBalanceCheck(savingsBal);
-            alert("Overdraw Activated")
             return
         }
         alert('Error, funds too low')
@@ -49,7 +48,7 @@ $('#savings-deposit').on('click', function(){
 $('#savings-withdraw').on('click', function(){
     let witVal = Number($('#savings-amount').val());
     if (savingsBal - witVal < 0){
-        if (savingsBal + checkingBal > witVal){
+        if (savingsBal + checkingBal >= witVal){
             witVal = witVal - savingsBal;
             checkingBal = checkingBal - witVal;
             savingsBal = 0;
@@ -57,7 +56,6 @@ $('#savings-withdraw').on('click', function(){
             checkingBalanceCheck(checkingBal);
             $('#savings-balance').html(`$${savingsBal}`);
             savingsBalanceCheck(savingsBal);
-            alert("Overdraw Activated")
             return
         }
         alert('Error, funds too low')
