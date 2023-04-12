@@ -6,25 +6,25 @@
 
 # Added an object for the subway system where each key represents a subway line and each value is an array of the stops of that respective line.
 
-subway = {
+subway_system = {
     "N" => ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"],
-    "L" => ["8th", "6th", "Union Square", "3rd", "1st"],
-    "6" => ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
+    "L" => ["8 Avenue", "6th", "Union Square", "3rd", "1st"],
+    "6" => ["Grand Central", "33rd", "28 Avenue", "23rd", "Union Square", "Astor Place"]
 }
 
 #Added a method that accepts 4 arguments 
 
-def plan_trip(subway, start_line, start_stop, end_line, end_stop)
+def plan_trip(subway_system, start_line, start_stop, end_line, end_stop)
     
-    # The indices of the starting and ending stops on their respective subway lines.
+    # The indices of the starting and ending stops on their respective subway_system lines.
 
-    start_index = subway[start_line].index(start_stop)
-    end_index = subway[end_line].index(end_stop)
+    start_index = subway_system[start_line].index(start_stop)
+    end_index = subway_system[end_line].index(end_stop)
 
     # The index of Union Square on each line.
 
-    union_index_start = subway[start_line].index("Union Square")
-    union_index_end = subway[end_line].index("Union Square")
+    union_index_start = subway_system[start_line].index("Union Square")
+    union_index_end = subway_system[end_line].index("Union Square")
 
     # If the starting and ending lines are the same, retrieve the stops the user will pass through on that line.
 
@@ -33,7 +33,7 @@ def plan_trip(subway, start_line, start_stop, end_line, end_stop)
         # If the user is traveling forward, retrieve the stops between the starting and ending destination.
 
         if start_index < end_index
-            stops = subway[start_line][start_index..end_index]
+            stops = subway_system[start_line][start_index..end_index]
             
             # The number of stops is one less than the number of elements in the stops array.
             num_stops = stops.length - 1 
@@ -41,7 +41,7 @@ def plan_trip(subway, start_line, start_stop, end_line, end_stop)
             # If the user is traveling in the reverse direction, retrieve the stops between the ending and starting destinations and reverse the order.
         
         else
-            stops = subway[start_line][end_index..start_index].reverse
+            stops = subway_system[start_line][end_index..start_index].reverse
             num_stops = stops.length - 1 
         end
         
@@ -57,23 +57,23 @@ def plan_trip(subway, start_line, start_stop, end_line, end_stop)
         # If the user is starting before Union Square on the first line, retrieve the stops between the starting stop and Union Square.
 
         if start_index < union_index_start
-            stops1 = subway[start_line][start_index..union_index_start]
+            stops1 = subway_system[start_line][start_index..union_index_start]
 
             # If the user is starting after Union Square on the first line, retrieve the stops between Union Square and the starting stop and reverse the order.
 
         else
-            stops1 = subway[start_line][union_index_start..start_index].reverse
+            stops1 = subway_system[start_line][union_index_start..start_index].reverse
         end
 
         # If the user is ending after Union Square on the second line, retrieve the stops between Union Square and the ending stop.
 
         if union_index_end < end_index
-            stops2 = subway[end_line][union_index_end..end_index]
+            stops2 = subway_system[end_line][union_index_end..end_index]
 
         # If the user is ending before Union Square on the second line, retrieve the stops between the ending stop and Union Square and reverse the order.
 
         else
-            stops2 = subway[end_line][end_index..union_index_end].reverse
+            stops2 = subway_system[end_line][end_index..union_index_end].reverse
         end
 
         # Calculate the total number of stops by adding the number of stops on each line.
@@ -90,6 +90,6 @@ def plan_trip(subway, start_line, start_stop, end_line, end_stop)
 end
 
 # Testing sample trips.
-plan_trip(subway, "N", "Times Square", "6", "33rd")
-plan_trip(subway, "N", "Times Square", "N", "8th")
-plan_trip(subway, "L", "8th", "6", "Grand Central")
+plan_trip(subway_system, "N", "Times Square", "6", "33rd")
+plan_trip(subway_system, "N", "Times Square", "N", "8th")
+plan_trip(subway_system, "L", "8 Avenue", "6", "Grand Central")
