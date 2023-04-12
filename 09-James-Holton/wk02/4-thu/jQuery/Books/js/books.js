@@ -15,8 +15,7 @@ var books = [
   
   for (let i = 0; i < books.length; i++) {
       let book = books[i];
-      const li = $('<li>').html(`${book.title} by ${book.author}`);
-      ul.append(li);
+      const li = $('<li>').html(`${book.title} by ${book.author}`).appendTo(ul);
     
       if (book.alreadyRead) {
           li.addClass('already-read');

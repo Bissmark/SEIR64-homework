@@ -20,7 +20,7 @@ const books = [
 // Iterate through the array of books. For each book, create a p element with the book title and author and append it to the page.
 
 
-for (i = 0; i < books.length; i++ ) {
+for ( let i = 0; i < books.length; i++ ) {
     const book = books[i];
     $(`<p>${book.title} by ${book.author}</p>`).appendTo('body')
     
@@ -33,15 +33,13 @@ $('<ul>').appendTo('body');
 
 for (i = 0; i < books.length; i++ ) {
     const book = books[i];
-    $(`<li> ${ book.title } by ${ book.author } </li>`).appendTo('ul')
+    const $item = $(`<li> ${ book.title } by ${ book.author } </li>`)
 
-    $('li').each( function (){
+    if ( books[i].alreadyRead ) {
+        $item.attr('class', 'already-read')
+    }
 
-        if ( book.alreadyRead ) {
-            $(this).attr('class', 'already-read')
-        }
-
-    })
+    $item.appendTo('ul')    
 }
 
 // what does this mean?
