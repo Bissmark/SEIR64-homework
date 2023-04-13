@@ -1,0 +1,19 @@
+body {
+    background-color: #b6b4b4;
+}
+
+.container {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    width: 150px;
+    border: 1 solid rgb(19, 18, 18);
+    box-shadow: 2px 2px 5px rgb(65, 64, 64);
+}
+
+footer {
+    color: rgb(80, 79, 79);
+}
