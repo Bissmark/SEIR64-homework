@@ -96,3 +96,18 @@ def calculator
   end
   
   calculator()
+
+
+
+  puts triangle? 1, 1, 1 # => true
+  puts triangle? 4, 2, 3 # => true
+  puts triangle? 1, 2, 2 # => true
+  puts triangle? 5, 1, 2 # => false
+
+  def triangle(a, b, c) {
+    if (a + b > c) && (b + c > a) && (a + c > b)
+        return true
+    else
+        return false
+    end
+  }
