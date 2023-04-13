@@ -25,6 +25,7 @@ get '/info' do
     # author
     @authors = info["items"][0]["volumeInfo"]["authors"].join(', ')
     
+    # preview link
     @preview = info["items"][1]["volumeInfo"]["previewLink"]
 
     erb :info
