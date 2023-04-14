@@ -1,0 +1,42 @@
+
+<img src="<%= @info["items"][0]["volumeInfo"]['imageLinks']["thumbnail"] %> " alt="<%=params[:title]%>">
+<p> <%=params[:title]%> </p>
+<p> Author: <%= @info["items"][0]["volumeInfo"]['authors'][0] %> </p>
+<p> Description: <%= @info["items"][0]["volumeInfo"]['description'] %> </p>
+
+
+
+<%# Practice  %>
+<div>
+     
+    <p> Trying loops:</p>
+    <p> Looping over imageLinks:</p>
+    <% @info["items"][0]["volumeInfo"]["imageLinks"].values().each do |key, value| %>
+    <p><%=  "Key: #{key} Value:#{value} "  %></p>
+    <% end  %>
+
+
+</div>
+
+<div>
+
+    <p> Looping over volume info keys:</p>
+    <% @info["items"][0]["volumeInfo"].keys().each do |key| %>
+    <p><%=  key  %></p>
+    <% end  %>
+
+
+</div>
+
+<div>
+
+    <p> Looping over items 0 info keys:</p>
+    <% @info["items"][0].each do |key| %>
+    <p><%=  key  %></p>
+    <% end  %>
+
+
+</div>
+
+
+
