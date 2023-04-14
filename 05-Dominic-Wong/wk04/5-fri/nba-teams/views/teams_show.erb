@@ -1,0 +1,8 @@
+<h1> <%= @team["name"] %> </h1>
+
+<h3> City: <%= @team["city"] %> </h3>
+
+<% unless @team["image"].nil? || @team["image"].empty? %>
+    <img src="<% @team["image"] %>" alt="<%= @team["name"] %>">
+<% end %>
+
