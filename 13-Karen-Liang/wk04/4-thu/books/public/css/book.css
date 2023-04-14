@@ -1,0 +1,133 @@
+/* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300&display=swap');
+</style>
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* background */
+body {
+    background-color: #e5e5f7;
+    background-size: 22px 22px;
+    background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1.1px, #e5e5f7 1.1px, #e5e5f7);
+}
+
+/* all page center */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 70vh;
+    padding: 50px;
+}
+
+/* header and heading font */
+h1, h2, nav, h4 {
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+
+/* info page 'written by' */
+h4 {
+    margin-top: 10px;
+}
+
+
+/* links on entire site */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 178, 44);
+}
+
+/* font consistency in body and input */
+p, input {
+    font-family: 'Roboto light', Helvetica, sans-serif;
+}
+
+/* for 'Book name:' text */
+label {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+/* heading on info page */
+h2 {
+    font-size: 20pt;
+    margin: 0 0 -10px 0;
+    color: #444CF7;
+}
+
+/* book description */
+.paragraph {
+    display: grid;
+    line-height: 1.4;
+    font-size: 12pt;
+    padding: 0 20px 0 20px;
+}
+
+/* div for columns after searching for result */
+.info {
+    display: grid;
+    grid-template-columns: 277px 100fr 1fr;
+    grid-gap: 10px; 
+
+}
+
+/* book image updates */
+img {
+    height: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+/* cover container for centering */
+.cover {
+    margin-left: 15%;
+    height: 635px;
+
+}
+
+/* cover image */
+.cover_pic {
+    margin: 0 auto;
+}
+
+/* input box */
+input { 
+    background-color: #444CF7;
+    margin-top: 3px;
+    border: 0px;
+    color: white;
+    padding: 10px;
+    border-radius: 0.4em;
+    width: 350px;
+}
+
+/* input placeholder */
+#my_input::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+/* search button */
+button {
+    padding: 10px;
+    border-radius: 0.4em;
+    border: 0.8px solid grey;
+}
+
+/* search button hover and transition */
+button:hover {
+    transition: 0.9s;
+    background-color: rgb(181, 181, 181);
+    color: white;
+    border: 0px;
+}
