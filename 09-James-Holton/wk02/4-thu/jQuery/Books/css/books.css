@@ -1,0 +1,11 @@
+body {
+    background-color: lime;
+}
+
+.listitem {
+    color: red;
+}
+
+.already-read {
+    color: white;
+}

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,600;1,200&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Saira', sans-serif;
+}
+
+.navs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navs li {
+  margin-left: 1rem;
+  font-family: 'Saira', sans-serif;
+}
+
+.navs a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navs a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  height: 1200px;
+}
+main h1 {
+  font-size: 30px;
+  margin-top: 50px;
+  font-style: italic;
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+.dash {
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Saira', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  text-align: center;
+  font-family: 'Saira', sans-serif;
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+main h3 {
+  font-family: 'Saira', sans-serif;
+  font-size: medium;
+  margin-bottom: 20px;
+}
+
+aside {
+  display: inline-block;
+  width: 35%;
+  height: 707px;
+  vertical-align: top;
+  padding: 1em;
+  background-color: beige;
+  margin-top: 183px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+aside h2 {
+  margin-top: 70px; 
+}
+
+aside > p::first-letter {
+  font-size:1.5rem;
+  background-color:goldenrod;
+}
+
+.spooky {
+  position: relative;
+  height: 4rem;
+}
+.spooky div {
+  visibility: hidden;
+  font-weight: normal;
+}
+
+.spooky:hover div {
+  visibility: visible;
+  color:goldenrod;
+  transition: 1s all;
+  font-size: medium;
+  text-align: center;
+  position: absolute;
+  height: 100%;
+}
+
+.spooky:hover {
+  background-color: black;
+}
+
+aside p {
+  font-size: 15px;
+}

@@ -1,0 +1,19 @@
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: brown;
+}
+
+div {
+    background-image: url('pictures/background.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid rgb(192, 122, 25);
+    width: 1300px;
+    height: 581px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+

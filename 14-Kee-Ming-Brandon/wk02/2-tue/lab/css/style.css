@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&display=swap');
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    background-color: lightslategrey;
+    margin: 10px;
+    padding: 0;
+
+    font-family: "Helvetica", sans-serif;
+    color: white;
+}
+.container {
+    max-width: 960px;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 0 auto;
+    background-color: rgb(112, 107, 107);
+    padding: 3em;
+    border-radius: 5px;
+}
+
+.inheader {
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    height: 160px;
+
+}
+
+#nav {
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    z-index: 1;
+}
+
+nav a {
+    padding: 4px 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    border-bottom: 2px inset rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom-left-radius: 20px;
+    box-shadow: -10px 20px 20px  rgba(128, 128, 128, 0.5);
+}
+
+#headline {
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid rgb(132, 1, 1);
+    position: absolute;
+    text-align: left;
+}
+
+#headline h1 {
+    width: 60%;
+}
+
+/* Main */
+
+.block1 {
+    width: 100%;
+    margin: 40px 0;
+}  
+
+.uneven-block1, .uneven-block2 {
+    display: inline-block;
+    width: 38%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.uneven-block2 {
+    width: 57%;
+    margin-right: 5px;
+}
+
+.uneven-block2 h2 {
+    text-align: left;
+}
+
+
+.multi-block {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 180px;
+    margin: auto 13px;
+    vertical-align: bottom;
+    background-color: rgb(15, 39, 100);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+    transition: 3s;
+    transform: scale(1) translate(0%, 0%);
+}
+
+.none-block {
+    background: url(../images/John-von-Neumann.png);
+    background-size: 300px;
+    background-position: center;
+}
+
+.multi-block p {
+    margin: 20px;
+}
+
+.cpuanimation {
+    width: 500px;
+    height: 300px;
+    margin: 40px auto 5px auto;
+}
+
+.cpuanimation img {
+    position: relative;
+    z-index: 5;
+}
+
+.input {
+    position: relative;
+    top: -182px;
+    left: 3px;
+    width: 80px;
+    height: 60px;
+    background-color: rgb(233, 233, 43);
+    transition-property: background-color;
+    transition: 5s;
+    z-index: 4;
+}
+
+.output {
+    position: relative;
+    top: -243px;
+    right: -418px;
+    width: 80px;
+    height: 60px;
+    background-color: rgb(25, 185, 49);
+    transition-property: background-color;
+    transition: 2s;
+    transition-delay: 3s;
+    z-index: 4;
+}
+
+.caption p {
+    text-align: center;
+    padding-bottom: 5px;
+    color: black;
+}
+
+main.hometown {
+    margin: auto 40px;
+
+}
+
+
+/* Global style */
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: 'Philosopher', sans-serif;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+}
+
+h3 {
+    margin-bottom: 4px;
+}
+
+/* Image style */
+.john   {
+    height: 350px;
+    border: 5px solid black;
+}
+
+.graph {
+    width: 500px;
+}
+
+/* Google maps */
+
+.google-map {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.google-map iframe {
+    width: 400px;
+    height: 300px;
+    border: 5px inset white;
+    box-shadow: 5px 5px 10px black;
+}

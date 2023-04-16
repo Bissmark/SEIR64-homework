@@ -1,0 +1,7 @@
+<p>Here is the book cover for <%= params[:title] %> fool!</p>
+
+<img src="<%= @info['imageLinks']['thumbnail'] %>">
+
+<p>
+<%= @info['title'] %> was written by <%= @info['authors'][0] %> and was published by <%= @info['publisher'] %> in <%= @info['publishedDate'] %>.
+</p>

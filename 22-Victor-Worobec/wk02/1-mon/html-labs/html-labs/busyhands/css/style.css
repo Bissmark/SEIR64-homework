@@ -1,0 +1,104 @@
+body {
+	background-image: url("../images/bg_body.jpg");
+}
+
+nav, footer {
+	background-color: black;
+	padding: 30px 150px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 30px 25px;
+}
+
+.main-content, .home-boxes-section {
+	max-width: 100%;
+	padding: 20px 150px;
+}
+
+#logo {
+	padding-top: 40px;
+}
+
+.social-media {
+	float: right;
+	margin: 0px 100px;
+}
+
+.photobanner, .shadow {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.request-quote {
+	border: solid;
+	margin: 0px 50px;
+	padding: 5px;
+}
+
+.request-quote p {
+	max-width: 60%;
+	display: inline-block;
+}
+
+#request-button {
+	float: right;
+	margin-top: 10px;
+}
+
+.home-box-div {
+	display: inline-block;
+	max-width: 28%;
+	margin: 0px 20px;
+	font-size: 12px;
+}
+
+.home-box-div img {
+	border: solid white;
+	max-width: 90%;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+h3 {
+	color: white;
+	border-bottom: solid grey;
+	padding: 10px 0px;
+	margin: 0;
+}
+
+ul {
+	color: grey;
+	list-style-type: none;
+}
+
+footer a, p {
+	display: block;
+	color: grey;
+	padding: 10px 0px;
+	border-bottom: solid grey;
+	font-size: 14px;
+}
+
+footer div {
+	max-width: 28%;
+	min-width: 16%;
+	display: inline-block;
+	color: grey;
+	margin: 20px;
+}
+
+.text-widget {
+	max-width: 40%;
+	vertical-align: top;
+}
+
+.meta-widget {
+	vertical-align: top;
+}

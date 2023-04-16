@@ -1,0 +1,34 @@
+#container {
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */   
+}
+nav {
+    margin: 10px, 0, 0, 20px;
+    padding: 10px;
+    background-color: black;
+    height: 60px;
+    color: white;
+
+}
+#mainhead {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#socials {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.banner {
+    margin-top: 60px;
+    display: block;
+    padding-left: 80px;
+    position: relative;
+
+}
+#button {
+    float: right;
+}
+#blurb { 
+    float: left;
+}

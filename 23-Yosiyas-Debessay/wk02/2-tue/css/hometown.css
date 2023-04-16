@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg);
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+nav {
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.cardWord {
+    color: rgb(175, 226, 252);
+    font-weight: bold;
+    font-size: 40px;
+}
+h3 {
+    color: rgb(88, 168, 208);
+    font-weight: bold;
+    font-size: 30px;
+}
+.card:hover{
+    transform: translateY(-10px);
+} 
+.card2:hover{
+    transform: translateY(-10px);
+}
+iframe {
+    position: relative;
+    top: 0px; 
+}

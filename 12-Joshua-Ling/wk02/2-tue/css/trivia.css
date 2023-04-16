@@ -1,0 +1,52 @@
+.top-container p {
+    text-align: center;
+}
+
+main p {
+    font-size: 21px;
+}
+
+
+
+.answer {
+    background-color: sandybrown;
+}
+
+.question .one-a {
+    background-color: #dfff00;
+}
+
+.question .one-b {
+    background-color:green;
+}
+
+.question .one-c {
+    background-color: blue;
+}
+
+.question {
+    position: relative;
+    padding: 20px 10px;
+    margin: 20px 0px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    z-index: 24;
+}
+.question h1 {
+    padding-bottom: 10px;
+    background-color: aquamarine;
+}
+
+.answer {
+    font-size: 25px;
+    display: inline-block;
+    width: 30%;
+}
+
+.one-a:hover, .two-b:hover, .three-c:hover {
+    color:#00ff1d;
+}
+
+.one-b:hover, .one-c:hover, .two-a:hover, .two-c:hover, .three-a:hover, .three-b:hover {
+    color: red;
+}

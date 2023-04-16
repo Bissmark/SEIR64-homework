@@ -1,0 +1,15 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    padding-top: 300px;
+    position: absolute;
+}
+
+.yes {
+    position: static;
+    visibility: hidden;
+
+}

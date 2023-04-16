@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap');
+
+body {
+    background-color: slategray;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgb(49, 46, 65);
+    padding: 1em; /*big pixel about an m-Dash */
+}
+
+header {
+    color: azure;
+    text-align: center;
+}
+
+main {
+    position: relative;
+}
+
+.pics { 
+    height: 400px;
+    width: 400px;
+    border: 2px;
+    display: inline-block;
+    background-color: rgb(42, 39, 50);
+} 
+
+.pics img {
+    width: 400px;
+}
+
+.pics p {
+    text-align: center;
+    line-height: 125px;
+}
+
+.topleft {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.topright {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.botleft {
+    position: absolute;
+    left: 50px;
+    top: 500px;
+}
+
+.botright {
+    position: absolute;
+    right: 50px;
+    top: 500px;
+}
+
+a {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+.back {
+    background-color: darkgoldenrod;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}

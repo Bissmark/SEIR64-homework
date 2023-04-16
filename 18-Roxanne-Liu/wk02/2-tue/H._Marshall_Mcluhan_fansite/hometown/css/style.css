@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,600;1,200&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Saira', sans-serif;
+}
+
+.navs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navs li {
+  margin-left: 1rem;
+  font-family: 'Saira', sans-serif;
+}
+
+.navs a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navs a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h2 {
+  font-size: 50px;
+  margin-top: 80px;
+  font-family: 'Saira', sans-serif;
+}
+
+main h3 {
+  margin-top: 80px;
+  font-size:25px;
+  font-family: 'Saira', sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main p {
+  font-family: 'Saira', sans-serif;
+  font-style: italic;
+  line-height: 2rem;
+  font-size: 14.5px;
+  color:navy;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Saira', sans-serif;
+}
+
+.info img {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.info p {
+  flex: 1;
+  margin: 0;
+}
+
+.inline {
+  display: flex;
+  gap: 3rem;
+}

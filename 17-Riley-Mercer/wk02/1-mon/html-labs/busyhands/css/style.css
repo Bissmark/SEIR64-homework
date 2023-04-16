@@ -1,0 +1,33 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #7f7d78;
+	font-size: 13px;
+	line-height: 1.1;
+	background: #FFF;
+}
+
+#logo {
+	max-width: 900px;
+	margin: 0px auto;
+	
+}
+
+#banner {
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+.quote {
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+p {
+	
+}
+
+img.quote {
+
+}

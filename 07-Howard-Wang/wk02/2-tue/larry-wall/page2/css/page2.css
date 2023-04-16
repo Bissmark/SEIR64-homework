@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: lightgoldenrodyellow;
+    padding:1em;
+}
+body{
+    background-color: lightcoral;
+}
+nav{
+    text-align: right;
+    background-color: black;
+}
+nav a{
+    margin: 25px;
+    color: lightskyblue;
+    font-size: 150%;
+}
+h1 {
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Alkatra', cursive;
+
+}
+img {
+    display: inline-block;
+    margin: 0 0 0 200px;
+    
+}
+p{
+    max-width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 125%;
+    margin: 50px 0px 100px 200px;
+    font-family: 'Delicious Handrawn', cursive;
+    letter-spacing: 2px;
+}
+
+h2 {
+    margin: 0 0 40px 80px;
+    font-family: 'Alkatra', cursive;
+
+}
+
+
+

@@ -1,0 +1,12 @@
+<p>
+    <h2><%= params[:book_title].capitalize %></h2>
+    <h4>Written by <%=@authors%></h4>
+    <br>
+    <div class="info">
+        <img src="<%=@image%>">
+        <div class="paragraph">
+            <p><%=@description%> <br> <a href="<%=@preview%>" target="_blank">Click for a sneak peek</a></p>
+            <p></p>
+        </div>
+    </div>
+</p>
