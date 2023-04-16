@@ -1,0 +1,9 @@
+<p>Flowers</p>
+
+
+
+<% @flower.each do |flower|%>
+    <a href="/flowers/<%= flower["id"] %>">
+        <%= flower["name"] %>
+    </a>
+<% end %>

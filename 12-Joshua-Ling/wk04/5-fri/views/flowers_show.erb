@@ -1,0 +1,16 @@
+<h1>
+    <%= @flower["name"] %>
+</h1>
+
+<h2>
+    <%= @flower["season"] %>
+</h2>
+
+<h2>
+    <%= @flower["lifespan"] %>
+</h2>
+
+<div class="controls">
+    <a href="/flowers/<%= @flower["id"] %>/edit">Edit</a>
+    <a href="/flowers/<%= @flower["id"] %>/delete">Delete</a>
+</div>
