@@ -1,0 +1,19 @@
+/* water.css is in usage - linked in the layout.erb */
+
+body {
+    text-align: center;
+}
+
+body a {
+    padding: 1em;
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.feature {
+    max-width: 100%;
+    border-radius: 2em;
+}
