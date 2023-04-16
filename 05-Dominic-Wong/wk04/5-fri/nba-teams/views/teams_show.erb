@@ -3,9 +3,11 @@
 <h3> City: <%= @team["city"] %> </h3>
 
 <% unless @team["image"].nil? || @team["image"].empty? %>
-    <img src="<%= @team["image"] %>" alt="<%= @team["name"] %>">
+    <img class='logos' src="<%= @team["image"] %>" alt="<%= @team["name"] %>">
 <% end %>
 
-<a href="/teams/<%= @team["id"] %>/update">Update</a>
-<a href="/teams/<%= @team["id"] %>/delete">Delete</a>
+<div class="controls">
+    <a href="/teams/<%= @team["id"] %>/update">Update</a>
+    <a href="/teams/<%= @team["id"] %>/delete">Delete</a>
+</div>
 
