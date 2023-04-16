@@ -1,0 +1,37 @@
+<h1>Edit Pokemon</h1>
+
+<form action="/pokemons/<%= @pokemon["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Pikachu" value="<%= @pokemon["name"] %>">
+    </label>
+    
+    <label>
+        Type:
+        <input name="type" placeholder="Electric" value="<%= @pokemon["type"] %>">
+    </label>
+
+    <label>
+        Gender:
+        <input name="gender" placeholder="F" value="<%= @pokemon["gender"] %>">
+    </label>
+
+    <label>
+        Weight:
+        <input name="weight" placeholder="7.1kg" value="<%= @pokemon["weight"] %>">
+    </label>
+
+    <label>
+        Height:
+        <input name="height" placeholder="0.43m" value="<%= @pokemon["height"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <button>Update Pokemon</button>
+
+
+</form>
