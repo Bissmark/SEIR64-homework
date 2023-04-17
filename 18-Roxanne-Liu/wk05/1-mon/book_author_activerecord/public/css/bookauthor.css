@@ -1,0 +1,32 @@
+/* body {
+    
+} */
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+.controls {
+    display: flex;
+    gap:4em;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.feature {
+    max-width: 100%;
+}

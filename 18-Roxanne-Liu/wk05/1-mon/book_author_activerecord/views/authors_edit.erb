@@ -1,0 +1,12 @@
+<h1>Edit author</h1>
+
+<form action="/authors/<%= @author["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Charles Dickens" value="<%= @author["name"] %>">
+    </label>
+
+    <button>Update author</button>
+
+
+</form>
