@@ -1,0 +1,47 @@
+<h1 class="new_dish_heading">New Dish</h1>
+
+<form action="/dishes" method="post">
+
+    <%# input name REQUIRED %>
+    <label class="input_heading">
+        Name:
+        <input name="name" required placeholder="Har Gow">
+    </label>
+
+    <%# category from dropdown %>
+    <label class="input_heading"><br>
+        Enter a category (Dumpling, Roll, Bun, Cake, Meat, Seafood, Vegetable, Rice, Dessert, Tea):
+        <input name="category" required placeholder="Dumpling">
+    </label>
+    
+    <%# image link %>
+    <label class="input_heading"><br>
+        Image link:
+        <input class="img_link" name="image" type="url">
+    </label>
+
+
+    <%# dish description %>
+     <label class="input_heading"> <br>
+        Describe the dish:<br>
+        <textarea name="description" rows="2" cols="114"  placeholder="Cantonese dumpling characterised by a delicate, translucent wrapper enveloped around a shrimp filling"></textarea>
+    </label><br>
+    <button class="edit_buttons">Create dish</button>
+</form>
+
+<%#  MAY REVISIT
+<select name="category" required>
+    <option value="" disabled selected>Select from dropdown</option>
+    <option value="Dumpling">Dumpling</option>
+    <option value="Roll">Roll</option>
+    <option value="Bun">Bun</option>
+    <option value="Cake">Cake</option>
+    <option value="Meat">Meat</option>
+    <option value="Seafood">Seafood</option>
+    <option value="Vegetable">Vegetable</option>
+    <option value="Rice">Rice</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Tea">Tea</option>
+</select>
+
+%>
