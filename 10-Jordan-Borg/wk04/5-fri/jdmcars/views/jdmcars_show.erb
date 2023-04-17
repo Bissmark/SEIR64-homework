@@ -1,0 +1,17 @@
+<h1>
+<%= @jdmcar["name"] %>
+</h1>
+
+<h2>
+family: <%= @jdmcar["family"] %>
+</h2> 
+
+<% unless @jdmcar["image"].nil? || @jdmcar["image"].empty? %>
+    <img class="feature" src="<%= @jdmcar["image"] %>" alt="<%= @jdmcar["name"] %>">
+
+<% end %>
+
+<div class="controls">
+    <a href="/jdmcars/<%= @jdmcar["id"] %>/edit">Edit jdmcars</a>
+    <a href="/jdmcars/<%= @jdmcar["id"] %>/delete">Delete jdmcars</a>
+</div>
