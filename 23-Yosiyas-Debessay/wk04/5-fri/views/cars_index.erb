@@ -1,0 +1,10 @@
+<h1>All Cars</h1>
+
+<%# this loop is controling how many times it's looping or how many paragraphs there will be %>
+<% @cars.each do |car| %>
+    <p>
+        <a href="/cars/<%= car["id"] %>">
+            <%= car["name"] %>
+        </a>
+    </p>
+<% end %>

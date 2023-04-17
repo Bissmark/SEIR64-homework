@@ -1,0 +1,30 @@
+<h2>  
+    Name: <%= @pokemon["name"] %>
+</h2>
+
+<div class="show">
+    <p>Type: <%= @pokemon["type"] %></p>
+
+    <p>Gender: <%= @pokemon["gender"] %></p>
+
+    <p>Weight: <%= @pokemon["weight"] %></p>
+
+    <p>Height: <%= @pokemon["height"] %></p>
+
+</div>
+
+<div class="pokeshow">
+<% unless @pokemon["image"].nil? || @pokemon["image"].empty? %>
+    <img class="feature" src="<%= @pokemon["image"] %>" alt="<%= @pokemon["name"] %>">
+<% end %>
+</div>
+
+
+<div class="controls">
+    <a href="/pokemons/<%= @pokemon["id"] %>/edit">Edit Pokemon</a>
+    <a href="/pokemons/<%= @pokemon["id"] %>/delete">Delete Pokemon</a>
+</div>
+
+    <form class="fav" action="/pokemons/<%= @pokemon["id"] %>/favorite" method="post">
+        <button>Favorite this Pokemon</button>
+    </form>

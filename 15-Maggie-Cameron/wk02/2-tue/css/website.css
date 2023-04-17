@@ -2,22 +2,18 @@ font-family: 'Alkatra', cursive;
 font-family: 'Montserrat', sans-serif;
 
 body {
-    /* #123 expands to #112233 */
-    background-color:black;  /* #222222 */
+    background-color:black;
     margin: 0;
     padding: 0;
     font-family: 'Alkatra', cursive;
 }
 
 .container {
-    max-width: 960px; /* poor person's lazy responsive container */
-    margin: 0 auto; /* center */
+    max-width: 960px;
+    margin: 0 auto;
     background-color:#ececec; ; 
-    padding: 1em; /* a chunky pixel */
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    padding: 1em; 
+    border-radius: 1em;
     font-family: 'Alkatra', cursive;
     
 }
@@ -30,6 +26,7 @@ nav {
     font-size: 20px;
     background-color: #9fd3c7;
     margin-inline: -16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -59,7 +56,7 @@ img {
     margin-bottom: 0px;
     border-width: 5px;
     margin-top: 30px;
- /* Can't set margins on display: inline (which is the default for image) */
+
 }
 
 p {
@@ -67,6 +64,8 @@ p {
     width: 45%;
     color: #142d4c;
     font-size: 20px;
+    vertical-align: top;
+    margin-top: 76px;
 }
 
 .trivia {

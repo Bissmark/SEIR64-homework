@@ -1,0 +1,32 @@
+<h1>Edit plant details</h1>
+
+<form action="/plants/<%= @plant['id'] %>" method="post">
+    <label>
+        Name: 
+        <input name="name" placeholder="Swiss Cheese" required value="<%= @plant["name"] %>">
+    </label>
+    <br>
+    <label>
+        Family: 
+        <input name="family" placeholder="Arums" value="<%= @plant["family"] %>">
+    </label>
+    <br>
+    <label>
+        Light: 
+        <input name="light" placeholder="Moderate indirect sunlight" value="<%= @plant["light"] %>">
+    </label>
+
+    <br>
+    <label>
+        Humidity: 
+        <input name="humidity" placeholder="30%-40%" value="<%= @plant["humidity"] %>">
+    </label>
+    <br>
+    <label>
+        Image: 
+        <input name="image" type="text" value="<%= @plant["image"] %>">
+    </label>
+    <br>
+    <br>
+    <button>Update Plant details</button>
+</form>

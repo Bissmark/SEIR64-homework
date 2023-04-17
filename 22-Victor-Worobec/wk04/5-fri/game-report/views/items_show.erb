@@ -1,0 +1,23 @@
+<div class="options">
+    <a href="/items/<%= @item["id"] %>/edit">Edit Item</a>
+    <a href="/items/<%= @item["id"] %>/delete">Delete Item</a>
+</div>
+
+<h1>
+    <%= @item["name"] %>
+</h1>
+
+<h2>
+    Genre: <%= @item["genre"] %>
+</h2>
+
+<% unless @item["played"].empty? %>
+    <h2>
+        Played: <%= @item["played"] %>    
+    </h2>
+<% end%>
+
+<% unless @item["image"].nil? || @item["image"].empty? %>
+    <img class="feature" src="<%= @item["image"] %>" alt="<% @item["name"] %>">
+<% end%>
+

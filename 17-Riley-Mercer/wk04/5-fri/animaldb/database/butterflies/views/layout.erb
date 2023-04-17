@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterflies</title>
+    <link rel="stylesheet" href="/css/butterflies.css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <a href="/butterflies">All butterflies</a>
+            <a href="/butterflies/new">New butterfly</a>
+        </nav>
+        <%= yield %> 
+        <%# this sticks the request into the new layout boilerplate %>
+        <%# the '=' means that the code is replaced by the imported content %>
+    </div>
+
+</body>
+</html>
+
+<%# Standard 'boilerplate' for making Sinatra pages %>
+<%# the erb (embedded ruby) acts as a template for embedded Ruby code in HTML files %>

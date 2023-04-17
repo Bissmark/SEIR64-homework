@@ -1,0 +1,9 @@
+<h1>All Pastas</h1>
+
+
+<% @pastas.each do |pasta| %>
+    <p>
+    <a href="/pastas/<%= pasta ["id"] %>">
+    <%= pasta["name"]%> 
+    </p>
+<% end %>

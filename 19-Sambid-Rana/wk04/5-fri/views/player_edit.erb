@@ -1,0 +1,45 @@
+
+<div class="nav_container">
+    <nav>
+        <a href="/player/list"> Back to Player List </a>
+
+    </nav>
+</div>
+
+<h1>Edit player info</h1>
+
+<div class="edit_container">
+
+<form action="/player/list/<%= @player["id"] %>" method="post"> 
+    <label for="first_name">
+    First Name:
+        <input name="first_name" required placeholder="e.g. 'Henry the VI'" value="<%= @player["first_name"]%>">
+    
+    </label>
+    <label for="last_name">
+    Family name:
+        <input name="last_name" placeholder="If applicable" value="<%= @player["last_name"]%>">
+
+    </label>
+    <label for="nationality">
+    Nationality:
+        <input name="nationality" placeholder="If applicable" value="<%= @player["nationality"]%>">
+    </label>
+
+    <label for="goals_scored">
+    Goals Socred:
+        <input type="number" name="goals_scored" placeholder="If applicable" value="<%= @player["goals_scored"]%>">
+    </label>
+
+    <label for="image">
+    Image URL:
+        <input type="url" name="image" placeholder="URL" value="<%= @player["image"]%>">
+    </label>
+
+    <div class="edit_button">
+        <button>Update</button>
+    </div>
+
+</form>
+
+</div>

@@ -1,0 +1,8 @@
+<h1>All Characters</h1>
+
+<% @harrypotter.each do |character| %>
+    <p>
+        <a href="/harrypotter/<%= character ["id"] %>">
+        <%= character["name"] %>
+    </p>
+<% end %>

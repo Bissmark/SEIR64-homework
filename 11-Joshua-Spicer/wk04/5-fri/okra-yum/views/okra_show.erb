@@ -1,0 +1,15 @@
+<h1>
+    <%= @okra["name"] %>
+</h1>
+<h2>
+    Family: <%= @okra["family"] %>
+</h2>
+<% unless @okra["image"].nil? || @okra["image"].empty? %>
+<img class="feature" src="<%= @okra["image"] %>" alt="<%= @okra["name"] %>">
+<% end %>
+<div class="controls">
+    <a href="/okra/<%= @okra["id"] %>/edit">Edit okra</a>
+    <a href="/okra/<%= @okra["id"] %>/delete">Delete okra</a>
+</div>
+
+
