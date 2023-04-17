@@ -1,0 +1,20 @@
+<h1>Edit player</h1>
+
+<form action="/players/<%= @player["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Emile Smith Rowe" value="<%= @player["name"] %>">
+    </label>
+
+    <label>
+        Birthplace:
+        <input name="birthplace" placeholder="Croydon" value="<%= @player["birthplace"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @player["image"] %>">
+    </label>
+
+    <button>Update player</button>
+</form>
