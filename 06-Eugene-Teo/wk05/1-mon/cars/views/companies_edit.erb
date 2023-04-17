@@ -1,0 +1,20 @@
+<h1>Edit company</h1>
+
+<form action="/companies/<%= @company["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Toyota" value="<%= @company["name"] %>">
+    </label>
+
+    <%# <label>
+        Family:
+        <input name="family" placeholder="Skipper" value="<%= @company["family"] %>">
+    <%# </label> %> 
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @company["image"] %>">
+    </label>
+
+    <button>Update company</button>
+</form>
