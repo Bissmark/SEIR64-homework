@@ -1,0 +1,12 @@
+<h1>
+    <%= @shoe["name"] %>
+</h1>
+
+<% unless @shoe["image"].nil? || @shoe["image"].empty? %>
+<img class="feature" src="<%= @shoe["image"] %>" alt="<%= @shoe["company"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/shoes/<%= @shoe["id"] %>/edit">Edit shoe</a>
+    <a href="/shoes/<%= @shoe["id"] %>/delete">Delete shoe</a>
+</div>
