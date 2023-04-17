@@ -1,0 +1,21 @@
+<h1> Edit Butterflies</h1>
+
+<form action="/harrypotter/<%= @character["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Luna Lovegood" value="<%= @character["name"]%>">
+    </label>
+    <label>
+        House:
+        <input name="house" placeholder="Hufflepuff" value="<%= @character["house"]%>">
+    </label>
+    <label>
+        Blood Type:
+        <input name="bloodtype" placeholder="Pure Blood" value="<%= @character["bloodtype"]%>">
+    </label>
+
+    <button>
+    Update Character
+    </button>
+
+</form>
