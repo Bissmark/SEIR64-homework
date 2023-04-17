@@ -1,0 +1,45 @@
+<h1>Edit Sneaker</h1>
+
+<form action="/sneakers/<%= @sneakers["id"]%>" method="post">
+  <label>
+        Brand
+        <input name="brand" required placeholder="nike" value="<%= @sneakers["brand"]%>">    
+    </label>
+
+     <label>
+        Model
+        <input name="model" required placeholder="Air Jordan 1" value="<%= @sneakers["model"]%>" >    
+    </label>
+
+     <label>
+        Colourway
+        <input name="colourway" required placeholder="Black/Red" value="<%= @sneakers["colourway"]%>">    
+    </label>
+
+     <label>
+        Size
+        <input name="size" required placeholder="8" value="<%= @sneakers["size"]%>">    
+    </label>
+    
+    <label>
+        Original Release Year
+        <input name="ogrelease" placeholder="1986" value="<%= @sneakers["ogrelease"]%>">    
+    </label>
+    
+    <label>
+        Release Date
+        <input name="release" placeholder="15/01/2011" value="<%= @sneakers["release"]%>">    
+    </label>
+
+    <label>
+        Style <Code></Code>
+        <input name="stylecode" placeholder="AB12345-000" value="<%= @sneakers["stylecode"]%>">    
+    </label>
+     
+    <label>
+        Image
+        <input type="url"  name="image" value="<%= @sneakers["image"]%>">    
+    </label>
+
+    <button>Update Sneaker</button>
+</form>
