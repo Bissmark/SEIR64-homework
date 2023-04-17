@@ -1,0 +1,20 @@
+<h1>Edit Pasta</h1>
+
+<form action="/pastas/<%= @pasta["id"]%>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Pasta name here" value="<%= @pasta["name"]%>">
+    </label>
+    
+    <label>
+        Region:
+        <input name="region" placeholder="Pasta region here" value="<%= @pasta["region"]%>">
+    </label>
+    
+    <label>
+        Image:
+        <input type="url" placeholder="Add image URL here" name="image">
+    </label>
+
+    <button>Update Pasta</button>
+</form>

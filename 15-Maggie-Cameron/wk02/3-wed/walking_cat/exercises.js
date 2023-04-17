@@ -1,13 +1,16 @@
 const img = document.getElementsByTagName('img')[0];
 img.style.position = 'absolute';
 img.style.left = '0px';
-const watchKittyWalk = function() {
+const catWalk = function() {
   const oldLeft = parseInt(img.style.left);
-  const newLeft = oldLeft + 1;
+  const newLeft = oldLeft + 10;
   img.style.left = newLeft + 'px';
-  if (newLeft > 1200) {
+  if (newLeft > window.innerWidth) {
     clearInterval(timer)
   }
   
 };
-const timer = setInterval(watchKittyWalk, 5)
+const timer = setInterval(catWalk, 50)
+
+
+

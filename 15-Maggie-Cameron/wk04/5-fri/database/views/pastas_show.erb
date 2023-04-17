@@ -1,0 +1,16 @@
+<h1>
+    <%= @pasta[ "name" ] %>
+</h1>
+
+<h2>
+Region: <%= @pasta[ "region" ] %>
+</h2>
+
+<% unless @pasta["image"].nil? || @pasta["image"].empty? %>
+    <img class="feature" src="<%= @pasta["image"] %>" alt="<%= @pasta["name"] %>">
+<%end%>
+
+<div class="controls">
+    <a href="/pastas/<%= @pasta["id"] %>/edit">Edit pasta</a>
+    <a href="/pastas/<%= @pasta["id"] %>/delete">Delete pasta</a>
+</div>
