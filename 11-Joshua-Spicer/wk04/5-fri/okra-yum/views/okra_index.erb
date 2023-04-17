@@ -1,0 +1,8 @@
+<h1>All okras</h1>
+<% @okras.each do |okra| %>
+<p>
+<a href="/okras/<%= okra["id"] %>">
+<%= okra["name"] %>
+</a>
+</p>
+<% end %>
