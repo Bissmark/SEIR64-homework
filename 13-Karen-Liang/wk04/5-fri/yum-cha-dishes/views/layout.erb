@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yum Cha Dishes</title>
+    <link rel="stylesheet" href="/css/dishes.css">
+    <link rel="icon" type="image/x-icon" href="/img/dish_icon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Thasadith&display=swap');
+    </style>
+    
+</head>
+
+
+<body>  
+    <div class="top_banner">
+        <p class="banner_text">Yum Cha Order Guide 🍵 </p>
+    </div>
+    <div class="nav_background">
+        <div class="nav_width">
+
+                <nav>
+                    <a class="nav_effect" href="/">Home</a>
+                    <a class="nav_effect" href="/dishes">All Dishes</a>
+                    <a class="nav_effect" href="/dishes/new">Add a Dish </a>
+                    <a class="nav_effect" href="/dishes/faq">FAQ </a>
+                </nav>
+
+            </div>
+    </div>
+        <div class="container">
+
+            
+
+            <%= yield %>        
+        </div>
+    
+</body>
+</html>

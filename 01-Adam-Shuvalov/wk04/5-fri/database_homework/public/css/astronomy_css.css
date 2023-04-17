@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
+
+body {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    font-family: 'Chivo Mono', monospace;
+}
+
+#container {
+    max-width: 960px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    text-align: center;
+    height: 35px;
+}
+
+.nav_links {
+    margin: 20px;
+}
+
+#add_to_db {
+    text-align: center;
+    height: 50px;
+}
+
+#astronomical_image {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li > * {
+    text-decoration: none;
+}
+
+label > * {
+    display: block;
+    margin-bottom: 25px;
+}
+
+#welcome {
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#delete_form {
+    display: inline-block;
+    position: relative;
+    left: 3%;
+}
+
+#delete_button {
+    background-color: black;
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    border: double 2px rgb(158, 4, 4);
+}
+
+#change_data {
+    margin-top: 50px;
+}
