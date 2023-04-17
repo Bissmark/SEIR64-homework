@@ -1,0 +1,52 @@
+
+<div class="nav_container">
+    <nav>
+        <a href="/player/list"> Back to Player List </a>
+
+    </nav>
+</div>
+
+<h1>
+    <%= " #{@player["first_name"]} #{@player["last_name"]} " %>
+</h1>
+<h2>
+    <span class="nationality">Nationality:</span> <%= "#{@player["nationality"]}"%>
+</h2>
+
+
+<%# goal_scored == 0 didn't work. Why? How is 0 represented in the database? And how to get something with the value 0%>
+<% if @player["goals_scored"].nil? %>
+
+    <p>No goals scored yet</p>
+
+<% elsif %>
+
+    <p> Goals Score in the Premier League: <%= @player["goals_scored"]%> </p>
+    
+<% end%>
+  
+  
+
+
+<div class="display_img">
+    
+    <% unless @player["image"].nil? || @player["image"].empty? %>
+    <img src="<%= @player["image"]%>" alt="<%= @player["last_name"] %>">
+    <% end %>
+</div>
+
+<div class="display_button_container">
+
+<div >
+    <form action="/player/list/<%= @player["id"]    %>/edit">
+    <button type="submit">Edit Player</button>
+    </form>
+</div>
+
+<div>
+    <form action="/player/list/<%= @player["id"]    %>/delete">
+    <button type="submit">Delete Player</button>
+    </form>
+</div>
+
+</div>

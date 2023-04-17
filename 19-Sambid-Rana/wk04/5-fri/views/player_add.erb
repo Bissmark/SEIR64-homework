@@ -1,0 +1,37 @@
+
+<h1>Add a player</h1>
+
+<div class="add_container">
+<%# Note: look into - Get vs Post %>
+<form action="/player/list" method="post"> 
+    <label for="first_name">
+    First Name:
+        <input type="text" name="first_name" required placeholder="e.g. 'Henry the VI'">
+    
+    </label>
+    <label for="last_name">
+    Family name:
+        <input type="text" name="last_name" placeholder="If applicable">
+
+    </label>
+    <label for="nationality">
+    Nationality:
+        <input type="text" name="nationality" placeholder="If applicable">
+    </label>
+
+    <label for="goals_scored">
+    Goals Socred:
+        <input type="number" name="goals_scored" placeholder="If applicable">
+    </label>
+
+    <label for="image">
+    Image URL:
+        <input type="url" name="image" placeholder="URL">
+    </label>
+
+    <div  class="add_button">
+        <button>Add Player</button>
+    </div>
+
+</form>
+</div>

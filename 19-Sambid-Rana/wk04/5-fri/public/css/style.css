@@ -1,0 +1,82 @@
+
+/* body {
+    background-image: url("/public/images/pngwing.com.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+} */
+
+img {
+    border: 2px solid white;
+    border-radius: 100px;
+    box-shadow: 0 0 25px 2px white;
+    margin-top: 20px ;
+    margin-bottom: 40px;
+}
+
+.display_img {
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.display_button_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit_container, .add_container {
+    display: flex;
+    background-color: rgba(218, 147, 147, 0.343);
+    margin-top: 100px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.edit_container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.add_container  > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit_button, .add_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nationality {
+    font-size: 16px;
+}
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("/public/image/pngwing.com.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container_yield {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home_list {
+    background-color: rgba(35, 35, 9, 0.5);
+    padding: 50px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.home_list > a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+} */
