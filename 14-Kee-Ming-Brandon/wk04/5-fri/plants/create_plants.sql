@@ -18,4 +18,4 @@ INSERT INTO plants (name, family, light, humidity, image) VALUES ('Monstera Deli
 
 INSERT INTO plants (name, family, light, humidity, image) VALUES ('Peperomia Piccolo Banda', 'Piperaceae', 'Medium to bright indirect sunlight', '40%-50%', '/images/piccolo_banda.jpeg');
 
-INSERT INTO plants (name, family, light, humidity, image) VALUES ('Dracaena Trifasciata', 'Asparagus', 'Medium to bright indirect sunlight', '50%', '/images/Trifasciata.webp');
+INSERT INTO plants (name, family, light, humidity, image) VALUES ('Dracaena Trifasciata', 'Asparagus', 'Medium to bright indirect sunlight', '50%', '/images/Trifasciata.jpeg');
