@@ -1,0 +1,16 @@
+<h1>Edit team</h1>
+
+<form action="/teams/<%= @team["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="New York" value="<%= @team["name"]%>">
+    </label>
+
+    <label>
+        Location: 
+        <input name="mvp" required placeholder="Julius Randle" value="<%= @team["mvp"]%>">
+    </label>
+
+    <button>Update Team</button>
+
+    </form>
