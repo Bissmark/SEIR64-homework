@@ -7,3 +7,16 @@
     Name: <%= @team["name"] %>
 </h2>
 
+<h2>
+    MVP: <%= @team["mvp"] %>
+
+<% unless @team["image"].nil? || @team["image"].empty? %>
+
+<img class="feature" src="<%= @team["image"] %>" alt="<%= @team["name"] %>">
+
+<% end %>
+
+<div class="controls">
+    <a href="/teams/<%= @team["id"] %>/edit">Edit Team</a>
+    <a href="/teams/<%= @team["id"] %>/edit">Delete Team</a>
+</div>

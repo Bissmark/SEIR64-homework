@@ -32,9 +32,15 @@ end
 
 #CREATE 
 
-get '/teams/new' do
-    erb :teams_new
-end 
+post '/teams' do 
+    team = Team.new
+    team.name = params[:name]
+    team.mvp = params[:mvp]
+    team.image = params[:image]
+    team.save
+    redirect to("/teams/#{ team.id }")
+end
+
 
 #SHOW 
 #show my teams
@@ -52,3 +58,23 @@ get '/teams/:id/edit' do
     erb :teams_edit
 end 
 
+#UPDATE
+
+post '/teams/:id' do
+    team = Team.find params[:id]
+    team.name = params[:name]
+    team.mvp = params[:mvp]
+    team.image = params[:image]
+    team.save
+    redirect to("/teams/#{ params[:id] }")
+end
+
+
+
+#DESTROY
+
+get '/teams/:id/delete' do
+    team = Team.find params[:id]
+    team.destroy
+    redirect to('/teams')
+end 
