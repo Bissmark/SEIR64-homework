@@ -13,6 +13,8 @@ ActiveRecord::Base.logger = Logger.new(STDERR)
 class Team < ActiveRecord::Base
 end 
 
+class Player < ActiveRecord::Base
+end
 
 get '/' do
     erb :home
@@ -70,7 +72,6 @@ post '/teams/:id' do
 end
 
 
-
 #DESTROY
 
 get '/teams/:id/delete' do
@@ -78,3 +79,60 @@ get '/teams/:id/delete' do
     team.destroy
     redirect to('/teams')
 end 
+
+#Players CRUD ###################################
+
+#index 
+
+get '/players' do
+    @players = Player.all
+    erb :players_index
+end 
+
+#new 
+
+get '/players/new' do
+    erb :players_new
+end
+
+#create
+
+post '/players' do
+    player = Player.new
+    player.name = params[:name]
+    player.position = params[:position]
+    player.image = params[:image]
+    player.save
+    redirect to("/players/#{ player.id }")
+end 
+
+#show 
+get '/players/:id' do
+    @player = Player.find params[:id]
+    erb :players_show
+end 
+
+#EDIT
+get '/players/:id/edit' do
+    @player = Player.find params[:id]
+    erb :players_edit
+end 
+
+#UPDATE 
+
+post '/players/:id' do
+    player = Player.find params[:id]
+    player.name = params[:name]
+    player.position = params[:position]
+    player.image = params[:image]
+    player.save
+    redirect to("/players/#{ params[:id] }")
+end 
+
+#DESTROY
+
+get '/players/:id/delete' do
+    player = Player.find params[:id]
+    player.destroy
+    redirect to('/players')
+end
