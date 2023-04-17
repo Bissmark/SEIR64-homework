@@ -1,0 +1,25 @@
+<div class="controls">
+
+        <a href="/artists/<%= @artist["id"] %>/edit">Edit artist</a>
+        <a href="/artists/<%= @artist["id"] %>/delete">Delete artist</a>
+
+</div>
+
+<h1>
+
+    <%= @artist.name %>
+
+</h1>
+
+<h2>
+
+    Currently alive:
+    <%= @artist.alive %>
+
+</h2>
+
+<% if @artist.image.present? %>
+
+    <img class="feature" src="<%= @artist.image %>" alt="<%= @artist.name %>">
+
+<% end %> 
