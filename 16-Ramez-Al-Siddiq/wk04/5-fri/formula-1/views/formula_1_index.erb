@@ -1,0 +1,9 @@
+<h1>All Formula 1 Cars</h1>
+
+<% @formula_1.each do |car| %>
+    <p>
+        <a href="/formula_1/<%= car["id"] %>">
+            <%= car["model"] %>
+        </a>
+    </p>
+<% end %>

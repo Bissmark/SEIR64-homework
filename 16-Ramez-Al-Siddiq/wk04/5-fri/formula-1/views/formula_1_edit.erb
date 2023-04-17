@@ -1,0 +1,20 @@
+<h1>Edit car</h1>
+
+<form action="/formula_1/<%= @car["id"] %>" method="post">
+    <label>
+        Model:
+        <input name="model" required placeholder="W11" value="<%= @car["model"] %>">
+    </label>
+
+    <label>
+        Team:
+        <input name="team" placeholder="Mercedes-AMG Petronas F1 Team" value="<%= @car["team"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @car["image"] %>">
+    </label>
+
+    <button>Update car</button>
+</form>
