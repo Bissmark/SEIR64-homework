@@ -1,0 +1,17 @@
+<h1><%= @brand.name %></h1>
+
+<% unless @brand.logo.empty? %>
+    <img src="<%= @brand.logo %>" alt="photo of <%= @brand.name %>" class="feature logo">
+<% end %>
+
+<p>
+    Origin: 
+    <a href="/origin/<%= @brand.origin %>">
+        <%= @brand.origin %>
+    </a>
+</p>
+
+<div class="controls">
+    <a href="/brands/<%= @brand.id %>/edit" class="mod-key">Edit Info</a>
+    <a href="/brands/<%= @brand.id %>/delete" class="mod-key">Delete Brand</a>
+</div>
