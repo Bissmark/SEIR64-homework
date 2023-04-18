@@ -1,0 +1,20 @@
+<h1>Edit dishes</h1>
+
+<form action="/dishes/<%= @dish.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Enter name of dish" value="<%= @dish.name %>">
+    </label>
+    
+    <label>
+        Country:
+        <input name="origin_country" placeholder="Enter continent" value="<%= @dish.origin_country %>">
+    </label>
+    
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <button>Update Dish</button>
+</form>
