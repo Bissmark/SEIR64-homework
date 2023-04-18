@@ -1,0 +1,8 @@
+<h1> All Asteroids & Planetoids! </h1>
+More coming soon!
+
+<% @asteroids.each do |asteroid| %>
+    <p>
+        <%= link_to asteroid.name, asteroid_path(asteroid.id) %>
+    </p>
+<% end %>
