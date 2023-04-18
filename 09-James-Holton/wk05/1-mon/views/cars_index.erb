@@ -1,0 +1,11 @@
+<h1>All Cars</h1>
+
+<% @cars.each do |car| %>
+    <% unless car.model == ""%>
+        <p>
+            <a href="/cars/<%= car.id %>">
+                <%= car.model%>
+            </a>
+        </p>
+    <% end %>
+<% end %>

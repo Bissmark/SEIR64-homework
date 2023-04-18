@@ -1,0 +1,14 @@
+<h1>
+    <%= @company.name %>
+</h1>
+
+<% unless @company.image.nil? || @company.image.empty? %>
+<h3>
+    Image: <img src="<%= @company.image %>" alt="">
+</h3>
+<% end %>
+
+<div class="controls">
+    <a href="/companies/<%= @company.id %>/edit">Edit</a>
+    <a href="/companies/<%= @company.id %>/delete">Delete</a>
+</div>
