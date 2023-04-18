@@ -1,0 +1,17 @@
+<h1>
+    <%= @author.name%>
+
+
+
+</h1>
+
+
+
+Author: <%= @author["hometown"]%>
+
+<div class="controls">  
+    <a href="/authors/<%= @author.id %>/edit">Edit Author</a>
+    <a href="/authors/<%= @author.id %>/delete">Delete Author</a>
+
+
+</div>
