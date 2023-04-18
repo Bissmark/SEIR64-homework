@@ -1,0 +1,16 @@
+<h1>
+    <%= @color.name %>
+</h1>
+
+<h1>
+    Likeability: <%= @color.likeability %>
+</h1>
+
+<% if @color.image.present? %>
+<img class="feature" src="<%= @color.image %>" alt="<%=@color.name%>%>">
+<% end %>
+
+<div class="controls">
+    <a href="/colors/<%= @color.id %>/edit">Edit</a>
+    <a href="/colors/<%= @color.id %>/delete">delete</a>
+</div>
