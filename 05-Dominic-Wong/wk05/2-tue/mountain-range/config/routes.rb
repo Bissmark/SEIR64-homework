@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 	post '/mountains' => 'mountains#create'
 	get '/mountains/:id/edit' => 'mountains#edit', :as => :edit_mountain
 	post '/mountains/:id' => 'mountains#update'
+	get '/mountains/:id/delete' => 'mountains#destroy', :as => :delete_mountain
 end

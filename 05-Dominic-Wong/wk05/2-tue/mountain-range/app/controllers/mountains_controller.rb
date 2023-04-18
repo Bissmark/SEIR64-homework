@@ -11,7 +11,7 @@ class MountainsController < ApplicationController
     end
 
     def create
-        mountain = Mountain.create :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent]
+        mountain = Mountain.create :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent], :image => params[:image]
         redirect_to mountain_path(mountain.id)
     end
 
@@ -21,8 +21,14 @@ class MountainsController < ApplicationController
 
     def update
         mountain = Mountain.find params[:id]
-        mountain.update :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent]
+        mountain.update :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent], :image => params[:image]
         redirect_to mountain_path(mountain.id)
+    end
+
+    def destroy
+        mountain = Mountain.find params[:id]
+        mountain.destroy
+        redirect_to mountains_path
     end
 
 end
