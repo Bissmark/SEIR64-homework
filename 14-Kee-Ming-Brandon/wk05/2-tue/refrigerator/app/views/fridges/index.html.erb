@@ -1,0 +1,7 @@
+<h1>All Fridges</h1>
+
+<% @fridges.each do |fridge| %>
+    <p>
+        <%= fridge.brand %> <%= link_to fridge.model, fridge_path(fridge.id) %> with energy rating of <%= pluralize fridge.energy, 'star' %>.
+    </p>
+<% end %>
