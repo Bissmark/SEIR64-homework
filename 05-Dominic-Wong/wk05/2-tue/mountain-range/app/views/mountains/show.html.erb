@@ -1,0 +1,9 @@
+<h1><%= @mountain.name %></h1>
+
+<ul>
+    <li>Elevation: <%= @mountain.elevation %></li>
+    <li>Range: <%= @mountain.range %></li>
+    <li>Continent: <%= @mountain.continent %></li>
+</ul>
+
+<%= image_tag @mountain.image if @mountain.image.present? %>
