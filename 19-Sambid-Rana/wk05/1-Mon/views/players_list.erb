@@ -1,0 +1,17 @@
+
+<h1>Premier League Player List</h1>
+
+
+<div>
+
+    <% @players.each do |player| %>
+    <p>   <a href="/players/list/<%= player.id %>"> <%= player.name %> </a>   </p>
+    <% end %>
+
+</div>
+
+<div>
+    <form action="/players/list/add">
+        <button type="submit"> Add to Player List</button>
+    </form>
+</div>
