@@ -1,0 +1,40 @@
+<h1>Edit Car</h1>
+
+<form action="/cars/<%= @car["id"]%>" method="post">
+       <label>
+        Name
+        <input name="name" required placeholder="F8" value="<%= @car.name%>">    
+    </label>
+    
+    <label>
+        Year
+        <input name="year"  placeholder="2022" value="<%= @car.year%>">    
+    </label>
+    
+    <label>
+        Layout
+        <input name="layout"  placeholder="4WD" value="<%= @car.layout%>">    
+    </label>
+    
+    <label>
+        Engine
+        <input name="engine"  placeholder="V8 4.0L" value="<%= @car.engine%>">    
+    </label>
+
+     <label>
+        Power
+        <input name="power"  placeholder="500 kW" value="<%= @car.power%>">    
+    </label>
+
+    <label>
+        Weight
+        <input name="weight"  placeholder="1500 kg" value="<%= @car.weight%>">    
+    </label>
+    
+    <label>
+        Image
+        <input type="url"  name="image" value="<%= @car.image%>">    
+    </label>
+
+    <button>Update Car</button>
+</form>

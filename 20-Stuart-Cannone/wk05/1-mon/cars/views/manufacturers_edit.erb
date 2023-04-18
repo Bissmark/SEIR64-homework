@@ -1,0 +1,35 @@
+<h1>Edit Manufacturers</h1>
+
+<form action="/manufacturers/<%= @manufacturer.id %>" method="post">
+     <label>
+        Name
+        <input name="name" required placeholder="Ferrari" value="<%= @manufacturer.name%>">    
+    </label>
+    
+    <label>
+        Country of Origin
+        <input name="country"  placeholder="Italy" value="<%= @manufacturer.country%>">    
+    </label>
+    
+    <label>
+        Year Founded
+        <input name="yearfounded"  placeholder="1939" value="<%= @manufacturer.yearfounded%>">    
+    </label>
+    
+    <label>
+        Founder
+        <input name="founder"  placeholder="Enzo Ferrari" value="<%= @manufacturer.founder%>">    
+    </label>
+    
+    <label>
+        Website
+        <input type="url"  name="website" value="<%= @manufacturer.website%>">    
+    </label>
+
+    <label>
+        logo
+        <input type="url"  name="logo" value="<%= @manufacturer.logo%>">    
+    </label>
+
+    <button>Update Manufacturer</button>
+</form>
