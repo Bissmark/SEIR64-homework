@@ -1,0 +1,17 @@
+<h1>Edit model</h1>
+
+<form action="/models/<%= @models.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Corolla" value="<%= @models.name %>">
+    </label>
+
+   
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @models.image %>">
+    </label>
+
+    <button>Update model</button>
+</form>
