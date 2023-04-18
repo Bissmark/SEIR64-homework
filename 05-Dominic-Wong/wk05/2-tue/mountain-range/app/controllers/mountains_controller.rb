@@ -14,4 +14,15 @@ class MountainsController < ApplicationController
         mountain = Mountain.create :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent]
         redirect_to mountain_path(mountain.id)
     end
+
+    def edit
+        @mountain = Mountain.find params[:id]
+    end
+
+    def update
+        mountain = Mountain.find params[:id]
+        mountain.update :name => params[:name], :elevation => params[:elevation], :range => params[:range], :continent => params[:continent]
+        redirect_to mountain_path(mountain.id)
+    end
+
 end
