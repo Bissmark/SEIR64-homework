@@ -1,0 +1,20 @@
+<h1>Ammend Directors</h1>
+
+<form action="/directors/<%= @director["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="First / Last" value="<%= @director["name"] %>">
+    </label>
+
+    <label>
+        Age:
+        <input name="age" placeholder="50" value="<%= @director["age"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @director["image"] %>">
+    </label>
+
+    <button>Send it!</button>
+</form>

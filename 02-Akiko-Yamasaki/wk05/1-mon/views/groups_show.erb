@@ -1,0 +1,9 @@
+<h1><%= @group.name%></h1>
+
+<% if @group.image.present? %>
+    <img class="feature" src="<% @group.image %>" alt="<%= @group.name%>">
+<%end%>
+<div class="controls">
+<a href="/groups/<%= @group.id %>/edit">Edit</a>
+<a href="/groups/<%= @group.id %>/delete">Delete</a>
+</div>

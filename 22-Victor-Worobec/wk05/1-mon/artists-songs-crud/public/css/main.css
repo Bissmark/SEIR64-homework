@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.title {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+iframe {
+    border-radius: 2em;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    padding: 0.5em
+}

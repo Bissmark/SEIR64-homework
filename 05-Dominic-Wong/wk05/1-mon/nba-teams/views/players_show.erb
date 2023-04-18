@@ -1,0 +1,14 @@
+<h1> <%= @player.name %> </h1>
+
+<h3> Team: </h3>
+<h3> Position: <%= @player.position %></h3>
+
+<% if @player.image.present? %>
+    <img class='logos' src="<%= @player.image %>" alt="<%= @player.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/players/<%= @player.id %>/edit">Update</a>
+    <a href="/players/<%= @player.id %>/delete">Delete</a>
+</div>
+

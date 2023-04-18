@@ -1,0 +1,30 @@
+<h3>Add movie to database</h3>
+
+<form action="/movies" method="post">
+    <label>
+        Movie's Name:
+        <input name="name" placeholder="Titanic" required>
+    </label>
+
+    <label>
+        Director:
+        <input name="director" placeholder="director">
+    </label>
+
+    <label>
+        Movie's Plot:
+        <textarea name="plot" cols="45" rows="10" placeholder="brief summary"required></textarea>
+    </label>
+    <label>
+        Release Year:
+        <input name="year" placeholder="1997" required>
+    </label>
+
+    <label>
+        Poster URL:
+        <input type="url" name="poster" id="data_image" placeholder="URL">
+    </label>
+
+    <button>Submit</button>
+</form>
+

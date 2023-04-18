@@ -1,0 +1,16 @@
+
+<h1>PL Clubs</h1>
+
+<div>
+    
+    <% @clubs.each do |club|  %>
+    <p> <a href="clubs/<%= club.id %>"> <%= club.club_name%> </a> </p>
+    <% end %>
+    
+</div>
+
+<div>
+    <form action="/clubs/add">
+        <button type="submit"> Add Clubs</button>
+    </form>
+</div>

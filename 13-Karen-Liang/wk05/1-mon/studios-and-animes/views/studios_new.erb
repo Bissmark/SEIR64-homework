@@ -1,0 +1,24 @@
+<h1 class="new_heading">New Studio</h1>
+
+<form action="/studios" method="post">
+
+    <%# input name REQUIRED %>
+    <label class="input_heading">
+        Name:
+        <input name="name" required placeholder="Madhouse">
+    </label>
+
+    <%# founders %>
+    <label class="input_heading"><br>
+        Founder/s:
+        <input name="founders" required placeholder="Masao Maruyama, Yoshiaki Kawajiri, Osamu Dezaki">
+    </label>
+    
+    <%# image link %>
+    <label class="input_heading"><br>
+        Studio logo:
+        <input class="img_link" name="image" type="url">
+    </label>
+    <br>
+    <button class="edit_buttons">Create Studio</button>
+</form>

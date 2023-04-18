@@ -1,0 +1,30 @@
+
+<%# name %>
+<h1>
+    <%= @studio.name %>
+</h1>
+
+
+<%# founders %>
+<h3>
+    Founder/s: <%= @studio.founders %>
+</h3>
+
+
+
+<%# logo image %>
+<% if @studio.image.present? %>
+    <img class="feature" src="<%= @studio.image %>" alt="<%= @studio.name %>">
+
+<% end %>
+
+
+
+
+<%# buttons to edit and update %>
+<div class="controls">
+    <a href="/studios/<%= @studio.id %>/edit""><button class="edit_buttons">Edit Studio</button></a>
+    <a href="/studios/<%= @studio.id %>/delete"><button class="edit_buttons">Delete Studio</button></a>
+</div>
+
+

@@ -1,0 +1,15 @@
+<h1>Edit shoe</h1>
+
+<form action="/shoes/<%= @shoe["id"] %>" method="post">
+    <label>
+        Silouhette:
+        <input name="name" required placeholder="Air Max 1" value="<%= @shoe["name"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <button>Create shoe</button>
+</form>

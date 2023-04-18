@@ -1,0 +1,26 @@
+body {
+    background-color: greenyellow;
+    background: url(carimg1.jpg) no-repeat center center fixed; 
+}
+/* html { */
+    /* background: url(carimg1.jpg) no-repeat center center fixed;  */
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}   */
+
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+} 
+
+nav {
+    text-align: right;
+}
+
+.feature {
+    max-width: 100%;
+}

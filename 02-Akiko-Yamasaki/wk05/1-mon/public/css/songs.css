@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(247, 100, 210);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    gap:2em;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,10 @@
+<h1>All Eucalypts</h1>
+
+<% @eucalypts.each do |eucalypt| %>
+    <p>
+        <a href="/eucalypts/<%= eucalypt["id"]%>">
+            <%= eucalypt['name'] %>
+        </a>
+    </p>
+<% end %>
+
