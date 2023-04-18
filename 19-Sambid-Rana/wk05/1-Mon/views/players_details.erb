@@ -1,0 +1,31 @@
+
+<nav>
+    <a href="/players/list"> Players List</a>
+</nav>
+
+<div>
+
+    <h1> <%= @player.name %> </h1>
+    <h2><%= @player.nationality%></h2>
+    <p>Age: <%= @player.age %></p>   
+    <p>Position: <%= @player.position %> </p>
+    <p>Goales Scored: <%= @player.goals_scored %> </p>  
+
+    <% if @player.image.present? %>
+        
+        <img src=" <%= @player.image %> " alt=" <%= @player.name %> ">
+
+    <% end%>
+
+</div>
+
+<div>
+    <form action="/players/list/<%= @player.id %>/edit">
+        <button>Edit Player Details</button>
+    </form>
+    
+    <form action="/players/list/<%= @player.id %>/delete">
+        <button>Delete Player</button>
+    </form>
+    
+</div>

@@ -1,0 +1,29 @@
+
+<nav>
+
+    <a href="/clubs">Clubs List</a>
+</nav>
+
+<h1> <%= @club.club_name %> </h1> 
+
+<a href="/clubs/<%= @club.id%>/edit">Edit Club Details</a>
+
+<p>Players</p>
+<ul>
+
+    <%# Get the players from  players database and loop over %>
+    <li> <%= @club.player%> </li>
+
+</ul>
+
+<% if @club.image_logo.present? %>
+
+    <img src=" <%= @club.image_logo %> " alt=" <%= @club.club_name%> ">
+
+<% end  %> 
+
+<div>
+    <form action="/clubs/<%= @club.id%>/delete">
+        <button>Delete Club Info</button>
+    </form>
+</div>
