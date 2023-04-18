@@ -1,0 +1,20 @@
+<h1>Edit country</h1>
+
+<form action="/countries/<%= @country.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Enter name of country" value="<%= @country.name %>">
+    </label>
+    
+    <label>
+        Continent:
+        <input name="continent" placeholder="Enter continent" value="<%= @country.continent %>">
+    </label>
+    
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <button>Update Country</button>
+</form>
