@@ -1,0 +1,13 @@
+<h1>Car List</h1>
+
+<% @cars.each do |car| %>
+    <p>
+        <a href="/cars/<%= car.id %>">
+            <%= car.model %>
+        </a>
+    </p>
+<% end %>
+
+<div class="controls">
+    <a href="/cars/new" class="mod-key">Add Car</a>
+</div>
