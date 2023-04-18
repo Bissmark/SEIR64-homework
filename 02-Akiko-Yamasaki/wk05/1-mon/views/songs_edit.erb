@@ -1,0 +1,16 @@
+<h1>Yet another typing error? fix it</h1>
+
+<form action="/songs/<%= @song["id"] %>" method="post">
+
+<label>
+Title:
+<input name="title" placeholder="Rip it up" required value="<%= @song["title"] %>">
+</label>
+
+<label>
+Image:
+<input type="url" name="image" value="<%= @song["image"] %>">
+</label>
+<button>Fix it</button>
+
+</form>

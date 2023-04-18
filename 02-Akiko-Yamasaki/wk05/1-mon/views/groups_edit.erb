@@ -1,0 +1,15 @@
+<h1>Edit groups</h1>
+
+<form action="/groups/<%= @group.id %>" method="post">
+    <label>
+    Name:
+    <input name="name" placeholder ="The Go-Betweens" required value="<%= @group.name %>">
+    </label>
+  
+    <label>
+    Image:
+    <input type="url" name="image" value="<%= @group.image %>">
+    </label>
+
+    <button>Update</button>
+</form>
