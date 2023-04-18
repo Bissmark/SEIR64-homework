@@ -1,0 +1,43 @@
+<h1>Edit Manga</h1>
+
+<form action="<%= manga_path(@manga.id) %>" method="post">
+
+    <label class="input_heading" >
+        Name:
+        <input name="name" required value="<%= @manga.name %>">
+    </label><br>
+
+    <label class="input_heading" >
+        Authors:
+        <input name="authors" required value="<%= @manga.authors %>">
+    </label><br>
+
+    <label class="input_heading" >
+        Status:
+        <select name="status" required>
+            <option value="Ongoing" <%= "selected" if @manga.status == "Ongoing" %>>Ongoing</option>
+            <option value="Finished" <%= "selected" if @manga.status == "Finished" %>>Finished</option>
+        </select>
+    </label><br>
+
+    <label class="input_heading" >
+        Published Year:
+        <input name="published" type="number" min="1000" max="9999" value="<%= @manga.published%>">
+    </label><br>
+
+    <label class="input_heading" >
+        Description: <br>
+        <textarea name="description" rows="2" cols="114"  placeholder="A high-school student discovers a supernatural notebook that grants its user the ability to kill."><%= @manga.description%></textarea>
+    </label><br>
+
+    <label class="input_heading" >
+        Image:
+        <input type="URL" name="image" value="<%= @manga.image%>">
+    </label>
+    <%= image_tag @manga.image, class:"edit_image"  if @manga.image.present?%>
+    <br>
+
+    
+    <button class="edit_buttons">Update Manga</button>
+
+</form>
