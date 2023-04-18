@@ -1,0 +1,42 @@
+<form action="/songs/<%= @song.id %>" method="post">
+
+    <label>
+
+        Name:
+        <input name="name" placeholder="7 Days" value="<%= @song.name %>" required>
+
+    </label>
+
+    <label>
+
+        Artist:
+        <input name="artist" placeholder="Craig David" value="<%= @song.artist.name %>">
+
+    </label>
+
+    <label>
+    
+        Genre:
+        <input name="genre" placeholder="RnB" value="<%= @song.genre %>">
+    
+    </label>
+
+    <label>
+    
+        Duration:
+        <input name="duration" placeholder="3.50 (minutes)" value="<%= @song.duration %>">
+
+    </label>
+
+    <label>
+    
+        Image Link:
+        <input name="youtube" value="<%= @song.youtube %>">
+    
+    </label>
+
+    <button>Edit song</button>
+
+    <p>Please pick an existing artist in the database.</p>
+
+</form>
