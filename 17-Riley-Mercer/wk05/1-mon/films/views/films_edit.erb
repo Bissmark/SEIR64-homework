@@ -1,0 +1,22 @@
+<h1>Ammend Films</h1>
+
+<form action="/films/<%= @film.id %>" method="post">
+    <label>
+        Title:
+        <input name="title" required placeholder="Film Title" value="<%= @film.title %>"> 
+    </label>
+
+    <label>
+        Release Year:
+        <input name="releaseyr" placeholder="2010" value="<%= @film.releaseyr %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @film.image %>">
+    </label>
+
+    <button>Send it!</button>
+</form>
+
+<%# Why're these different to the others?? %>
