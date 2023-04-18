@@ -1,0 +1,31 @@
+<h1 class="name_heading">
+     <%= @manga.name %>
+</h1>
+
+
+<h2>
+    Author:
+    <%= @manga.authors %>
+</h2>
+
+<p>
+    Status:
+    <%= @manga.status %>
+</p>
+
+<p>
+    Published Year:
+    <%= @manga.published %>
+</p>
+
+<p>
+    Description:
+    <%= @manga.description %>
+</p>
+
+<%= image_tag @manga.image, class:"feature"  if @manga.image.present?%>
+
+<div class="controls">
+    <%= link_to " Edit Manga ", edit_manga_path(@manga.id), class:"edit_buttons" %>
+    <%= link_to "Delete Manga", delete_manga_path(@manga.id), class:"edit_buttons" %>
+</div>
