@@ -1,0 +1,24 @@
+<h1 class="new_heading">Edit Anime</h1>
+
+<form action="/animes/<%= @anime.id %>" method="post">
+
+    <%# input name REQUIRED %>
+    <label class="input_heading">
+        Name:
+        <input name="name" required placeholder="Jujutsu Kaisen" value=<%= @anime.name %>>
+    </label>
+
+    <%# description %>
+     <label class="input_heading"><br>
+        Description: <br>
+        <textarea name="description" rows="2" cols="114" placeholder="Jujutsu Kaisen is a dark fantasy action anime based on the manga series by Gege Akutami. It follows Yuji Itadori, a high school student who becomes a jujutsu sorcerer and battles cursed spirits threatening humanity. Known for its intense action, unique characters, and intricate world-building, 'Jujutsu Kaisen' has gained widespread acclaim among anime fans worldwide"><%= @anime.description %></textarea>
+    </label>
+    
+    <%# image link %>
+    <label class="input_heading"><br>
+        Anime artwork:
+        <input class="img_link" name="image" type="url" value="<%= @anime.image %>">
+    </label>
+    <br>
+    <button class="edit_buttons">Update Anime</button>
+</form>

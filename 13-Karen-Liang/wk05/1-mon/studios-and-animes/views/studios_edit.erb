@@ -1,0 +1,30 @@
+<h1 class="new_heading">Edit Studio</h1>
+
+<form action="/studios/<%= @studio.id %>" method="post">
+
+    <%# input name REQUIRED %>
+    <label class="input_heading">
+        Name:
+        <input name="name" required placeholder="Madhouse" value="<%= @studio.name %>">
+    </label>
+
+    <%# founders %>
+    <label class="input_heading"><br>
+         Founder/s:
+        <input name="founders" required placeholder="Masao Maruyama, Yoshiaki Kawajiri, Osamu Dezaki" value="<%= @studio.founders %>">
+    </label>
+    
+    <%# image link %>
+    <label class="input_heading"><br>
+        Studio logo:
+        <input class="img_link" name="image" type="url" value="<%= @studio.image %>">
+    </label>
+    <br>
+
+    <button class="edit_buttons">Update Studio</button>
+    
+
+</form>
+
+    
+ 
