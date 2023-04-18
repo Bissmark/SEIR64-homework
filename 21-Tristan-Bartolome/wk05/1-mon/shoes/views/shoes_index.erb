@@ -1,0 +1,9 @@
+<h1>All shoes</h1>
+
+<% @shoes.each do |shoe| %>
+    <p>
+        <a href="/shoes/<%= shoe.id %>">
+            <%= shoe.name %>
+        </a>
+    </p>
+<% end %>
