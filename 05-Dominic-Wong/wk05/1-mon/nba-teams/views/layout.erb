@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nba_teams.css">
+    <title>NBA Teams</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <nav>
+            <a href="/">Home</a>
+            |
+            <a href="/teams">Teams</a>
+            <a href="/teams/new">Add Teams</a>
+            |
+            <a href="/players">Players</a>
+            <a href="/players/new">Add Players</a>
+        </nav>
+    
+        <%# before yield %>
+        <%= yield %>
+        <%# after yield %>
+
+    </div>
+
+</body>
+</html>
