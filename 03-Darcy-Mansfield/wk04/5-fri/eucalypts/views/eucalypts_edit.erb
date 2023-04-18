@@ -1,0 +1,20 @@
+<h1>Edit eucalypt</h1>
+
+<form action="/eucalypts/<%= @eucalypt['id']%>" method="post">
+    <label>
+        Name:
+        <input type="text" name="name" required placeholder="Red Gum" value="<%= @eucalypt['name'] %>">
+    </label>
+
+    <label>
+        Family:
+        <input type="text" name="family" placeholder="" value="<%= @eucalypt['family'] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @eucalypt['image'] %>">
+    </label>
+
+    <button>Update eucalypt</button>
+</form>
