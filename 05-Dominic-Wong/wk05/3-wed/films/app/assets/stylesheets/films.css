@@ -1,0 +1,19 @@
+body {
+    background-color: teal;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thumb {
+    height: 12em;
+    width: auto;
+}
+
+a {
+    text-decoration-line: none;
+    margin: 0px 10px 0px 10px;
+}
