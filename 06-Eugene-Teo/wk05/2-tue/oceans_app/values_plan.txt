@@ -1,0 +1,13 @@
+Ocean
+
+id.		name.		image.	surface area(km2	water vol (km3)
+
+
+integer	text		text		float			float
+
+
+1. Atlantic Ocean http://           106,460,000		310,410,900
+2. Indian Ocean	http://		70,560,000		264,000,000
+
+<li>Surface Area: <%= @ocean.surface_area %></li>
+    <li>Water Volume: <%= @ocean.water_volume %></li>
