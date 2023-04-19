@@ -1,0 +1,14 @@
+<h1><%= @artist.name %></h1>
+
+<%= image_tag @artist.image, :class => 'feature' if @artist.image.present? %>
+<ul>
+    <li>WHO? <%= @artist.name %></li>
+    <li>WHERE? <%= @artist.city %></li>
+    <li>FORMED? <%= @artist.formed %></li>
+    <li>REFORMED? <%= @artist.reformed %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "EDIT", edit_artist_path  %>
+    <%= link_to "DETLETE", artist_path(@artist), :method => :delete, :data => { :confirm => "Are you sure?"}  %>
+</div>
