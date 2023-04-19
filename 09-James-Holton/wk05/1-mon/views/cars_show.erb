@@ -34,6 +34,15 @@
     Engine 'cc': <span><%= @car.engine/1000.0 %>L</span>
 </h3>
 
+<% if @car.company.present? %>
+<h3>
+    Volkswagen:
+    <a href="/companies/<%= @car.company_id %>">
+    <%= @car.company.name %>
+    </a>
+</h3>
+<% end %>
+
 <% unless @car.image.nil? || @car.image.empty? %>
 <h3>
     Image: <img src="<%= @car.image %>" alt="">

@@ -48,6 +48,16 @@
     
     </label>
 
+    <label>
+        Volkswagen:
+        <select name="company_id">
+            <option></option>
+            <% Company.all.each do |company| %>
+                <option value="<%= company.id %>" <%= "selected" if company.id == @car.company_id %>><%= company.name %></option>
+            <% end %>
+        </select>
+    </label>
+
     <button>Update Car</button>
 </form>
 
