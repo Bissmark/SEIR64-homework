@@ -1,0 +1,7 @@
+<h1>All Wines</h1>
+
+<% @wines.each do |wine| %>
+    <p>
+        <%= link_to wine.name, wine_path(wine.id) %> from <%= wine.region %>
+    </p>
+<% end %>
