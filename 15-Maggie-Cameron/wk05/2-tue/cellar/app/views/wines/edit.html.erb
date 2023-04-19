@@ -1,0 +1,30 @@
+<h1>Edit wine</h1>
+
+<form action="<%= wine_path(@wine.id) %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @wine.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @wine.image %>">
+    </label>
+
+    <label>
+        Region:
+        <input name="region" value="<%= @wine.region %>">
+    </label>
+
+    <label>
+        Main varietal:
+        <input name="main_varietal" value="<%= @wine.main_varietal %>">
+    </label>
+
+    <label>
+        Color:
+        <input name="color" value="<%= @wine.color %>">
+    </label>
+
+    <button>Update wine</button>
+</form>

@@ -1,0 +1,20 @@
+<h1>Edit footyteam</h1>
+
+<form action="/footyteams/<%= @footyteam["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="League" value="<%= @footyteam["name"] %>">
+    </label>
+
+    <label>
+        Family:
+        <input name="family" placeholder="Club Name" value="<%= @footyteam["family"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @footyteam["image"] %>">
+    </label>
+
+    <button>Update footyteam</button>
+</form>

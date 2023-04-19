@@ -1,0 +1,1 @@
+ALTER TABLE cars ADD COLUMN company_id INTEGER;

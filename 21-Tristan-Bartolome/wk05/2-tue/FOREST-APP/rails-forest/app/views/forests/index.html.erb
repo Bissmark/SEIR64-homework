@@ -1,0 +1,7 @@
+<h1>All forests</h1>
+
+<% @forests.each do |forest| %>
+    <p>
+        <%= link_to forest.name, forest_path(forest.id) %>
+    </p>
+<% end %>

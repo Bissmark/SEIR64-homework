@@ -1,0 +1,8 @@
+<h1>All Graphics</h1>
+
+<% @graphics.each do |graphic| %>
+    <p>
+        <%= link_to graphic.name, graphic_path(graphic.id) %> has a gpu clock of <%= graphic.gpu_clock %> MHz
+    </p>
+<% end %>
+
