@@ -1,0 +1,12 @@
+<h1 class="name_heading"><%= @studio.name %></h1>
+
+<h3>
+    Founded: <%= @studio.founded %>
+</h3>
+
+<%= image_tag @studio.image, :class => 'feature' if @studio.image.present? %>
+
+<div class="controls">
+    <%= link_to "Edit studio", edit_studio_path(@studio), :class => "edit_buttons"  %>
+    <%=  link_to "Delete work", @studio, :method => :delete, :class => "edit_buttons", :data => { :confirm => "Are you sure?"} %>
+</div>
