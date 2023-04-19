@@ -10,3 +10,4 @@
 </ul>
 
 <%= link_to 'Edit Director', edit_director_path %>
+<%= link_to 'Delete Director', @director, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
