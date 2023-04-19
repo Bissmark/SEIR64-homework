@@ -1,0 +1,13 @@
+<h1><%= @director.name %></h1>
+
+<%= image_tag @director.image, :class => 'feature' if @director.image.present? %>
+
+<ul>
+    <li>Name: <%= @director.name %></li>
+    <li>Date of birth: <%= @director.dob %></li>
+    <li>Years active: <%= @director.years %></li>
+    <li>Nationality: <%= @director.nationality %></li>
+</ul>
+
+<%= link_to 'Edit Director', edit_director_path %>
+<%= link_to 'Delete Director', @director, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
