@@ -1,0 +1,17 @@
+<h1><%= @artist.name %></h1>
+
+<%= image_tag @artist.image, :class => 'feature' if @artist.image.present? %>
+<ul>
+<li>Name: <%= @artist.name %></li>
+<li>Nationality: <%= @artist.nationality %></li>
+<% unless @artist.dob.nil? %>
+<li>Date of Birth: <%= @artist.dob.strftime '%A, %B %e, %Y' %></li>
+<% end %>
+<li>Period: <%= @artist.period %></li>
+</ul>
+
+
+<div class="controls">
+<%= button_to "Edit Artist", edit_artist_path(@artist) %>
+<%= button_to "Delete artist", artist_path(@artist), :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>
