@@ -1,0 +1,23 @@
+body {
+    background-color:lavender;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.thumb {
+    height: 12em;
+    /* either set a height or a width coz otherwise it will squezze, looks ugly */
+}
+
+.feature {
+    max-height: 30em;
+}
+
+label {
+    display: block;
+}
