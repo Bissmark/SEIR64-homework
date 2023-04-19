@@ -1,0 +1,18 @@
+<h1>New Sale</h1>
+
+<form action="/sales" method="post">
+  <label for="customer_name">Customer Name:</label>
+  <input id="customer_name" name="sale[customer_name]" type="text">
+
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" name="sale[quantity]" type="number">
+
+  <label for="book_id">Book:</label>
+  <select id="book_id" name="sale[book_id]">
+    <% @books.each do |book| %>
+      <option value="<%= book.id %>"><%= book.title %></option>
+    <% end %>
+  </select>
+
+  <input type="submit" value="Create Sale">
+</form>
