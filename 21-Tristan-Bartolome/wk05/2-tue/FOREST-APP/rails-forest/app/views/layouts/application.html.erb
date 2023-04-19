@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forests of the World</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to "Home", root_path %>
+      |
+      <%= link_to "All forests", forests_path %>
+      |
+      <%= link_to "New forest", new_forest_path %>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

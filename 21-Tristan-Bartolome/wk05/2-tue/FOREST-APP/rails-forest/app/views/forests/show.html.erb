@@ -1,0 +1,17 @@
+<h1>
+    <%= @forest.name %>
+</h1>
+
+<%= image_tag @forest.image if @forest.image.present? %>
+
+<ul>
+    <li>Name: <%= @forest.name %></li>
+    <li>Country: <%= @forest.country %></li>
+    <li>Known plant species: <%= number_to_human @forest.plants %></li>
+    <li>Weather condition: <%= @forest.weather %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit forest", edit_forest_path(@forest.id) %>
+    <%= link_to "Delete forest", delete_forest_path(@forest.id) %>
+</div>
