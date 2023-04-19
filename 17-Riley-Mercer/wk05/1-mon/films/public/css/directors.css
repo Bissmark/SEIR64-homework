@@ -1,0 +1,16 @@
+body {
+    width: 900px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+nav {
+    text-align: right;
+}
+
+.feature {
+    max-width: 100%;
+}

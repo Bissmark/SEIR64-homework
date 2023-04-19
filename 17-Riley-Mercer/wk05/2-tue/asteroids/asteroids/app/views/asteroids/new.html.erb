@@ -1,0 +1,37 @@
+<h1>Create Celestial Object</h1>
+
+<form action="<%= asteroids_path %>" method="post">
+    <label>
+        Name:
+        <input type="text" name="name" required %>
+    </label>
+    <label>
+        Designation:
+        <input type="text" name="designation">
+    </label>
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+    <label>
+        Orbit:
+        <input type="text" name="orbit">
+    </label>
+    <label>
+        Size:
+        <input type="number" name="size">
+    </label>
+    <label>
+        Funfact:
+        <input type="text" name="funfact">
+    </label>
+
+    <button>Create Celestial Object!</button>
+</form>
+
+<%# # name TEXT,
+# designation TEXT,
+# image TEXT,
+# orbit TEXT,
+# size FLOAT,
+# funfact TEXT %>
