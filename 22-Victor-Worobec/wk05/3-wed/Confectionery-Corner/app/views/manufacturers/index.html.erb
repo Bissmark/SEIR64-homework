@@ -1,0 +1,18 @@
+<h1>All manufacturers</h1>
+
+<% @manufacturers.each do |manufacturer| %>
+
+    <div class="listing">
+        <% if manufacturer.image.present? %>
+            <%= image_tag(manufacturer.image, :alt => "#{ manufacturer.name }", :class => 'thumbnail') %> </br>
+        <% end %>
+
+        <%= link_to manufacturer.name, manufacturer, :class => 'name-link' %>
+        <ul>
+            <li>Founded: <%= manufacturer.founded %></li>
+            <li>Founder: <%= manufacturer.founder %></li>
+            <li>Country: <%= manufacturer.country %></li>
+        </ul>
+    </div>
+
+<% end %>

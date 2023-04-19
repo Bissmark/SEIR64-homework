@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ConfectioneryCorner</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav>
+
+        <%= link_to "All manufacturers", manufacturers_path %>
+        <%= link_to "New manufacturer", new_manufacturer_path %>
+        |
+        <%= link_to "All confectionery", confectioneries_path %>
+        <%= link_to "New confectionery", new_confectionery_path %>
+
+      </nav>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>
