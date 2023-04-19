@@ -13,7 +13,17 @@ body {
     width: auto;
 }
 
+.feature {
+    height: 30em;
+    width: auto;
+}
+
 a {
     text-decoration-line: none;
     margin: 0px 10px 0px 10px;
 }
+
+ul {
+    list-style-type: none;
+}
+

@@ -3,6 +3,6 @@
 <% @directors.each do |director| %>
 
     <%= image_tag director.image, :class => 'thumb' if director.image.present? %>
-    <h3> <%= director.name %> </h3>
+    <h3> <%= link_to director.name, director %> </h3>
 
 <% end %>

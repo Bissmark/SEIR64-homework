@@ -1,2 +1,12 @@
-<h1>Directors#show</h1>
-<p>Find me in app/views/directors/show.html.erb</p>
+<h1><%= @director.name %></h1>
+
+<%= image_tag @director.image, :class => 'feature' if @director.image.present? %>
+
+<ul>
+    <li>Name: <%= @director.name %></li>
+    <li>Date of birth: <%= @director.dob %></li>
+    <li>Years active: <%= @director.years %></li>
+    <li>Nationality: <%= @director.nationality %></li>
+</ul>
+
+<%= link_to 'Edit Director', edit_director_path %>
