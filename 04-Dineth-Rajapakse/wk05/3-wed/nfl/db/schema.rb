@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_19_065422) do
+ActiveRecord::Schema.define(version: 2023_04_19_112506) do
+
+  create_table "players", force: :cascade do |t|
+    t.text "name"
+    t.text "position"
+    t.text "image"
+  end
 
   create_table "teams", force: :cascade do |t|
     t.text "name"

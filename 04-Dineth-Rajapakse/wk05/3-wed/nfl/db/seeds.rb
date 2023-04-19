@@ -15,3 +15,13 @@ Team.create(:name => 'Denver Broncos', :owner => 'Walter-Penner Family', :champi
 Team.create(:name => 'Philadelphia Eagles', :owner => 'Jeffrey Lurie', :championships => '1', :image => 'https://seeklogo.com/images/P/philadelphia-eagles-logo-018F9784F0-seeklogo.com.png')
 
 puts "#{ Team.count } teams created."
+
+Player.destroy_all
+
+Player.create(:name => 'Patrick Mahomes', :position => 'QB', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6F3w8OIJ0905vbyVhTACXTHOpoFNho3k9Zg&usqp=CAU')
+Player.create(:name => 'Deandre Hopkins', :position => 'WR', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanw5O6f5it9pl9iXNge8GJI_blpAw5TQXij9nYJQeEsYuO22YmGujBqOkGWwUOlHLSx0&usqp=CAU')
+Player.create(:name => 'Aaron Donald', :position => 'DT', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAQQSgf_FgQQshmZYcZ_EL2j8_ZdD1qkZHw&usqp=CAU')
+Player.create(:name => 'Jalen Ramsey', :position => 'CB', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVc0xnHV9o1dIM3_8sXg6bMjntew6Nh0vk6g&usqp=CAU')
+Player.create(:name => 'Tom Brady', :position => 'QB', :image => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQap5_di7n8uM3_MMQznxf4-EOAgva57QTk6Q&usqp=CAU')
+
+puts "#{ Player.count } players created."
