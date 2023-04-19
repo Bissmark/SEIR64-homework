@@ -1,0 +1,18 @@
+
+<%= form_for @flag do |f| %>
+
+    <%= f.label :image, "Image URL" %>
+    <%= f.url_field :image, :required => true %>
+
+    <%= f.label :adoption_date %>
+    <%= f.text_field :adoption_date %>
+
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+
+    <%= f.label :design %>
+    <%= f.text_field :design %>
+
+    <%= f.submit :class => "create_update" %>
+
+<% end %>
