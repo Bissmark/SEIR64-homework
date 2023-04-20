@@ -1,0 +1,15 @@
+<h1><%= @dish.name %></h1>
+
+<%= image_tag @dish.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @dish.name %></li>
+    <li>Region: <%= @dish.region %></li>
+    <li>Course: <%= @dish.course %></li>
+    <li>Main Ingredient: <%= @dish.main_ingredient %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit dish", edit_dish_path(@dish) %>
+    <%= link_to "Delete dish", @dish, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

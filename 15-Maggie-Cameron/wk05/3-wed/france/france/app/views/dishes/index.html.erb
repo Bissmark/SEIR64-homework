@@ -1,0 +1,7 @@
+<h1>All Dishes</h1>
+
+<% @dishes.each do |dish|%>
+    <%= image_tag dish.image, :class => 'thumb' if dish.image.present? %>
+    <%= link_to dish.name, dish %>
+<% end %>
+
