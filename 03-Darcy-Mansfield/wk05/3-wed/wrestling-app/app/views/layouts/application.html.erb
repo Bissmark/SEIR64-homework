@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WrestlingApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to "All Wrestlers", wrestlers_path %>
+        <%= link_to "New Wrestler", new_wrestler_path %>
+        <%= link_to "Random Wrestler", wrestler_path(Wrestler.order("RANDOM()").first) %>
+        |
+        <%= link_to "All Promotions", promotions_path %>
+        <%= link_to "New Promotion", new_promotion_path %>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>
