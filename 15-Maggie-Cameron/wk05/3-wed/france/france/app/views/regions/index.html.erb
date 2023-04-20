@@ -1,0 +1,18 @@
+<h1>All Regions</h1>
+
+<% @regions.each do |region| %>
+    <%= image_tag region.image, :class => 'thumb' if region.image.present? %>
+    <ul>
+        <li>Name: <%= link_to region.name, region %></li>
+        
+        <li>Location: <%= region.location %></li>
+        
+        <% unless region.population.nil? %>
+            <li>Population: <%= number_to_human region.population %></li>
+        <% end %>
+
+        <% unless region.famous_appellation.nil? %>
+            <li>Famous Appellation: <%= region.famous_appellation %></li>
+        <% end %>
+    </ul>
+<% end %>
