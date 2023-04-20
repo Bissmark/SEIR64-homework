@@ -1,0 +1,12 @@
+<h1>All Writers</h1>
+
+<% @writers.each do |writer| %>
+    <%= image_tag writer.image, :class => 'thumb' if writer.image.present? %>
+    <ul>
+        <li>Name: <%= link_to writer.name, writer %></li>
+        <li>Nationality: <%= writer.nationality %></li>
+        <% unless writer.dob.nil? %>
+            <li>Date of birth: <%= writer.dob.strftime '%A, %B %e, %Y' %></li>
+        <% end %>
+    </ul>
+<% end %>
