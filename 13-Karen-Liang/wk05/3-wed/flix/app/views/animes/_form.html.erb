@@ -1,0 +1,24 @@
+<%= form_for @anime do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :placeholder => "Death Note", :class => "form_size"  %>
+
+    <%= f.label :aired %>
+    <%= f.text_field :aired, :placeholder => "YYYY", :class => "form_size"  %>
+
+    <%= f.label :status %>
+    <%= f.text_field :status, :placeholder => "Ongoing/Finished", :class => "form_size" %><br>
+
+    <%= f.label :synonymns %>
+    <%= f.text_area :synonyms, :rows => "1", :cols =>"114", :placeholder => "Death Note" %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => "4", :cols => "114" %>
+
+
+    <%= f.label :image %>
+    <%= f.url_field :image, :size => "108" %>
+
+     <%= image_tag @anime.image, :class => 'edit_image' if @anime.image.present? %>
+
+    <%= f.submit :class => "edit_buttons" %>
+<% end %>
