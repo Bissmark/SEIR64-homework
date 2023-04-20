@@ -1,0 +1,13 @@
+<h1><%= @club.name %></h1>
+<p> <%= @club.location %>  </p>
+<%= image_tag(@club.image, :class => 'full-disp') if @club.image.present? %>
+<ul>
+    <li>Titles Won: <%= @club.titles_won %> </li>
+    <li>Stadium Capicity: <%= @club.stadium_cap %>  </li>
+
+</ul>
+
+<div>
+    <%= link_to "Edit Club Details", edit_club_path(@club) %>
+    <%= link_to "Delete Club Details", club_path(@club), :method => :delete, :data => { :confirm => 'Are you sure?'} %>
+</div>

@@ -1,0 +1,15 @@
+<h1><%= @player.name %></h1>
+
+<%= image_tag(@player.image, :class => 'player_img') if @player.image.present? %>
+
+
+<ul>
+    <li> Nationality: <%= @player.nationality %> </li>
+    <li> Date of birth: <%= @player.dob.strftime '%A, %B %e, %Y' unless @player.dob.nil? %> </li>
+    <li> Current club: <%= @player.present_club %> </li>
+</ul>
+
+<div>
+    <%= link_to "Edit Player", edit_player_path(@player) %>
+    <%= link_to "Delete Player", player_path(@player), :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>
