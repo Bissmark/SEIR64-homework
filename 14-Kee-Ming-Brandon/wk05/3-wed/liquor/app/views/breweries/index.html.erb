@@ -1,0 +1,17 @@
+<h1>All Brewery</h1>
+
+<% @breweries.each do |brewery| %>
+    <div class='block view_box'>
+        <div class='inline' ><%= link_to image_tag(brewery.image, :class => 'thumb'), brewery if brewery.image.present? %></div>
+        
+        <div class='inline brewery'>
+            <ul>
+                <li>Name:<%= link_to brewery.name, brewery %></li>
+                <li>Founder: <%= brewery.founder %></li>
+                <li>Establish: <%= brewery.establish %></li>
+                <li>Origin: <%= brewery.origin %></li>
+            </ul>
+        </div>
+    </div>
+    
+<% end %>
