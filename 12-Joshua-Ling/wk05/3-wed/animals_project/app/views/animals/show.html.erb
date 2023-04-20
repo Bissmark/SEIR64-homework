@@ -1,0 +1,13 @@
+<h1><%= @animal.name %></h1>
+
+<%= image_tag @animal.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @animal.name %></li>
+    <li>Height: <%= @animal.height %>cm</li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit animal", edit_animal_path(@animal), :class => "link" %>
+    <%= button_to "Delete animal", @animal, :method => :delete, :class => "link", :data => { :confirm => "r u sure?"}  %>
+</div>

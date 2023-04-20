@@ -1,0 +1,7 @@
+<h1>All Meals</h1>
+
+<% @meals.each do |meal| %>
+    <%= link_to image_tag(meal.image, :class => 'thumb'), meal %>
+    <%= link_to image_tag("https://placekitten.com/200/300"),meal unless meal.image.present? %>
+
+<% end %>
