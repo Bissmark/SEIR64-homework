@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 225, 225);
+}
+
+/* header */
+
+header {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+}
+
+header > h1 {
+    padding: 20px 20px;
+}
+
+/* input container */
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-input {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#book-input, #book-btn {
+    margin: 40px 20px 40px 20px ;
+    font-size: 30px;
+}
+
+/* results container */
+
+.results-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-info {
+    text-align: center;
+}
+
+.feature {
+    height: 300px;
+    width: auto;
+}
+
+.book-title {
+    margin-top: 20px;
+}
+
+
