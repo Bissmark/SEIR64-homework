@@ -1,0 +1,28 @@
+<h1 class="name_heading"><%= @anime.name %></h1>
+
+<h3>
+    Synonym:
+    <%= @anime.synonyms %>
+</h3>
+
+<p>
+    Status:
+    <%= @anime.status %>
+</p>
+
+<p>
+    Aired:
+    <%= @anime.aired %>
+</p>
+
+<p>
+    Description:
+    <%= @anime.description %>
+</p>
+
+<%= image_tag @anime.image, :class => 'feature' if @anime.image.present? %>
+
+<div class="controls">
+    <%= link_to "Edit anime", edit_anime_path(@anime), :class => "edit_buttons" %>
+    <%= link_to "Delete anime", @anime, :method => :delete, :class => "edit_buttons", :data => { :confirm => "Are you sure?" } %>
+</div>

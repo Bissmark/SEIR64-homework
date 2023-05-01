@@ -1,0 +1,13 @@
+<h1>Plant Families List</h1>
+
+<% families = Array.new %>
+<% @plants.each do |species| %>
+    <% unless families.include? species["family"] %>
+        <p>
+            <a href="/families/<%= species["family"] %>">
+                <%= species["family"] %>
+            </a>
+        </p>
+    <% end %>
+    <% families << species["family"] %>
+<% end %>

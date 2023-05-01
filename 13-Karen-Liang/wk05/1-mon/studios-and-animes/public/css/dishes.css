@@ -1,0 +1,227 @@
+
+/* entire website updates */
+body {
+    background: #f4f4f4;
+    margin: -10px -10px 0 -10px;
+}
+
+/* layout inc body, nav, header etc */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* New dish heading */
+.new_heading {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: rgb(61 61 61);
+    font-size: 28pt;
+    margin-bottom: -4px;
+}
+
+/* new form input */
+input {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+/* hover preview image 
+.hover_img a {
+    position: relative;
+  }
+  
+  .hover_img a span {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    right: 100%;
+    top: 0;
+    transform: translateX(-10px);
+  }
+  
+  .hover_img a:hover span {
+    display: block;
+  } */
+  
+
+/* spacing between form */
+.input_heading {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    line-height: 39px;
+}
+
+/* input image line area width */
+.img_link {
+    width: 500px;
+}
+
+/* form text area input font and size */
+textarea {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+/* founders heading */
+h3 {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: rgb(61 61 61);
+}
+
+/* FAQ page heading */
+h4 {
+    color: #16a1ff;
+    text-align: left;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 15px;
+}
+
+/* FAQ paragraph */
+p {
+    margin-bottom: 30px;
+}
+
+/* description text */
+p {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+/* navigation bar */
+nav {
+    text-align: left;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+
+    font-size: 20px;
+    display: inline-block;
+}
+
+.nav_background {
+    background-color: white;
+    border: 1px solid rgb(30, 30, 30);
+    border-top: none;
+}
+
+/* logo */
+.logo {
+    display: inline-block;
+    width: 5%;
+}
+
+/* logo and nav formatting */
+.nav_width {
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* top_banner */
+.top_banner {
+    padding-top: 20px;
+    background: rgb(85,210,255);
+    background: radial-gradient(circle, rgba(85,210,255,1) 6%, rgba(50,123,221,1) 53%, rgba(46,38,173,1) 100%);
+    display: block;
+    height: 30px;
+    border: 1px solid rgb(30, 30, 30);
+}
+
+.banner_text {
+    text-align: center;
+    margin: -3px;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: white;
+    
+}
+
+/* nav effect */
+.nav_effect {
+    text-decoration: none;;
+    box-shadow: inset 0 0 0 0 #0055ff;
+    color: #0055ff;
+    margin: 0;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.nav_effect:hover {  
+    box-shadow: inset 150px 0 0 0 #0055ff;
+    color: white;
+}
+
+/* text for index */
+.show_list {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: #2baaff;
+    text-decoration: none;
+}
+
+.show_list:hover {
+    color: orange;
+    transition: 0.6s;
+}
+
+/* image in show */
+.feature {
+    max-width: 40%;
+    /*border: 1px solid rgb(41, 41, 41); */
+    border-radius: 0.8em;
+}
+
+/* edit and delete button */
+.edit_buttons {
+    background-color: #ffa12f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.edit_buttons:hover {
+    background-color: #fe83177c;
+    color: #ffffff;
+
+}
+
+/* text area to input dish description */
+textarea {
+    margin-bottom: 18px;
+}
+
+/* home image */
+.home_image {
+    margin-top: 20px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* home text */
+.home_text {
+    margin-bottom: 10px;
+}
+/* home layout */
+.home_container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 3%;
+}
+
+.home_button {
+    background-color: #ffa12f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    font-size: 12pt;
+    margin-top: 20px;
+}
+
+.home_button:hover {
+    background-color: #fe83177c;
+    color: #ffffff;
+}

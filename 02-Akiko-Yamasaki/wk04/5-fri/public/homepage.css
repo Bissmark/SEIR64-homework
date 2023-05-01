@@ -1,0 +1,7 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)), url("https://i.discogs.com/f5hywHS0VsGbaYs0fPVEMix2HpZzb9fDLKPrOiubc4A/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNzgx/NTYtMTU1Njk2Nzg1/Mi00MzY5LmpwZWc.jpeg");
+    background-size: contain;
+    background-repeat: repeat;
+    position: relative;
+}
+

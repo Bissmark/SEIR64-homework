@@ -1,0 +1,51 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: olive;
+}
+
+.container {
+    background-color: olive;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+.controls {
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+a {
+    text-decoration-line: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.logos {
+    max-width: 80%;
+    width: 500px;
+    height: 500px;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 0px 0px 0px 10px;
+}
+
+button {
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    margin: 0 0 0 10px;
+}
+

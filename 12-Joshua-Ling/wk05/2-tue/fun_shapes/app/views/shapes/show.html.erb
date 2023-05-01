@@ -1,0 +1,12 @@
+<h1><%= @shape.name %></h1>
+
+<ul>
+    <li>Name: <%= @shape.name %></li>
+    <li>Number of Corners: <%= @shape.corners %> </li>
+    <li>Number of Edges: <%= @shape.edges %></li>
+</ul>
+
+<div class="control">
+    <%= link_to "edit shape", edit_shape_path(@shape.id) %>
+    <%= link_to "delete shape", delete_shape_path(@shape.id) %>
+</div>

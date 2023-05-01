@@ -1,0 +1,19 @@
+<h1>Update player</h1>
+
+<form action="/players/<%= @player.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Tyrese Haliburton" value="<%= @player.name %>">
+    </label>
+
+    <label>
+        Position:
+        <input name="position" placeholder="Point Guard" value="<%= @player.position %>">
+    </label>
+
+    <label>
+        Image:
+        <input type='url' name="image" value="<%= @player.image %>">
+    </label>
+    <button>Update player</button>
+</form>

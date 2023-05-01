@@ -1,0 +1,16 @@
+/* body {
+    background-color: yellow;
+} */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav { 
+    text-align: right;
+}
+
+.feature {
+    max-width: 100%;
+}

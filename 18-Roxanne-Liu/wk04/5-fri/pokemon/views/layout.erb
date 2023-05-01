@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="/pokemons.css">
+</head>
+<body>
+    <div class="container">
+        <%# <h1>POKEMON</h1> %>
+        <img class="heading" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/800px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon World">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/pokemons">Pokemon Center</a>
+            <a href="/pokemons/new">New Pokemon</a>
+            <a href="/pokemons/favorites">Favorite Pokemon</a>
+        </nav>
+        <%= yield %>
+    </div>
+<footer>@ Copyright POKEMON</footer>
+</body>
+</html>

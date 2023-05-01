@@ -1,0 +1,21 @@
+<h1>
+<%= @car.name %>
+</h1>
+
+<h2>Specs</h2>
+<ul>
+<li> Year : <%= @car.year %> </li>
+<li> Layout : <%= @car.layout %> </li>
+<li> Engine : <%= @car.engine %> </li>
+<li> Power Output : <%= @car.power %> </li>
+<li> Weight : <%= @car.weight %> </li>
+</ul>
+
+<% if  @car.image.present? %>
+<img class="feature" src="<%= @car["image"]%>" alt="<%= @car.name%>">
+<% end %>
+
+<div class="controls">
+    <a href="/cars/<%= @car.id %>/edit">Edit Car</a>
+    <a href="/cars/<%= @car.id %>/delete">Delete Car</a>
+</div>

@@ -1,0 +1,19 @@
+<%= form_for @brewery do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+    <br>
+    <%= f.label :founder %>
+    <%= f.text_field :founder %>
+    <br>
+    <%= f.label :establish %>
+    <%= f.text_field :establish %>
+    <br>
+    <%= f.label :origin %>
+    <%= f.text_field :origin %>
+    <br>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+    <br>
+    <%= f.submit %>
+<% end %>
+

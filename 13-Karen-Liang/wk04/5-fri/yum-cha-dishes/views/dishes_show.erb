@@ -1,0 +1,36 @@
+
+<%# Dish name %>
+<h1>
+    <%= @dish["name"] %>
+</h1>
+
+
+<%# Dish category %>
+<div class="category_box">
+    <div class="category_border">
+        <h2>
+            <%= @dish["category"]%>
+        </h2>
+    </div>
+</div>
+
+
+<%# Unless image is filled, there will be no image %>
+<% unless @dish["image"].nil? || @dish["image"].empty? %>
+    <img class="feature" src="<%= @dish["image"] %>" alt="<%= @dish["name"] %>">
+<% end %>
+
+
+<%# Dish description %>
+<p>
+    <%= @dish["description"]%>
+</p>
+
+
+<%# buttons to edit and update %>
+<div class="controls">
+    <a href="/dishes/<%= @dish['id']%>/edit""><button class="edit_buttons">Edit dish</button></a>
+    <a href="/dishes/<%= @dish['id'] %>/delete"><button class="edit_buttons">Delete dish</button></a>
+</div>
+
+

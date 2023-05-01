@@ -1,0 +1,41 @@
+<h1>Edit GPU</h1>
+
+<form action="<%= graphic_path(@graphic.id) %>" method="post">
+
+    <label>
+        Name:
+        <input name="name" required value="<%= @graphic.name %>">
+    </label>
+
+    <label>
+        Release date:
+        <input name="release" value="<%= @graphic.release %>">
+    </label>
+
+    <label>
+        Bus:
+        <input name="bus" value="<%= @graphic.bus %>">
+    </label>
+
+    <label>
+        Memory Size:
+        <input type="number" name="memory_size" value="<%= @graphic.memory_size %>">
+    </label>
+
+    <label>
+        Memory Type:
+        <input name="memory_type" value="<%= @graphic.memory_type %>">
+    </label>
+
+    <label>
+        Gpu Clock:
+        <input type="number" name="gpu_clock" value="<%= @graphic.gpu_clock %>">
+    </label>
+
+    <label>
+        Memory Clock:
+        <input type="number" name="memory_clock" value="<%= @graphic.memory_clock %>">
+    </label>
+
+    <button>Update GPU</button>
+</form>

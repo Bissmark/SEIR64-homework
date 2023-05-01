@@ -1,0 +1,20 @@
+<h1>Edit Players</h1>
+
+<form action="/players/<%= @player.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Anothony Martial" value="<%= @player.name %>">
+    </label>
+
+    <label>
+        Name:
+        <input name="position" required placeholder="Forward" value="<%= @player.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @player.image %>">
+    </label>
+
+    <button>Update Player</button>
+</form>

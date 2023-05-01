@@ -1,0 +1,48 @@
+body {
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 20px
+}
+
+nav {
+    background-color: blueviolet;
+    max-width: 100%;
+    padding: 10px;
+    text-align: right;
+}
+
+nav a {
+    font-size: 100%;
+    padding: 16px;
+    text-decoration: none;
+    color: aqua;
+}
+
+nav a:hover {
+    color: rgb(0, 159, 159);
+}
+
+.container {
+    background-color: aqua;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+}
+
+.container a {
+    padding: 3%;
+    text-decoration: none;
+    font-size: 120%;
+    color:palevioletred;
+}
+
+.container a:hover {
+    color: rgb(137, 57, 83);
+}
+
+label {
+    display: block;
+    padding: 5px 0;
+}

@@ -1,0 +1,5 @@
+<%#  What type of data is @directors? Hash, array, object?%>
+
+<% @directors.each do |director| %>
+    <a href="/directors/<%= director.id %>"><%= director.name %> </a>
+<% end %>

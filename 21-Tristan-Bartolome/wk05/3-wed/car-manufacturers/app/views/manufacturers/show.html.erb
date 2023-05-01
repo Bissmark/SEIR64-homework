@@ -1,0 +1,14 @@
+<h1><%= @manufacturer.name %></h1>
+
+<%= image_tag @manufacturer.image, :class => 'feature' if @manufacturer.image.present? %>
+<ul>
+    <li>Manufacturer: <%= @manufacturer.name %></li>
+    <li>Founder: <%= @manufacturer.founder %></li>
+    <li>Established: <%= @manufacturer.founded%></li>
+    <li>Origin: <%= @manufacturer.origin %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit manufacturer", edit_manufacturer_path(@manufacturer) %>
+    <%= link_to "Delete manufacturer", @manufacturer, :method => :delete %>
+</div>

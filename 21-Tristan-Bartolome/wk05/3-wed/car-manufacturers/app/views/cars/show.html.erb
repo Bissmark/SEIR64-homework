@@ -1,0 +1,15 @@
+<h1><%= @car.model %></h1>
+<%= image_tag @car.image, :class => 'feature' %>
+
+<ul>
+    <li>Manufacturer: <%= @car.name %></li>
+    <li>Model: <%= @car.model %></li>
+    <li>Manufacture date: <%= @car.year %></li>
+    <li>Acceleration 0/100kmh: <%= @car.acceleration %></li>
+    <li>Driveline: <%= @car.driveline %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit car", edit_car_path(@car) %>
+    <%= link_to "Delete car", @car, :method => 'delete', :data => {:confirm => "Are you sure?"} %>
+</div>

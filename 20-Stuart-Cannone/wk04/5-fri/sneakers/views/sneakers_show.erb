@@ -1,0 +1,23 @@
+<h1>
+<%= @sneakers["brand"] %> <%= @sneakers["model"] %> 
+</h1>
+
+<h2>
+Colourway: <%= @sneakers["colourway"] %>
+</h2>
+
+<ul>
+<li>Size: <%= @sneakers["size"] %> </li>
+<li>Original Release Year: <%= @sneakers["ogrelease"] %></li>
+<li>Release Date: <%= @sneakers["release"] %> </li>
+<li> Style Code: <%= @sneakers["stylecode"] %></li>
+</ul>
+
+<% unless @sneakers["image"].nil? || @sneakers["image"].empty? %>
+<img class="feature" src="<%= @sneakers["image"].strip %>" alt="<%= @sneakers["brand"] %> <%= @sneakers["model"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/sneakers/<%= @sneakers["id"] %>/edit">Edit This Sneaker</a>
+    <a href="/sneakers/<%= @sneakers["id"] %>/delete">Remove This Sneaker from Collection</a>
+</div>

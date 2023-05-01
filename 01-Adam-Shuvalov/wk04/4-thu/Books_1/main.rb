@@ -15,7 +15,7 @@ get "/book_result" do
     if book_author.size == 2
         @formatted_authors = book_author.join(" and ")
     elsif book_author.size > 2
-        @formatted_authors = book_author[0..-2].join + "and #{book_author[-1]}"
+        @formatted_authors = book_author[0..-2].join(", ") + " and #{book_author[-1]}"
     else
         @formatted_authors = book_author.join()
     end

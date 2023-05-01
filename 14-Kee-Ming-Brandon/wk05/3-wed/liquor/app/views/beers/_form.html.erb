@@ -1,0 +1,28 @@
+<%= form_for @beer do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+    <br>
+    <%= f.label :beer_type, "Type" %>
+    <%= f.text_field :beer_type %>
+    <br>
+    <%= f.label :origin %>
+    <%= f.text_field :origin %>
+    <br>
+    <%= f.label :size, "Size (ml)" %>
+    <%= f.text_field :size %>
+    <br>
+    <%= f.label :std_drinks, "Standard Drinks" %>
+    <%= f.text_field :std_drinks %>
+    <br>    
+    <%= f.label :alcohol_vol, "Alcohol Volumn (%)" %>
+    <%= f.text_field :alcohol_vol %>
+    <br>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+    <br>
+    <%= f.label :brewery_id %>
+    <%= f.select :brewery_id, Brewery.pluck(:name, :id), :include_blank => true%>
+    <br>
+    <%= f.submit %>
+<% end %>
+

@@ -1,0 +1,20 @@
+<h1>Edit player</h1>
+
+<form action="/players/<%= @player["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Monarch" value="<%= @player["name"] %>">
+    </label>
+
+    <label>
+        Family:
+        <input name="family" placeholder="Skipper" value="<%= @player["family"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @player["image"] %>">
+    </label>
+
+    <button>Update player</button>
+</form>

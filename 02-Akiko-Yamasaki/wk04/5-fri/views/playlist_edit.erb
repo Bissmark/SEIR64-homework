@@ -1,0 +1,21 @@
+<h1 class="addedit">A human error has taken place? please fix it</h1>
+
+<form action="/playlist/<%= @song["id"] %>" method="post">
+    <label>
+    Artist:
+    <input name="artist" value = "<%= @song["artist"] %>">
+    </label>
+
+    <label>
+    Title:
+    <input name="title"  required value= "<%= @song["title"] %>">
+    </label>
+    
+
+    <label for="">
+    Image:
+    <input type="url" name="image" value="<%= @song["image"] %>">
+    </label>
+
+    <button>Update the song</button>
+</form>

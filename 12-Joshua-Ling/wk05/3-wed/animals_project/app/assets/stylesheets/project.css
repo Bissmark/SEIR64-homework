@@ -1,0 +1,32 @@
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.thumb {
+    height: 12em;
+}
+
+.feature {
+    max-height: 30em;
+}
+
+label {
+    display: block;
+}
+
+.link{
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: arial, sans-serif;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+}
+

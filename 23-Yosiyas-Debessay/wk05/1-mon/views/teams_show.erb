@@ -1,0 +1,16 @@
+<h1>
+    <%= @team.name %>
+</h1>
+
+<h2> 
+    <%= @team.country %>
+<h2>
+
+<% if @team.image.present? %>
+    <img class="feature" src="<%= @team.image %>" alt="<%= @team.image %>">
+<% end %>
+
+<div class="controls">
+    <a href="/teams/<%= @team.id %>/edit">Edit Team</a>
+    <a href="/teams/<%= @team.id %>/delete">Delete Team</a>
+</div>

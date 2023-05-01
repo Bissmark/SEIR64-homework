@@ -1,0 +1,4 @@
+<h1>All Exhibits</h1>
+<% @exhibits.each do |exhibit| %>
+<%= link_to image_tag(exhibit.image, :class => 'thumb'), exhibit %>
+<% end %>

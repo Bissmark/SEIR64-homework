@@ -1,0 +1,26 @@
+
+<%# name %>
+<h1>
+    <%= @anime.name %>
+</h1>
+
+
+<%# description %>
+<p>
+    <%= @anime.description %>
+</p>
+
+
+<%# logo image %>
+<% if @anime.image.present? %>
+    <img class="feature" src="<%= @anime.image %>" alt="<%= @anime.name %>">
+<% end %>
+
+
+<%# buttons to edit and update %>
+<div class="controls">
+    <a href="/animes/<%= @anime.id %>/edit""><button class="edit_buttons">Edit Anime</button></a>
+    <a href="/animes/<%= @anime.id %>/delete"><button class="edit_buttons">Delete Anime</button></a>
+</div>
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>France</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,600;1,100&display=swap');
+    </style> 
+  </head>
+
+  <body>
+    <div class="container">
+    <nav>
+      <%= link_to "All regions", regions_path %>
+      <%= link_to "New region", new_region_path %>
+      |
+      <%= link_to "All dishes", dishes_path %>
+      <%= link_to "New dish", new_dish_path %>
+    </nav>
+      <%= yield %>
+      </div>
+  </body>
+</html>

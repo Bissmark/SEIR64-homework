@@ -1,0 +1,11 @@
+<h1>Which song to play</h1>
+
+<%# loop through the list in the database??? %>
+<%# what if i want to put both song and artist song["title] by artist["artist"]? %>
+<% @playlist.each do |song| %>
+<h2 class="index-container">
+    <a class ="index" href="/playlist/<%= song["id"] %>">
+        <%= song["title"] %>
+    </a>
+</h2>
+<% end %>

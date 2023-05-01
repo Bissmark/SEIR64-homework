@@ -1,0 +1,203 @@
+
+/* font-family: 'Luckiest Guy', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Rubik Wet Paint', cursive; */
+body {
+    /* background-color: rgb(115,143,126); */
+    background-color: rgb(247, 100, 210);
+    font-family: 'Poppins', sans-serif;
+}
+
+.homepage{
+    max-width: 85%;
+    background: linear-gradient(rgba(115, 143, 126, 0.5),rgba(115, 143, 126, 0.8));
+    padding: 1em 1em 1em 1em;
+    border-radius: 2em;
+    position: absolute;
+    left:7%;
+    margin-top: 15%;
+}
+
+
+.homepage h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(158, 28, 82);
+}
+
+.homepage p{
+    font-size: 2em;
+    padding-left: 1em;
+    font-weight: bold;
+    color: rgb(40, 40, 170);
+}
+h1{
+    text-align: center;
+    color: rgb(243, 226, 200);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+.index-container{
+    margin-left: 50%;
+    transform: translateX(-6em);
+}
+
+.index{
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: left;
+    max-width: 100%;
+    color: rgb(40, 40, 170);  
+}
+
+.index:hover{
+    color: goldenrod;
+}
+
+a:hover{
+    position: relative;
+    bottom: -5px
+}
+
+.container{
+    margin-top: 3em;
+}
+
+nav a{
+    color: rgb(243, 226, 200);
+    font-size: 20px;
+    max-width: 6em;
+    text-decoration: none;
+    background-color: rgb(230, 100, 55);
+    padding: .5em;
+    border-radius: 2em;
+    margin: .5em;
+    font-weight: bold;
+}
+
+.song {
+    color:rgb(50, 50, 106);
+    font-size: 2em;
+    padding-left: 2em;  
+}
+
+.art::before{
+    content: "ARTIST: ";
+    color:rgb(50, 140, 98);
+}
+
+.name::before{
+    content: "TITLE: ";
+    color: rgb(50, 140, 98);
+}
+
+
+label{
+    font-size: 30px;
+    font-weight:bold;
+    color:rgb(50, 50, 106);
+    margin-right: .4em;
+}
+
+form {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap:1em;
+    }
+    image{
+        max-width: 90%;
+    }
+}
+
+@media (max-width:500px){
+    nav{
+        display:flex;
+        flex-direction: column;
+    }
+}
+input, button{
+    padding: .5em;
+    font-size: 20px;
+    border: solid 1px rgb(150, 150, 224);
+    border-radius: 1em;
+    color:rgb(55, 55, 130);
+    box-shadow: 8px 8px 4px black;
+}
+
+button{
+    background-color: coral;
+    margin-left: 1em;
+    color: rgb(243, 226, 200);
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.data-container, h2{
+    font-size: 1.5em;
+    color:rgb(95, 25, 145);
+    margin:.1em auto;
+}
+
+.feature{
+    height: 500px;
+    box-shadow: 8px 8px 5px rgb(75, 72, 72);
+}
+
+.addedit{
+    margin:1em;
+}
+
+.edit_delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.editanddelet{
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 7em;
+    text-decoration: none;
+    background-color: rgb(230, 100, 55);
+    padding: .5em;
+    border-radius: 2em;
+    margin: .5em;
+    color:rgb(243, 226, 200);
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: rgb(55, 55, 130);
+}
+.editanddelet:hover{
+    background-color: rgb(55, 55, 130);
+}
+
+.delete-message{
+    /* color:rgb(176, 48, 48); */
+    margin-top: 5%;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 120px;
+    animation: flash 5s infinite;
+}
+
+@keyframes flash {
+    from {opacity: 1.0; color: rgb(200, 50, 50); transform: translateY(0px);}
+    to{opacity: 0; color:rgb(16, 20, 54); transform: translateY(700px);}
+}

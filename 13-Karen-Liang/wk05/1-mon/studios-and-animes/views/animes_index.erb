@@ -1,0 +1,11 @@
+<h1>All Animes</h1>
+
+<div class="hover_img"></div>
+    <% @animes.each do |anime| %>
+        <p>
+            <a class="show_list" href="/animes/<%= anime.id %>">
+                <%= anime.name %>
+            </a>
+        </p>
+    <% end %>
+</div>

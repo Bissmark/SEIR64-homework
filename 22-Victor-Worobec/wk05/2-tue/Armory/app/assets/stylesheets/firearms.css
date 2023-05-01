@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.feature {
+    max-width: 100%;
+    border-radius: 2em;
+}
+
+.item-description {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
