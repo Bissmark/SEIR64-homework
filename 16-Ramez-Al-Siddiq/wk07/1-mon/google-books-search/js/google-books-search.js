@@ -4,7 +4,7 @@ const fetchBookCover = function () {
     // Adding a new object
     const xhr = new XMLHttpRequest();
 
-    // Defining a callback (I think that's what it is called) for when the ready state changes
+    // Defining a callback function (I think that's what it is called) for when the ready state changes
 
     xhr.onreadystatechange = function () {
 
