@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+body {
+    background-color: rgb(203, 198, 189);
+    font-family: 'Aboreto', cursive;}
+
+.container  {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+nav > * {
+
+    margin: auto 5px;
+    color: rgb(32, 32, 32);
+}
+
+.feature {
+    max-width: 80%;
+}
+
+img {
+    max-width: 80%;
+    max-height: 600px;
+    margin-bottom: 20px;
+    position: relative;
+    vertical-align: center;
+    /* border: 1px solid black;
+    box-shadow: -5px -5px 10px black; */
+}
+
+.thumb {
+    max-width: 180px;
+    margin: 0;
+}
+
+.logo {
+    max-width: 40%;
+    border: none;
+    box-shadow: none;
+}
+
+form {
+    text-align: right;
+    margin-right: 32%;
+}
+
+input, select {
+    width: 200px;
+    border-radius: 5px;
+    padding: 4px 15px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+input[name="commit"], select {
+    width: 235px;
+
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 16px;
+    text-decoration: bold;
+}
+
+a {
+    color: rgb(80, 3, 4);
+    padding: 5px 10px;
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    margin: auto;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block {
+    display: block;
+    text-align: left;
+}
+
+.view_box {
+    padding-left: 20%;
+    padding-top: 20px;
+}
+
+.adj {
+    margin: 0;
+}
+
+.controls {
+    margin: 20px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.221);
+}
+.controls > * {
+    color: rgb(1, 10, 1);
+    padding: 3px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 15px;
+}
+
+div.brewery {
+    padding-top: 20px;
+}
+
+.bottom_link {
+    margin: 30px auto;
+}

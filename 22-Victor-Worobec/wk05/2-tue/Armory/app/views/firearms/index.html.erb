@@ -1,0 +1,7 @@
+<h1>Firearms:</h1>
+
+<% @firearms.each do |firearm| %>
+    <p>
+        <%= link_to firearm.model, firearm_path(firearm.id) %>
+    </p>
+<% end %>

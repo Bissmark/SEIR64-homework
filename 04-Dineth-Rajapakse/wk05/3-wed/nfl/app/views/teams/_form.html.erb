@@ -1,0 +1,15 @@
+<%= form_for @team do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :owner  %>
+    <%= f.text_field :owner %>
+
+    <%= f.label :championships, 'Championships' %>
+    <%= f.text_field :championships, :placeholder => 'no of SB wins' %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+<% end %>

@@ -1,0 +1,19 @@
+<h1>
+    <%= @asteroid.name %>
+</h1>
+
+<%= image_tag @asteroid.image if @asteroid.image.present? %>
+
+<ul>
+    <li>Name: <%= @asteroid.name %></li>
+    <li>Designation: <%= @asteroid.designation %></li>
+    <li>Orbit: <%= @asteroid.orbit %></li>
+    <li>Size: <%= @asteroid.size %></li>
+    <li>Funfact: <%= @asteroid.funfact %></li>
+
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit Asteroid", edit_asteroid_path(@asteroid.id) %>
+    <%= link_to "Delete Asteroid", delete_asteroid_path(@asteroid.id) %>
+</div>

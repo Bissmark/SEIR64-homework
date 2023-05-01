@@ -1,0 +1,26 @@
+<%= form_for @confectionery do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+
+    <%= f.label :group %>
+    <%= f.text_field :group %>
+
+    <%= f.label :energy %>
+    <%= f.number_field :energy %>
+
+    <%= f.label :protein %>
+    <%= f.number_field :protein %>
+
+    <%= f.label :fat %>
+    <%= f.number_field :fat %>
+
+    <%= f.label :carbs %>
+    <%= f.number_field :carbs %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+
+<% end %>

@@ -1,0 +1,10 @@
+<h1>All players</h1>
+
+<% @players.each do |player|%>
+    
+    <ul>
+        <li>
+            <%= link_to player.name, player %> for <%= player.present_club %>
+        </li>
+    </ul>
+<% end%>

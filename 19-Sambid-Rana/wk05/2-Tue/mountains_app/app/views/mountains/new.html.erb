@@ -1,0 +1,28 @@
+
+<h1>Add a New mountain to the list</h1>
+<form action="<%= mountains_path %>" method="post">
+    <label>
+        Name:
+        <input name="name" required>
+    </label>
+    <label>
+        Location:
+        <input name="location" >
+    </label>
+    <label>
+        Elevation:
+        <input type="number" name="elevation" >
+    </label>
+    <label>
+        First ascent by:
+        <input  name="first_ascent" >
+    </label>
+    <label>
+        Image:
+        <input type="url" name="image" >
+    </label>
+
+    <div>
+        <button>Create</button>
+    </div>
+</form>

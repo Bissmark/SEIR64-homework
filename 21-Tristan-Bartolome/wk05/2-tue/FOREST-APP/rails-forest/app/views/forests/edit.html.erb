@@ -1,0 +1,30 @@
+<h1>Edit forest</h1>
+
+<form action="<%= forest_path %>" method="post">
+    <label>
+        Forest:
+        <input name="name" required value="<%= @forest.name %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @forest.image %>">
+    </label>
+
+    <label>
+        Country:
+        <input name="country" placeholder="Brazil" value="<%= @forest.country %>">
+    </label>
+
+    <label>
+        Known plant species:
+        <input type="number" name="plants" value="<%= @forest.plants %>">
+    </label>
+
+    <label>
+        Weather condition:
+        <input name="weather" value="<%= @forest.weather %>">
+    </label>
+
+    <button>Create forest</button>
+</form>

@@ -1,0 +1,27 @@
+<h1>Add Wrestler</h1>
+
+<form action="<%= wrestlers_path %>" method="post">
+
+    <label>
+        Name: <input type="text" name="name" required>
+    </label>
+
+    <label>
+        Image: <input type="text" name="image">
+    </label>
+
+    <label>
+        Height (cm): <input type="number" name="height">
+    </label>
+
+    <label>
+        Weight (kg): <input type="number" name="weight">
+    </label>
+
+    <label>
+        Experience (years): <input type="number" name="exp">
+    </label>
+
+    <button>Add Wrestler</button>
+
+</form>

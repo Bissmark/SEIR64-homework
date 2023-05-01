@@ -1,0 +1,14 @@
+<h1>
+    <%= @mountain.name %>
+</h1>
+
+<%= image_tag @mountain.image if @mountain.image.present? %>
+
+<ul>
+    <li>Name: <%= @mountain.name %></li>
+    <li>Elevation: <%= @mountain.elevation %></li>
+    <li>Diameter: <%= @mountain.diameter %></li>
+    <li>Country: <%= @mountain.country %></li>
+    <li>Type: <%= @mountain.type %></li>
+    <li>First-Ascent: <%= @mountain.first-ascent %></li>
+</ul>

@@ -1,0 +1,17 @@
+<h1>
+    <%= @wine.name %>
+</h1>
+
+<%= image_tag @wine.image if @wine.image.present? %>
+
+<ul>
+    <li>Name: <%= @wine.name %></li>
+    <li>Region: <%= @wine.region %></li>
+    <li>Main Varietal: <%= @wine.main_varietal %></li>
+    <li>Color: <%= @wine.color %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit wine", edit_wine_path(@wine.id) %>
+    <%= link_to "Delete wine", delete_wine_path(@wine.id) %>
+</div>

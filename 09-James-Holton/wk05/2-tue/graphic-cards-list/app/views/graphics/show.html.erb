@@ -1,0 +1,19 @@
+<h1>
+    <%= @graphic.name %>
+</h1>
+
+<ul>
+
+    <li>Name: <%= @graphic.name %></li>
+    <li>Release date: <%= @graphic.release %></li>
+    <li>Bus: <%= @graphic.bus %></li>
+    <li>Memory: <%= @graphic.memory_size %> GB, <%= @graphic.memory_type %></li>
+    <li>GPU Clock: <%= @graphic.gpu_clock %> MHz</li>
+    <li>Memory Clock: <%= @graphic.memory_clock %> MHz</li>
+
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit graphic", edit_graphic_path(@graphic.id) %>
+    <%= link_to "Delete graphic", delete_graphic_path(@graphic.id) %>
+</div>

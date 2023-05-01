@@ -1,0 +1,18 @@
+
+.thumb {
+    width: 4em;
+    margin-right: 10px;
+}
+
+.full-disp {
+    max-width: 14em;
+}
+
+.list {
+    margin-left: 10px;
+    vertical-align: super;
+}
+.player_img {
+    max-height: 22em;
+    border: 2px solid black;
+}

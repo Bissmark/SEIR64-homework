@@ -2,6 +2,19 @@
     <%= @company.name %>
 </h1>
 
+<% if @company.cars.any? %>
+    <h3>Associated cars:</h3>
+    <ul>
+        <% @company.cars.each do |car| %>
+            <li>
+                <a href="/cars/<%= car.id %>">
+                <%= car.model %>
+                </a>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
+
 <% unless @company.image.nil? || @company.image.empty? %>
 <h3>
     Image: <img src="<%= @company.image %>" alt="">

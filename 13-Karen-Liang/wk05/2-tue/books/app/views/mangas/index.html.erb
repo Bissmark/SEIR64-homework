@@ -1,0 +1,10 @@
+<h1>All Mangas</h1>
+
+
+<% @mangas.each do |manga| %>
+    <p>
+        <%= link_to manga.name, manga_path(manga.id), class:"show_list" %>
+    </p>
+<% end %>
+
+

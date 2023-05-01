@@ -1,0 +1,13 @@
+<h1><%= @wrestler.name %></h1>
+
+<%= image_tag @wrestler.image, :class => 'full' if @wrestler.image.present? %>
+
+<div class="info">
+    <p>Country: <%= @wrestler.country %></p>
+    <p>Height: <%= @wrestler.height %> cm</p>
+    <p>Weight: <%= @wrestler.weight %> kg</p>
+    <p>Experience: <%= pluralize @wrestler.exp, 'year' %></p>
+</div>
+ 
+<%= link_to "Edit Wrestler", edit_wrestler_path(@wrestler) %>
+<%= link_to "Delete Wrestler", wrestler_path(@wrestler), :method => :delete, :data => { :confirm => 'Are you sure?' } %>

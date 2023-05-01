@@ -1,0 +1,42 @@
+<h1>New Firearm</h1>
+
+<form action="<%= firearms_path %>" method="post">
+
+    <label>
+        Model:
+        <input name="model" placeholder="Vector" required>
+    </label>
+
+    <label>
+        Manufacturer:
+        <input name="manufacturer" placeholder="Kriss">
+    </label>
+
+    <label>
+        Calibre:
+        <input name="calibre" placeholder="9x19">
+    </label>
+
+    <label>
+        Family:
+        <input name="family" placeholder="Submachine Gun">
+    </label>
+
+    <label>
+        Fire Rate:
+        <input name="fire_rate" type="number" placeholder="950 (rpm)">
+    </label>
+
+    <label>
+        Effective Distance:
+        <input name="effective_distance" type="number" placeholder="200 (metres)">
+    </label>
+
+    <label>
+        Image:
+        <input name="image" placeholder="<url>">
+    </label>
+
+    <button>Create Firearm</button>
+
+</form>
