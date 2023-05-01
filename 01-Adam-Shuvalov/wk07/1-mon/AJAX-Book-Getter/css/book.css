@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://assets.weforum.org/article/image/responsive_big_webp_hySrQhk9QgN45B-0z8PR0bd8ZRyDZ9LnvzPSGaIb91Q.webp');
+}
+
+#container {
+    width: 960px;
+    height: 1000px;
+    margin: 0 auto;
+    color: white;
+    background-color: #442b18ba;
+    text-align: center;
+    border-radius: 2em;
+}
+
+#container img {
+    height: 400px;
+    margin: auto;
+}
+
+#input {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#booksearchButton {
+    width: 200px;
+}
+
