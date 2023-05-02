@@ -1,0 +1,12 @@
+.thumb {
+    height: 18em;
+    width: auto;
+}
+
+.select_play {
+    display: inline-block;
+}
+
+.select_play_two {
+    display: inline-block;
+}
