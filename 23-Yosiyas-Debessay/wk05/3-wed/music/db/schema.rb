@@ -10,19 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_19_054104) do
+ActiveRecord::Schema.define(version: 2023_04_19_081119) do
 
   create_table "artists", force: :cascade do |t|
-    t.text "name"
-    t.text "genre"
-    t.date "dob"
-    t.text "noa"
-    t.text "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
-  create_table "albums", force: :cascade do |t|
+  create_table "works", force: :cascade do |t|
     t.text "title"
     t.text "date"
     t.text "not"
