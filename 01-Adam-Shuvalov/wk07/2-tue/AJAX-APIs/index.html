@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX API Practice</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="space">
+
+            <div id="ISS-Info" class="grid-item">
+                <h3>ISS-location</h3>
+                <p id="ISS-location"></p>
+            </div>
+
+            
+            <div id="neo" class="grid-item">
+                <h3>Displays name, danger (T/F), and brightness of objects orbiting close to earth on a give date</h3>
+                <form id="search">
+                    <input type="search" name="" id="neo-search" placeholder="YYYY-MM-DD">
+                    
+                    <button>Search</button>
+                </form>
+                <ol id="neo-list">
+                </ol>
+            </div>
+
+            <div id="space-news">
+                <h3>Space News Articles</h3>
+                Enter a word to retrieve articles based on that query
+                <form id="search2">
+                    <input type="search" name="" id="article-search" placeholder="SpaceX">
+                    <button>Search</button>
+                </form>
+                <ol id="article-list">
+                    
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="map">
+
+    </div>
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/ajax_apis.js"></script>
+</body>
+</html>
