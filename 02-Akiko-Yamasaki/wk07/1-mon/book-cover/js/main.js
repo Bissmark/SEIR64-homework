@@ -49,20 +49,16 @@ const fetchinfo = function () {
 
     xhr.open('GET', `https://www.googleapis.com/books/v1/volumes?q=title:${title}`);
 
-    // how to display when the title has no match?
+    // how to display when the title has no match?  
     // if(xhr.responseText!==(title)){
     //     console.log("no match");
     //     const nomatch = document.createElement('p');
     //     nomatch.innerText = "there is no matching title"
     //     document.getElementById('book-container').appendChild('nomatch');
-    }
+// }
 
     xhr.send();
-    return;
 }
 
-const refresh = function(){
-
-}
 
 document.getElementById('btn').addEventListener('click', fetchinfo)
