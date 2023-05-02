@@ -1,0 +1,21 @@
+<h1>Edit car Info</h1>
+
+<form action="/cars/<%= @car.id %>" method="post">
+    <label>
+        Model: 
+        <input type="text" name="model" required value="<%= @car.model %>">
+    </label>
+    <br>
+    <label>
+        Brand: 
+        <input type="text" name="brand" value="<%= @car.brand %>">
+    </label>
+    <br>
+    <label>
+        Photo: 
+        <input type="url" name="image" value="<%= @car.image %>">
+    </label>
+    <br>
+    <br>
+    <button>Update car</button>
+</form>

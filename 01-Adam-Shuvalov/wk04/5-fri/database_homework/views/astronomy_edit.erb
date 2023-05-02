@@ -1,0 +1,24 @@
+<form action="/astronomy-database/<%=@astronomical_item["id"]%>" method="post">
+    <label>
+        Name:
+        <input name="name" value="<%= @astronomical_item["name"] %>" required>
+    </label>
+
+    <label>
+        Type:
+        <input name="type" value="<%= @astronomical_item["type"] %>" required>
+    </label>
+
+        
+    <label>
+        Summary:
+        <textarea name="summary" cols="45" rows="10" required><%= @astronomical_item["summary"] %></textarea>
+    </label>
+
+    <label>
+        Image:
+        <textarea type="url" name="image" cols="60" rows="1"><%= @astronomical_item["image"] %></textarea>
+    </label>
+
+    <button>Submit change</button>
+</form>

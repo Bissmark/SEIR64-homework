@@ -1,0 +1,22 @@
+<%= form_for @console do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :brand %>
+    <%= f.text_field :brand %>
+
+    <%= f.label :rd %>
+    <%= f.text_field :rd %>
+
+    <%= f.label :units %>
+    <%= f.text_field :units %>
+
+    <%= f.label :play %>
+    <%= f.text_field :play %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+<% end %>

@@ -1,0 +1,15 @@
+<h1>
+    <%= @wrestler.name %>
+</h1>
+
+<%= image_tag @wrestler.image if @wrestler.image.present? %>
+
+<p>Height: <%= @wrestler.height %> cm</p>
+<p>Weight: <%= @wrestler.weight %> kg</p>
+<p>Experience: <%= pluralize @wrestler.exp, "year" %></p>
+
+<div class="controls">
+    <%= link_to "Edit wrestler", edit_wrestler_path(@wrestler.id) %>
+    |
+    <%= link_to "Delete wrestler", delete_wrestler_path(@wrestler.id) %>
+</div>

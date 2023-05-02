@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/database_css.css">
+    <title>Movies & Directors List</title>
+</head>
+<body>
+ 
+    <div id="container">
+        <h1>Movies & Directors List</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/directors">Directors</a>
+            <a href="/directors/new">Add Director</a>
+            |
+            <a href="/movies">Movies</a>
+            <a href="/movies/new">Add Movie</a>
+
+        </nav>
+
+        <div id="yield">
+            <%= yield %>
+        </div>
+        
+    </div>
+</body>
+</html>

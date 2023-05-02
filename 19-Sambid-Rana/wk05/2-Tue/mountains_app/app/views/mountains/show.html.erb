@@ -1,0 +1,19 @@
+
+<h1> 
+    <%= @mountain.name %>
+</h1>
+
+<%# image_tag @mountain.image if @mountain.image.present? %>
+<img src="<%= @mountain.image%>" alt="">
+
+<ul>
+    <li>Location: <%= @mountain.location  %>  </li>
+    <li>Elevation: <%= @mountain.elevation  %>m  </li>
+    <li>First ascent by <%= @mountain.first_ascent  %>  </li>
+
+</ul>
+
+
+<div>
+    <%= link_to "Edit Mountain", edit_mountain_path(@mountain.id)%>
+</div>

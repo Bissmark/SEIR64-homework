@@ -1,0 +1,13 @@
+<h1><%= @plant['family'] %></h1>
+
+<% @plants.each do |species| %>
+    <p>
+        <a href="/plants/<%= species["id"] %>">
+            <%= species["name"] %>
+        </a>
+    </p>
+<% end %>
+
+<div class="controls">
+    <a href="/plants/new" class="mod-key">Add Plants to <%= @plant['family'] %> family</a>
+</div>

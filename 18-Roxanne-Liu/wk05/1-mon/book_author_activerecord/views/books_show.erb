@@ -1,0 +1,19 @@
+<h3>
+    Title: <%= @book.title %>
+    
+    Author ID: <%= @book.author_id %>
+    
+    Publish Time: <%= @book.published_at %>
+</h3>
+        
+
+<% if @book.image.present? %>
+    <img class="feature" src="<%= @book.image %>" alt="<%= @book.title %>">
+<% end %>
+
+
+
+<div class="controls">
+    <a href="/books/<%= @book.id %>/edit">Edit book</a>
+    <a href="/books/<%= @book.id %>/delete">Delete book</a>
+</div>

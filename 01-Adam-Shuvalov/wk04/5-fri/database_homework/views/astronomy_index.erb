@@ -1,0 +1,14 @@
+
+<div id="add_to_db">
+<a  href="/astronomy-database/new">Add to database</a>
+</div>
+
+<ul>
+    <% @astronomy.each do |astronomical_item| %>
+        <li>
+            <a href="/astronomy-database/<%= astronomical_item["id"] %>">
+                <%= astronomical_item["name"] %> - <%= astronomical_item["type"] %>
+            </a> 
+        </li>
+    <% end %>
+</ul>

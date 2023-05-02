@@ -1,0 +1,16 @@
+<h1>Edit player</h1>
+
+<form action="/players/<%= @player["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Jayson Tatum" value="<%= @player["name"]%>">
+    </label>
+
+    <label>
+        Position: 
+        <input name="position" required placeholder="Small Forward" value="<%= @player["position"]%>">
+    </label>
+
+    <button>Update Player</button>
+
+    </form>

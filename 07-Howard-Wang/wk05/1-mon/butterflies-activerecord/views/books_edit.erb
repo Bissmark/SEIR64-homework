@@ -1,0 +1,17 @@
+<h1> Edit Butterflies</h1>
+
+<form action="/books/<%= @book["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Harry Potter" value="<%= @book["name"]%>">
+    </label>
+    <label>
+        Author:
+        <input name="author" placeholder="J.K.Rowling" value="<%= @book["author"]%>">
+    </label>
+
+    <button>
+    Update Book
+    </button>
+
+</form>

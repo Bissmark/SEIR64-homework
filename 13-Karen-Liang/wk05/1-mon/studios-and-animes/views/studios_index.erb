@@ -1,0 +1,11 @@
+<h1>All Studios</h1>
+
+<div class="hover_img"></div>
+
+    <% @studios.each do |studio| %>
+        <p>
+            <a class="show_list" href="/studios/<%= studio.id %>">
+                <%= studio.name %>
+            </a>
+        </p>
+    <% end %>

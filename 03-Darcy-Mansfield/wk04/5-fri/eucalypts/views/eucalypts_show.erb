@@ -1,0 +1,16 @@
+
+<h1><%= @eucalypt['name'] %></h1>
+
+<h2>Eucalyptus <%= @eucalypt['species'] %></h2>
+
+<% unless @eucalypt['image'].nil? || @eucalypt['image'].empty? %>
+<img class='feature' src="<%= @eucalypt['image'] %>" alt="<%= @eucalypt['name']%>">
+<% end %>
+
+<div class="controls">
+    <a href="/eucalypts/<%= @eucalypt['id'] %>/edit">Edit eucalypt</a>
+</div>
+
+<div class="controls">
+    <a href="/eucalypts/<%= @eucalypt['id'] %>/delete">Delete eucalypt</a>
+</div>

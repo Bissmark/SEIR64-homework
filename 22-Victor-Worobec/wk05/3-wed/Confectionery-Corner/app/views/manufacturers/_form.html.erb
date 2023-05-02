@@ -1,0 +1,20 @@
+<%= form_for @manufacturer do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+
+    <%= f.label :founded %>
+    <%= f.text_field :founded %>
+
+    <%= f.label :founder %>
+    <%= f.text_field :founder %>
+
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+
+<% end %>

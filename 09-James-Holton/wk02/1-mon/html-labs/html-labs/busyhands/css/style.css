@@ -51,6 +51,18 @@ li {
     text-align: justify;
 }
 
+#top {
+	color: white;
+}
+
+#top:hover {
+	padding: 8px;
+	padding-top: 23px;
+	padding-bottom: 20px;
+	background-image: url('../images/bg_nav_rollover.png');
+	
+}
+
 header {
 	display: relative;
 }
@@ -68,6 +80,10 @@ header {
 	object-fit: cover;
 	object-position: 100% -62px;
 	right: 560px;
+}
+
+.sozial:hover {
+	object-position: 100% 0px;
 }
 
 p {

@@ -1,0 +1,17 @@
+<h1><%= @console.title %></h1>
+
+<%= image_tag @console.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @console.name %></li>
+    <li>Brand: <%= @console.brand %></li>
+    <li>Release Date: <%= @console.rd %></li>
+    <li>Units: <%= @console.units %></li>
+    <li>Play: <%= @console.play %></li>
+    <li>Image: <%= @console.image %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit console", edit_console_path(@console) %>
+    <%= link_to "Delete console", @console, :method => :delete, :data => { :confirm => "Are you sure?"} %>
+</div>

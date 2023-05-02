@@ -1,0 +1,12 @@
+<h1>
+    <%= @dish.name %>
+</h1>
+
+<% if @dish.image.present? %>
+    <img class="feature" src="<%= @dish.image %>" alt="<%= @dish.name %>">
+<%end%>
+
+<div class="controls">
+    <a href="/dishes/<%= @dish.id %>/edit">Edit dish</a>
+    <a href="/dishes/<%= @dish.id %>/delete">Delete dish</a>
+</div>

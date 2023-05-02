@@ -1,0 +1,8 @@
+<h1>All Consoles</h1>
+
+<% @consoles.each do |console| %>
+
+    <%= link_to image_tag(console.image, :class => 'thumb'), console %>
+    <%= link_to image_tag("https://picsum.photos/1000", :class => 'thumb'), console if console.image.nil? || console.image.empty? %>
+    
+<% end %>

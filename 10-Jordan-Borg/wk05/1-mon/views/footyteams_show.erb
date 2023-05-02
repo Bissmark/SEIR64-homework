@@ -1,0 +1,16 @@
+<h1>
+    <%= @footyteam["name"] %>
+</h1>
+
+<h2>
+    Family: <%= @footyteam["family"] %>
+</h2>
+
+<% unless @footyteam["image"].nil? || @footyteam["image"].empty? %>
+    <img class="feature" src="<%= @footyteam["image"] %>" alt="<%= @footyteam["name"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/footyteams/<%= @footyteam["id"] %>/edit">Edit footyteam</a>
+    <a href="/footyteams/<%= @footyteam["id"] %>/delete">Delete footyteam</a>
+</div>

@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(205, 255, 249);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.thumb {
+    height: 20em;
+}
+
+.feature {
+    max-height: 40em;
+}
+
+label {
+    display: block;
+}
+

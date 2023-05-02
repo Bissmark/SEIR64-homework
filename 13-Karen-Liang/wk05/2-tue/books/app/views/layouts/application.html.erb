@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mangas</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="icon" type="image/x-icon" href="/img/studios_favicon.png">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Thasadith&display=swap');
+    </style>
+  </head>
+
+  <body>
+
+    <div class="top_banner">
+        <p class="banner_text">Manga Guide 🍿</p>
+    </div>
+    <div class="nav_background">
+        <div class="nav_width">
+    <nav>
+        <%= link_to "Home", root_path, class:"nav_effect" %>
+        <%= link_to "All Mangas", mangas_path, class:"nav_effect"  %>
+        <%= link_to "New Manga", new_manga_path, class:"nav_effect"  %>
+    </nav>
+    </div>
+    </div>
+    
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

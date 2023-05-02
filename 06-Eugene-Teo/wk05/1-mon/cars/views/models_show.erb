@@ -1,0 +1,16 @@
+<h1>
+    <%= @models.name %>
+</h1>
+
+<%# <h2>
+    Family: <%= @butterfly["family"] %>
+<%# </h2> %>
+
+<% if @models.image.present? %>
+    <img class="feature" src="<%= @models.image %>" alt="<%= @models.name %>">
+<% end %>
+
+<div class="controls">
+    <a href="/models/<%= @models["id"] %>/edit">Edit model</a>
+    <a href="/models/<%= @models["id"] %>/delete">Delete model</a>
+</div>

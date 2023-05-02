@@ -1,0 +1,11 @@
+<h1>All Dishes</h1>
+
+<div class="hover_img">
+    <%# looping through all the data and creating its own link with names %>
+    <% @dishes.each do |dish| %>
+        <p>
+            <a class="dish_list" href="/dishes/<%= dish['id']%>"><%= dish['name'] %><span><img src="<%= dish['image'] %>" alt="image" height="100" /></span></a>
+        </p>
+    <% end %>
+</div>
+

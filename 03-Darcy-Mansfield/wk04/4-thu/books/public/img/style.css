@@ -1,0 +1,15 @@
+img {
+    width: 50vw;
+    max-width: 200%;
+    border: 5px solid black;
+}
+
+body {
+    text-align: center;
+}
+
+.input {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}

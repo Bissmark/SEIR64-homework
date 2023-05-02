@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GameBrands</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container">
+    
+      <nav>
+      
+      <%= link_to "All Brands", brands_path %>
+      <%= link_to "New Brand", new_brand_path %>
+      |
+      <%= link_to "All Consoles", consoles_path %>
+      <%= link_to "New Consoles", new_console_path %>
+      
+      </nav>
+    
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

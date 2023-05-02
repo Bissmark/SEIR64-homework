@@ -1,0 +1,19 @@
+<h1>Edit Company</h1>
+
+<form action="/companies/<%= @company.id %>" method="post">
+
+    <label>
+        Name:
+        <input name="name" placeholder="Volkswagen" value="<%= @company.name %>" required>
+    
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" placeholder="https://...jpg" value="<%= @company.image %>">
+    
+    </label>
+
+    <button>Update Company</button>
+</form>
+

@@ -1,0 +1,24 @@
+<h3>Edit movie entry</h3>
+
+<form action="/movies/<%= @movie.id %>" method="post">
+    <label>
+        Movie's Name:
+        <input name="name" value="<%= @movie.name %>" required>
+    </label>
+
+    <label>
+        Movie's Plot:
+        <input name="plot" value="<%= @movie.plot %>" required>
+    </label>
+    <label>
+        Release Year:
+        <input name="year" value="<%= @movie.year %>" required>
+    </label>
+
+    <label>
+        Poster URL:
+        <input type="url" name="poster" id="data_image" value="<%= @movie.poster %>">
+    </label>
+    
+    <button>Submit Changes</button>
+</form>

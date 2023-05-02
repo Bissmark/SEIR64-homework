@@ -1,0 +1,19 @@
+<h1>Edit Okra</h1>
+<form action="/okras/<%= @okra["id"] %>" method="post">
+    <label>
+        Name:
+        <input name="name" required placeholder="Bhindi" value="<%= @okra["name"] %>">
+    </label>
+    <label>
+    Family:
+    <input name="family" placeholder="Hibiscus esculentus" value="<%= @okra["family"] %>">
+</label>
+
+<label>
+    Image:
+    <input type="url" name="image" value="<%= @okra["image"] %>">
+</label>
+
+<button>Update okra</button>
+</form>
+

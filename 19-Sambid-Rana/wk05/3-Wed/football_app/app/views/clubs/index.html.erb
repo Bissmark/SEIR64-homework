@@ -1,0 +1,13 @@
+<h1>Football Clubs</h1>
+
+<%# @clubs.inspect %>
+<% @clubs.each do |club| %>
+    
+    <ul>
+    
+        <li>
+            <%= image_tag(club.image, :class => 'thumb') if club.image.present? %> <%= link_to club.name, club, :class =>'list' %> 
+        </li>
+    </ul>
+
+<% end %>

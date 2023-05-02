@@ -55,4 +55,10 @@ const reverseCatWalk = () => {
 
 let intervalNum = setInterval(catWalk, 50);
 
+cat.style.left = '0px';
+cat.style.top = '0px' ;  
+cat.style.scale = '0.1';
 
+$("body").append($("<img id='cat2' style='position:absolute;' src='http://www.anniemation.com/clip_art/images/cat-walk.gif'>"));
+$("#cat2").css({"left":"0px", "top": "100px", "scale":"0.5"});
+$("#cat2").animate({left: "+=1000"},10000, function() {});

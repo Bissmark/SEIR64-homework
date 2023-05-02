@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors & Books</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="/css/bookauthor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Authors & Books</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/authors">All Authors</a>
+            <a href="/authors/new">New author</a>
+            |
+            <a href="/books">All Books</a>
+            <a href="/books/new">New book</a>
+        </nav>
+        <%= yield %>
+    </div>
+<footer>@ Copyright WE BECOME WHAT WE BEHOLD</footer>
+</body>
+</html>

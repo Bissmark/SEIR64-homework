@@ -1,0 +1,12 @@
+<h3>
+    <%= @director.name %> 
+</h3>
+<h3>
+    <%= @director.nationality %> 
+</h3>
+<img src="<%= @director.image %>">
+
+<div id="data_changers">
+    <a href="/directors/<%= @director.id %>/edit">Edit entry</a>
+    <a href="/directors/<%= @director.id %>/delete">Delete entry</a>
+</div>
