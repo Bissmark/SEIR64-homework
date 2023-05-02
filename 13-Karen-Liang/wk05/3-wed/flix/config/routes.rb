@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'animes#index' 
   get 'animes/index'
   get 'animes/new'
   get 'animes/edit'
