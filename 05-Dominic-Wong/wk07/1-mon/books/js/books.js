@@ -1,8 +1,4 @@
-const xhr = new XMLHttpRequest();
-
-
 // get text from input
-
 const getBookThumb = function () {
 
     // get user input from search box
@@ -12,16 +8,13 @@ const getBookThumb = function () {
     const result_container = document.getElementsByClassName('book-info')[0];
     result_container.innerHTML = "";
 
-    
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', `https://www.googleapis.com/books/v1/volumes?q=${book_title}`)
+    xhr.send();
     xhr.onreadystatechange = function () {
-        if (xhr.readyState !== 4) {
-            return;
-        }
-        
-        // hardcode book title to jaws first
-        
-        // get the payload
-        
+        if (xhr.readyState !== 4) return; // not ready yet
+            
+        // get the payload    
         const book_payload = JSON.parse( xhr.responseText );
         
         // get the div where information sits
@@ -38,12 +31,8 @@ const getBookThumb = function () {
         book_title.setAttribute('class', 'book-title')
         book_title.innerText = book_payload["items"][0]["volumeInfo"]["title"];
         result_container.appendChild(book_title);
-
-
+        
     }
-    
-    xhr.open('GET', `https://www.googleapis.com/books/v1/volumes?q=${book_title}`)
-    xhr.send();
 }
 
 document.getElementById('book-btn').addEventListener('click', getBookThumb)
