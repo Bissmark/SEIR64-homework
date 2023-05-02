@@ -1,5 +1,5 @@
 // get text from input
-const getBookThumb = function () {
+const getBookInfo = function () {
 
     // get user input from search box
     const book_title = document.getElementById('book-input').value;
@@ -31,8 +31,8 @@ const getBookThumb = function () {
         book_title.setAttribute('class', 'book-title')
         book_title.innerText = book_payload["items"][0]["volumeInfo"]["title"];
         result_container.appendChild(book_title);
-        
+
     }
 }
 
-document.getElementById('book-btn').addEventListener('click', getBookThumb)
+document.getElementById('book-btn').addEventListener('click', getBookInfo)
