@@ -10,8 +10,10 @@ const searchFlickr = function (keywords, page_num) {
     }
 
     $.getJSON( flickrURL, parameters ).done(function( results ){
+        // get total pages from results
         const total_pages = results.photos.pages;
 
+        // exit function if current page > total_page
         if (page_num > total_pages) {
             return;
         }
@@ -27,8 +29,10 @@ const showImages = function ( results ) {
     _(urls).each(function(url){
         const $img = $('<img>', {src: url});
         $img.appendTo('#images');
+      
     })
 };
+
 
 const generateURL = function (p) {
     return [
@@ -43,6 +47,13 @@ const generateURL = function (p) {
         '_q.jpg',  // change 'q' to osomething else for diff sizes ( see documentation)
     ].join('');
 };
+
+const generateLink = function (p) {
+    return [
+        "https://www.flickr.com/photo.gne?id=",
+        p.id
+    ].join('');
+}
 
 $(document).ready(function (){
     
