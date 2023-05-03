@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>API Practice</title>
+</head>
+<body>
+
+    <h1>API Central</h1>
+
+    <!-- Weather -->
+    <h2>Weather - openweathermap.org</h2>
+
+    <form id="weather-form">
+        <label>Location to search:</label>
+        <input type="search" id="weather-location" placeholder="Sydney">
+        <button>Get Weather</button>
+    </form>
+
+    <div id="weather-info"></div>
+
+    <!-- Recipes -->
+    <h2>Recipes - themealdb.com</h2>
+
+    <form id="recipe-form">
+        <label>Recipe to search:</label>
+        <input type="search" id="recipe-search" placeholder="Arrabiata">
+        <button>Get Recipe</button>
+    </form>
+
+    <div id="recipe-section"></div>
+
+    <!-- Quiz -->
+    <h2>Quiz - quizapi.io</h2>
+
+    <p>Under construction - Wanted to implement check boxes with a submit button that checks if the right answers were selected (some questions have more than 1 answer). Decided that it was outside the scope of the homework and spent more time learning about APIs</p>
+
+    <div id="quiz-section"></div>
+</body>
+</html>
