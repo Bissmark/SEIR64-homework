@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX HW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="css/basic.css">
+</head>
+<body>
+
+    <h1>Pokemon API Demonstration</h1>
+
+    <img id="pokemon_thumbnail" class="thumb" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="PokeAPI">    
+
+    <p> I am aware that I should have capitalised this. But the code looked so pretty and I didn't want to break it.</p>
+    <ul>
+        <li> Name: <span id="returned_name"></span></li>
+        <li> Abilities: <span id="returned_abilities"></span></li>
+        <li> Moves: <span id="returned_moves"></span></li>
+        <li> Species: <span id="returned_species"></span></li>
+        <li> Stats: <span id="returned_stats"></span></li>
+    </ul>
+
+    <input id="pokemon_search" type="text">
+    <button id="pokemon_fetch">
+        Search!
+    </button>
+    <button onclick="location.href='index.html';">Back!</button>
+    <!-- I do not remember the order for this -->
+    <script src="js/jquery.js"></script>
+    <script src="js/pokemons.js"></script>
+</body>
+</html>
