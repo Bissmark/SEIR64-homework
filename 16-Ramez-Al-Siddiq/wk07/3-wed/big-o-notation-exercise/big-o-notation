@@ -1,0 +1,15 @@
+#1: The worst-case time complexity of this algorithm is O(n), where n is the length of the input phrase. This is because the algorithm must iterate through each word in the phrase to check if it matches the given word.
+
+#2: The worst-case time complexity of bubble sort is O(n^2), where n is the length of the input list. This is because in the worst case scenario, the algorithm must make n-1 passes over the list, and on each pass, it must compare each element with every other element in the list.
+
+#3: The worst-case time complexity of this recursive function is O(n), where n is the input value. This is because the function must call itself recursively n times in the worst case scenario, and each call takes constant time.
+
+#4: The worst-case time complexity of this function is O(1), which means it takes constant time regardless of the size of the input array.
+
+#5: The worst-case time complexity of this algorithm is O(n), where n is the length of the input string. This is because the algorithm must iterate through each character in the string and push it onto the stack, and then iterate through the stack to pop each character off and build the output string.
+
+#6: The worst-case time complexity of this algorithm is O(n), where n is the input value. This is because the algorithm must iterate through each number less than n to check if it is a divisor of n.
+
+#7: The worst-case time complexity of this algorithm is O(n), where n is the length of the input array. This is because the algorithm must iterate through each element in the array twice, once to print each element, and once to print the sum of each pair of adjacent elements.
+
+#8: The worst-case time complexity of this algorithm is O(n), where n is the input value. This is because in the worst case scenario, the algorithm must check if the input number is divisible by every number from 2 to n-1.
