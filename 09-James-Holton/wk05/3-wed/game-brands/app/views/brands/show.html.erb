@@ -1,0 +1,17 @@
+<h1><%= @brand.name %></h1>
+
+<%= image_tag @brand.image, :class => 'feature' if @brand.image.present? %>
+
+<ul>
+    <li>Name: <%= @brand.name %></li>
+    <li>Based: <%= @brand.based %></li>
+    <% unless @brand.founded.nil? %>
+    <li>Founded: <%= @brand.founded.strftime "%A, %B #{@brand.founded.day.ordinalize}, %Y" %></li>
+    <% end %>
+    <li>net: <%= @brand.net %></li>
+</ul>
+
+<div class="controls">
+    <%= button_to "Edit Brand", edit_brand_path(@brand) %>
+    <%= button_to "Delete Brand", @brand, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

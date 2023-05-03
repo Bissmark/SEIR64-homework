@@ -1,0 +1,16 @@
+<h1><%= @confectionery.name %></h1>
+
+<%= image_tag @confectionery.image, :alt => "#{ @confectionery.name }", :class => 'feature' if @confectionery.image.present?%>
+
+<ul>
+    <li>Group: <%= @confectionery.group %> </li>
+    <li>Energy: <%= @confectionery.energy %><%= 'kj' if @confectionery.energy.present? %></li>
+    <li>Protein: <%= @confectionery.protein %><%= 'g' if @confectionery.protein.present? %></li></li>
+    <li>Fat: <%= @confectionery.fat %><%= 'g' if @confectionery.fat.present? %></li></li>
+    <li>Carbs: <%= @confectionery.carbs %><%= 'g' if @confectionery.carbs.present? %></li></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit confectionery", edit_confectionery_path(@confectionery) %>
+    <%= link_to "Delete confectionery", @confectionery, :method => :delete, :data => { :confirm => 'Are you sure?'} %>
+</div>

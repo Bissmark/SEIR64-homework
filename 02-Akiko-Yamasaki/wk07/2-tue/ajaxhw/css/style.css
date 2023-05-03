@@ -1,0 +1,81 @@
+body{
+    max-width: 960px;
+    margin: 0 auto;
+    background-image: url(../img/b-g.jpg);
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/4/102/413/minimalism-black-dark-space-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    color:rgba(255, 255, 255, 0.793);
+}
+
+
+h1{
+    color: rgb(135, 18, 18);
+    text-align: center;
+    animation: shine 2s ease infinite;
+    font-size: 3em;
+}
+
+@keyframes shine{
+    0%{
+        opacity: 1;
+    }
+    /* 25%{
+        opacity: .3; */
+    /* } */
+    50%{
+        opacity: .2;
+    }
+    /* 75%{
+        opacity: .8;
+    } */
+    100%{
+        opacity: 1;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+@media (min-width: 600px) {
+    .container{
+        display: flex;
+           
+    }
+}
+
+
+.oracle {
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+button{
+    height:4em;
+    width: 4em;
+    font-size:1em;
+    color: white;
+    background-color: black;
+    border: solid 1px white;
+    border-radius: 50% 53% 50% 50%;
+}
+
+button:hover{
+    animation: shake 2s ease infinite;
+}
+
+@keyframes shake {
+        0%, 100% {transform: translateX(0);}
+        10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
+        20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+
+ #image {
+   font-size: 3em;
+}
+
+
+

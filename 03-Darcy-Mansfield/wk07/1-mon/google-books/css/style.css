@@ -1,0 +1,17 @@
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    height: 450px;
+    margin: 0 auto;
+    display: block;
+}
+
+input {
+    margin: 1em auto;
+}

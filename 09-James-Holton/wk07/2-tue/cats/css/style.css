@@ -1,0 +1,37 @@
+body {
+    /* background-color: rgb(109, 0, 121); */
+    background-image: url('../image.jpg');
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgba(69, 68, 68, 0.906);
+    min-height: 80vh;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+img {
+    width: 200%;
+    max-width: 250px;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+span {
+    color: rgb(7, 233, 236);
+}
+
+input {
+    margin: 20px auto;
+}

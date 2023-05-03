@@ -1,0 +1,14 @@
+<h1>Lineup</h1>
+<%# <p>Find me in app/views/carcarmodel/show.html.erb</p> %>
+
+<% @carmodels.each do |carmodel| %>
+    <%= image_tag carmodel.image, :class => 'feature' if carmodel.image.present? %>
+    <ul>
+        <li><%= link_to carmodel.name, carmodel_path(carmodel.id) %></li> 
+    </ul>
+<% end %>
+
+<div class="controls">
+        <%= link_to "Edit carmodel", edit_carmodel_path(@carcarmodel) %> 
+        <%= button_to "Delete carcarmodel", @carcarmodel, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+    </div>

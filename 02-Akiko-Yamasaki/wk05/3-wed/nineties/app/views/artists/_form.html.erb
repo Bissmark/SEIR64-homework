@@ -1,0 +1,19 @@
+<%= form_for @artist do |f| %>
+    <%= f.label :name, 'WHO?' %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :city, 'WHERE?' %>
+    <%= f.text_field :city %>
+    
+    <%= f.label :formed, 'FORMED?' %>
+    <%= f.text_field :formed %>
+    
+    <%= f.label :reformed, 'REFORMED?' %>
+    <%= f.text_field :reformed %>
+
+    <%= f.label :image, 'IMAGE?'%>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+
+    <% end %>

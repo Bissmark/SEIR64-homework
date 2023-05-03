@@ -1,0 +1,19 @@
+<h1><%= @beer.name %></h1>
+
+    <%= image_tag @beer.image, :class => 'feature' if @beer.image.present? %>
+
+
+    <ul>
+        <li>Name: <%= @beer.name %></li>
+        <li>Type: <%= @beer.beer_type %></li>
+        <li>Origin: <%= @beer.origin%></li>
+        <li>Size: <%= @beer.size %> ml</li>
+        <li>Standard Drinks: <%= @beer.std_drinks %></li>
+        <li>Alcohol Volumn: <%= @beer.alcohol_vol %>%</li>
+        <li>Brewery:<%= link_to @beer.brewery.name, brewery_path(@beer.brewery) %></li>
+    </ul>
+
+    <div class="controls ">
+        <%=  link_to "Edit beer", edit_beer_path(@beer), :class => "mod-key" %>
+        <%=  link_to "Delete beer", @beer, :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => "mod-key" %>
+    </div>

@@ -1,0 +1,19 @@
+<%= form_for @region do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.label :location %>
+    <%= f.text_field :location, :placeholder => 'North West' %>
+    
+    <%= f.label :population %>
+    <%= f.text_field :population %>
+
+    <%= f.label :famous_appellation %>
+    <%= f.text_field :famous_appellation %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+    
+<% end %>

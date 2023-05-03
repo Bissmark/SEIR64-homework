@@ -1,0 +1,21 @@
+
+<%= form_for @country  do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :population %>
+    <%= f.number_field :population %>
+
+    <%= f.label :capital %>
+    <%= f.text_field :capital %>
+
+    <%= f.label :states, "States/Provinces" %>
+    <%= f.number_field :states %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit :class => "create_update" %>
+
+<% end %>

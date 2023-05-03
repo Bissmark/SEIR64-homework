@@ -1,0 +1,18 @@
+<h1> <%= @region.name %> </h1>
+
+    <%= image_tag @region.image, :class => 'feature' if @region.image.present? %>
+        <ul>
+            <li>Name: <%= @region.name %></li>
+            
+            <li>Location: <%= @region.location %></li>
+            
+            <li>Population: <%= number_to_human @region.population unless @region.population.nil? %></li>
+
+            <li>Famous appellation: <%= @region.famous_appellation unless @region.famous_appellation.nil? %></li>
+
+        </ul>
+
+        <div class="controls">
+            <%= link_to "Edit region", edit_region_path(@region) %>
+            <%= link_to "Delete region", @region, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        </div>

@@ -1,0 +1,7 @@
+<h1>Flags</h1>
+
+<% @flags.each do |flag| %>
+
+<%= link_to image_tag(flag.image, :class => "thumb"), flag_path(flag.id) %>
+
+<% end %>

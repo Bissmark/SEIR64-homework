@@ -1,0 +1,19 @@
+<h1>All Beer</h1>
+
+<% @beers.each do |beer| %>
+    <div class='block view_box'>
+        <div class='inline' ><%= link_to image_tag(beer.image, :class => 'thumb'), beer if beer.image.present? %></div>
+        
+        <div class='inline'>
+            <ul>
+                <li>Name:<%= link_to beer.name, beer %></li>
+                <li>Type: <%= beer.beer_type %></li>
+                <li>Origin: <%= beer.origin %></li>
+                <li>Size: <%= beer.size %>ml</li>
+                <li>Standard drinks: <%= beer.std_drinks %></li>
+                <li>Alcohol volumn: <%= beer.alcohol_vol %>%</li>
+            </ul>
+        </div>
+    </div>
+    
+<% end %>

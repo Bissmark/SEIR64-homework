@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX HW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="css/books.css">
+</head>
+<body>
+
+    <h1>Insert witty Blackbooks reference here</h1>
+
+    <img id="returned_thumbnail" class="thumb" src="https://m.media-amazon.com/images/M/MV5BODZjOGMxMGUtYTY3YS00NjcxLWFkY2EtYzc3NDVkZjk0YWY2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="hopefully a book title">    
+
+    <p>Book Information</p>
+    <ul>
+        <li> Book Title: <span id="returned_title"></span></li>
+        <li> Book Author: <span id="returned_author"></span></li>
+        <li> Book Publisher: <span id="returned_publisher"></span></li>
+    </ul>
+
+    <input id="book_search" type="text">
+    <button id="book_fetch">
+        Book Search
+    </button>
+    <!-- I do not remember the order for this -->
+    <script src="js/jquery.js"></script>
+    <script src="js/books.js"></script>    
+
+</body>
+</html>

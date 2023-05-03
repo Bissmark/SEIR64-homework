@@ -1,0 +1,14 @@
+<h1>All Brands</h1>
+
+<% @brands.each do |brand| %>
+    <%= image_tag brand.image, :class => 'thumb' if brand.image.present? %>
+
+    <ul>
+        <li>Name: <%= link_to brand.name, brand %></li>
+        <% unless brand.founded.nil? %>
+        <li>Founded: <%= brand.founded.strftime "%A, %B #{brand.founded.day.ordinalize}, %Y" %></li>
+        <% end %>
+        <li>based: <%= brand.based %></li>
+    </ul>
+
+<% end %>

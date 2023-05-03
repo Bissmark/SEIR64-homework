@@ -1,0 +1,8 @@
+<h1>Artists List</h1>
+
+<% @artists.each do |artist| %>
+    <%= image_tag artist.image, :class => 'thumb' if artist.image.present? %>
+    <ul>
+        <li><%= link_to artist.name, artist_path(artist.id) %></li>
+    </ul>
+<% end %>

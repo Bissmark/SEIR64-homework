@@ -1,0 +1,11 @@
+<h1>All Books</h1>
+
+<% @books.each do |book| %>
+    <%= image_tag book.image, :class => 'thumb' if book.image.present? %>
+    <ul>
+        <li>Title: <%= link_to book.title, book %></li>
+        <li>Author: <%= book.author %></li>
+        <li>Publication: <%= book.publication %></li>
+        <li>Genre: <%= book.genre %></li>
+    </ul>
+<% end %>
