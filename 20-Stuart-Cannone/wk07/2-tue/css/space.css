@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+body {
+    background-image: url("../assets/stars.jpg");
+    background-color: black;
+    background-size: cover;
+    font-family: 'Trispace', sans-serif;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.2) ;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    max-width: 960px;
+}
+.mainImages {
+    width: 60%;
+    height: auto;
+    padding: 1em;
+}
