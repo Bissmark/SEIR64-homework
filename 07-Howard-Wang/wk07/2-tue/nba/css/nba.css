@@ -1,0 +1,16 @@
+body{
+    background-image: url('https://cdn.vox-cdn.com/thumbor/xlGcIHN1cPYEiga5a3cLGvfldSc=/0x0:1200x800/1200x675/filters:focal(561x17:753x209)/cdn.vox-cdn.com/uploads/chorus_image/image/72237539/MahoneySecondRoundQuestions_AP_Ringer.0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:limegreen;
+    font-size: 100%;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+p{
+    background-color: white;
+    width: 200px;
+    margin: 0 auto;
+}
