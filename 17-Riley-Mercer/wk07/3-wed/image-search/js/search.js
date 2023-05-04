@@ -58,13 +58,13 @@ $(document).ready(function(){
 
     $(window).on('scroll', function() {
         const scrollBottom = $(document).height() - $(window).height() - $(window).scrollTop();
-        if ((scrollBottom <= 700) && lock == false && maxPage != $c) {
+        if ((scrollBottom <= 700) && lock === false && maxPage != $c) {
             const searchTerms = $('#query').val();
             $c = $c + 1
             searchFlickr(searchTerms, $c)
             lock = true
         };
-        if (maxPage = $c) {
+        if (maxPage === $c) {
             $('#error').html("You have run out of pages!")
         };
     });
