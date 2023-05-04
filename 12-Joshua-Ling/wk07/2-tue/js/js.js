@@ -18,8 +18,8 @@ $(document).ready( function() {
   $('#waifu-search').on('submit', function (event) {
     event.preventDefault();
 
-    const name = $('#waifu-name').val().replace(' ', '-');
-    $.ajax('https://api.waifu.im/search/?included_tags=' + name).done((weeb) => {
+    const tag = $('#waifu-name').val();
+    $.ajax('https://api.waifu.im/search/?included_tags=' + tag).done((weeb) => {
       $('#weeb').attr('src', weeb.images[0].url);
     });
   });
