@@ -1,13 +1,18 @@
 const tellJoke = function () {
     $.ajax('https://official-joke-api.appspot.com/jokes/random').done(function (data) {
-        $('body').append('<p>' + data.setup + '</p>');
+        const setUp = data.setup 
+        const punchLine = data.punchline;
 
-        const clickPunchline = function () {
-            $('#punch').on('click', function() {
-                $('body').append('<p>' + data.punchline + '</p>'); 
-            });
-        };
-        clickPunchline();
-     });
+        $('#setUp').text(setUp);
+        $('#punchLine').text("");
+        
+        $('#newJoke').on('click', function () {
+            tellJoke();
+        });        
+        
+        $('#punch').on('click', function () {
+        $('#punchLine').text(punchLine);
+        });
+    });
 };
 tellJoke();
