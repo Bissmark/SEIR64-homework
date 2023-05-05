@@ -2,28 +2,27 @@
 // You will have to figure out what parameters to include
 // All functions must use recursion
 
-function findMax(arr, index = 0, largest = undefined){
+function findMax(arr, largest = undefined){
     // This function returns the largest number in a given array.
-    if (index === arr.length) return largest;
-    if (arr[index] > largest || largest === undefined) largest = arr[index];
-    return findMax(arr, ++index, largest);
+    if (arr.length === 0) return largest;
+    const value = arr.pop();
+    if (value > largest || largest === undefined) largest = value;
+    return findMax(arr, largest);
 }
 
-function factorial(number, count = 1, total = 1){
+function factorial(number){
     // This function returns the factorial of a given number.
-    if (count > number) return total;
-    total *= count;
-    return factorial(number, ++count, total);
+    if (number <= 1) {
+        return 1;
+    }
+    return  number * factorial(number - 1);
 }
 
-function fibonacci(number, inc = 3, num1 = 1, num2 = 1){
+function fibonacci(n){
     // This function returns the Nth number in the fibonacci sequence.
     // For this function, the first two fibonacci numbers are 1 and 1
-    if (number === 1 || number === 2) return 1;
-    if (inc === number) return num1 + num2;
-    num1 += num2;
-    return fibonacci(number, ++inc, num2, num1);
-
+    if (n === 1 || n === 2) return 1;
+    return fibonacci(n-1) + fibonacci(n-2);
 }
 
 function coinFlips(number, count = 0, arr = []){
