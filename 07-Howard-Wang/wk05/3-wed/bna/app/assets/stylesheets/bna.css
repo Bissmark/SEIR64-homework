@@ -1,0 +1,17 @@
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+body {
+    background-color: lemonchiffon;
+}
+.thumb {
+    height: 12em;
+}
+.feature{
+    max-height: 30em;
+}
+
+.label{
+    display: block;
+}
