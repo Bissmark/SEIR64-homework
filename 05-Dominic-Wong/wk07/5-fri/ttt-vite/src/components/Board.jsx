@@ -1,5 +1,4 @@
 import Square from './Square.jsx'
-import { useState } from 'react';
 
 // Question - can this logic exist in it's own file?
 function calculateWinner(squares) {
@@ -24,9 +23,7 @@ function calculateWinner(squares) {
 
 // main //////
 
-const Board = () => {
-    const [ xIsNext, setXIsNext ] = useState(true);
-    const [ squares, setSquares ] = useState(Array(9).fill(null)); // .fill changes all elements in array to null
+const Board = ( {xIsNext, squares, onPlay }) => {
 
     const _handleClick = (i) => {
         if (squares[i] || calculateWinner(squares)) {
@@ -41,8 +38,7 @@ const Board = () => {
             nextSquares[i] = "O";
         };
 
-        setSquares(nextSquares);
-        setXIsNext(!xIsNext);
+        onPlay(nextSquares);
     };
 
     const winner = calculateWinner(squares);
