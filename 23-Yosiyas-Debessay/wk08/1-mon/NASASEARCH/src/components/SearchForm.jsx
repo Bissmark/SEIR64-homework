@@ -5,7 +5,7 @@ const SearchForm = (props) => {
 
     const _handleSubmit = (event) => {
         event.preventDefault();
-        props.onSubmit(query); // the child communicates the search term back up to the parent.
+        props.onSubmit(query); 
     };
 
     const _handleInput = (event) => {
