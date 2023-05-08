@@ -8,12 +8,15 @@ import Library from "./Library";
 const QuoteSearch = () => {
     const [quote, setQuote] = useState([]);
 
-    const fetchQuote = async () => {
-        const response = await axios.get("https://animechan.vercel.app/api/random");
-        const { data } = response;
-        setQuote(data.quote);
+    const fetchQuote =  () => {                                                         ///async helped thru chatgpt lol
+        axios("https://animechan.vercel.app/api/random").then((response) => {
+            console.log(response.data);
+            setQuote(response.data.quote)
+        });
+       
+       
 
-        ///async helped thru chatgpt lol
+       
         // console.log('search quote library for', q);
 
         // const animeQuoteURL = 'https://animechan.vercel.app/api/random';
@@ -29,7 +32,7 @@ const QuoteSearch = () => {
     }; 
     return (
         <div>
-            <SearchForm fetchQuote= {fetchQuote} />
+            <SearchForm onSubmit= { fetchQuote } />
             <Library quote={quote} fetchQuote={fetchQuote} /> 
         </div>
     );

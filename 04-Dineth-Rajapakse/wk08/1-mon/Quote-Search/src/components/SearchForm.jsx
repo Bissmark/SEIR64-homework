@@ -3,19 +3,19 @@ import { useState } from "react";
 const SearchForm = (props) => {
     const [query, setQuery] = useState('');
 
-    const handleSubmit = (event) => {
+    const _handleSubmit = (event) => {
         event.preventDefault();
-        fetchQuote(query);
+        props.onSubmit(query);
         //setQuery(event.target.value);
     };
     
-    const handleInput = (event) => {
+    const _handleInput = (event) => {
         setQuery(event.target.value);
     };
 
     return (
-        <form onSubmit={ handleSubmit }>
-            <input type="search" required autoFocus placeholder="anime" onInput={ handleInput } />
+        <form onSubmit={ _handleSubmit }>
+            <input type="search" required autoFocus placeholder="anime" onInput={ _handleInput } />
             <input type="submit" value={`Search for ${ query }`} />
         </form>
     );
