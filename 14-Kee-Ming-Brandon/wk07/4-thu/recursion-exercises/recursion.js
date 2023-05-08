@@ -31,51 +31,34 @@ function coinFlips( n ){
     return n === 1? ['H', 'T']: recursion( n );
 }
 
-function letterCombinations( Arr ){
+function letterCombinations( arr ){
+    const basicArr = arr;
 
-
-    // Check if array include highest degree combination which include everything single letter
-    const checkNumbOfLetter = ( arr, numb ) => {
-        arr.forEach(str => {
-            if ( str.length === numb ) return turn; 
-        });
-        return false;
-    };
-
-    // display combination 
+    // display combination for two arrays
     const combine = ( combArr, basicArr ) => {
         let output = new Array;
         basicArr.forEach(basicChar => {
             combArr.forEach(combChar => {
+                // combination without repeating the same letter
                 if ( !combChar.includes(basicChar) ) output.push( combChar + basicChar );
             });
         });
         return output;
     };
 
-    // const getCombination = ( Arr, n ) => {
-
-    //     return checkNumbOfLetter( combArr, n ) ? combArr:
-    //         combArr = combine( combArr, basicArr ).concat( basicArr, basicArr )    getCombination( n - 1 )
-
-    // // return checkNumbOfLetter( combArr, n ) ? combArr: 
-    // //     combArr = combine( combArr, basicArr ).concat( basicArr, basicArr ) ;
-    // };
-
-    if ( basicArr[0] === 1 ) {
-        const data = {
-            1: basicArr
+    // recursion for letter combination
+    const accumulateComb = (n, newArr = basicArr ) => {
+        if ( n === 0 ) {
+            // define base letters
+            return newArr;
+        } else {
+            // n x (n-1)  ,  n x (n - 1) x (n - 2)  , ... ,   n x (n - 1) x (n - 2) ... 1 
+            return newArr.concat( resursion( n-1, combine( newArr, basicArr) ) );
         };
-    } else {
-        data.
-    }
-
-
-    if ( checkNumbOfLetter( basicArr, 1 ) ) {
-        prevArr;
-    } else {
-        letterCombinations( basicArr )
     };
+
+    // call recursion function
+    return accumulateComb( arr.length, arr );
 }
 
 module.exports = {
