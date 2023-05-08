@@ -1,0 +1,18 @@
+.thumbnail {
+    border: 1px solid red;
+    text-align: center;
+
+  }
+
+.instructions {
+    max-width: 1;
+}
+  
+.center_button {
+    margin: 0 auto;
+    text-align: center;
+}
+
+span {
+    color: rgba(121, 121, 121, 0.541);
+}
