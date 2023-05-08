@@ -10,14 +10,12 @@ const ImageSearch = () => {
     const fetchImages = (q) => {
         console.log('searching NASA for', q);
     
-        const nasaURL = 'https://images-api.nasa.gov/search';
+        const nasaURL = 'https://images-api.nasa.gov/search?q=${title}';
     
         const nasaParams = {
           api_key: '2f5ac274ecfac5a455f38745704ad084',
-          q: q,
           media_type: 'image',
         };
-
         const generateURL = function (p) {
             return [
                 'http://farm',
