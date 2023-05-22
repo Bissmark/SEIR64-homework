@@ -14,22 +14,27 @@ const onOff = function (lineA, stopA, lineB, stopB) {
     const lBUS = subwaySystem[lineB].indexOf('union square'); // the value 'union square' in lineB array
     let allStopsA = [];
     let allStopsB = [];
+    let b;
+    let c;
+    let w;
+    let d;
+
     const result = 'You must travel through the following stops on the';
 
     if (lAsA < lAUS) { // values for if the indexOf the first stop is less than the indexOf 'union square'
-        var b = lAsA + 1, w = lAUS + 1;  
-        var c = lAsB, d = lAsA;
+        b = lAsA + 1, w = lAUS + 1;  
+        c = lAsB, d = lAsA;
     }
 
     if (lAsA > lAUS) {
-        var b = lAUS; var w = lAsA;
-        var c = lAsA - 1; var d = lAsB - 1; 
+        b = lAUS; w = lAsA;
+        c = lAsA - 1; d = lAsB - 1; 
     }
     // if statements above will determine the values of b and w for the following loop.
     for (i = b; i < w; i++) {
         allStopsA.push(subwaySystem[lineA][i]); // this loop will push all stops that are less than or larger than 'union square' depending on the predetermined values
     } 
-    var y = allStopsA;
+    let y = allStopsA;
 
     if (lineA === lineB) { // if the stops are on the same line
 
@@ -44,21 +49,21 @@ const onOff = function (lineA, stopA, lineB, stopB) {
         return (`${ result } ${ lineA } line: ${ p.join(', ') }.\nNo need to change lines and you will reach your destination with a total of ${ allStopsB.length } stops`) // will return the value and log if both stops are on the same line
     } 
     else if (lAsB < lBUS) {
-        var b = lBUS; var w = lAsB; // values for if the indexOf the second stop is less than the indexOf 'union square'
+        b = lBUS; w = lAsB; // values for if the indexOf the second stop is less than the indexOf 'union square'
     } 
     else if (lAsB > lBUS) {
-        var b = lAsB + 1; var w = lBUS + 1; // values for if the indexOf the second stop is more than the indexOf 'union square'
+        b = lAsB + 1; w = lBUS + 1; // values for if the indexOf the second stop is more than the indexOf 'union square'
     } 
     for (k = w; k < b; k++) { // if statements above will determine the values of b and w for the following loop.
         allStopsB.push(subwaySystem[lineB][k]); // this loop will push all stops that are less than or larger than 'union square' depending on the predetermined values
     }
-    var d = allStopsB;
+    d = allStopsB;
 
     if (lAUS < lAsA) {
-        var y = allStopsA.reverse(); // if indexOf 'union square' is bigger than indexOf stopA, it will reverse the array
+        y = allStopsA.reverse(); // if indexOf 'union square' is bigger than indexOf stopA, it will reverse the array
     } 
     if (lBUS > lAsB) {
-        var d = allStopsB.reverse(); // if indexOf 'union square' is bigger than indexOf stopB, it will reverse the array
+        d = allStopsB.reverse(); // if indexOf 'union square' is bigger than indexOf stopB, it will reverse the array
     }
     leng = allStopsA.length + allStopsB.length; // adds the length of arrays
     return (`${ result } ${ lineA } line: ${ y.join(', ') }.\nChange at union square.\nYour journey continues through the following stops: ${ d.join(', ') }\n${ leng } stops in total`); // returns the stops needed to take  to get to destinatoin

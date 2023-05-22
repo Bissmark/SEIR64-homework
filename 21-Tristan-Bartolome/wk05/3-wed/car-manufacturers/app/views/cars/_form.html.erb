@@ -1,0 +1,21 @@
+<%= form_for @car do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :model %>
+    <%= f.text_field :model %>
+
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+
+    <%= f.label :acceleration %>
+    <%= f.text_field :acceleration %>
+
+    <%= f.label :driveline %>
+    <%= f.text_field :driveline %>
+
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+
+    <%= f.submit %>
+<% end %>

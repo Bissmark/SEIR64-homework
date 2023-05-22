@@ -1,0 +1,21 @@
+<h1>Edit Butterfly</h1>
+
+<form action="/jdmcars/<%= @jdmcar["id"] %>" method="post">
+<label>
+Name:
+<input name="name" required placeholder="Honda" value="<%= @jdmcar["name"] %>">
+</label>
+
+<label>
+    Family:
+    <input name="family" placeholder="Civic" value="<%= @jdmcar["family"] %>">
+</label>
+
+<label>
+    Image:
+    <input type="url" name="image" value="<%= @jdmcar["image"] %>">
+    </label>
+
+    <button>Supercharged</button>
+</form>
+

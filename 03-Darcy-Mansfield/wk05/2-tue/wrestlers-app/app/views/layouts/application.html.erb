@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Japanese Wrestlers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= link_to "Current Wrestlers", root_path %>
+      |
+      <%= link_to "New Wrestler", new_wrestler_path %>
+      |
+      <%= link_to "Random Wrestler", wrestler_path(Wrestler.order("RANDOM()").first) %>
+    </header>
+
+    <%= yield %>
+
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<h1><%= @firearm.model %></h1>
+
+<div class="controls">
+    <%= link_to "Edit Firearm", edit_firearm_path(@firearm.id) %> |
+    <%= link_to "Delete Firearm", delete_firearm_path(@firearm.id) %>
+</div>
+
+<div class="item-description">
+    <ul>
+        <li>Manufacturer: <span><%= @firearm.manufacturer %></span></li>
+        <li>Calibre: <%= @firearm.calibre %></li>
+        <li>Family: <%= @firearm.family %></li>
+        <li>Fire Rate: <%= @firearm.fire_rate %> <%= "RPM" if @firearm.fire_rate.present? %></li>
+        <li>Effective Distance: <%= @firearm.effective_distance %> <%= "metres" if @firearm.effective_distance.present? %></li>
+    </ul>
+</div>
+
+<%= image_tag @firearm.image, alt: "#{ @firearm.model }", class: "feature" if @firearm.image.present? %>

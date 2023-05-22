@@ -1,0 +1,10 @@
+
+<h1>All jdmcars</h1>
+
+<% @jdmcars.each do |jdmcar| %>
+    <p>
+        <a href="/jdmcars/<%= jdmcar["id"] %>">
+            <%= jdmcar["name"] %>
+        </a>
+    </p>
+<% end %>

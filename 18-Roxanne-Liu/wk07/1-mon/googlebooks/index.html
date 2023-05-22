@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Books</title>
+    <link rel="stylesheet" href="css/googlebooks.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Cover Searcher</h1>
+        <form id="search">
+            <label>
+                Book title:
+                <input type="search" id="title" placeholder="Jaws" autofocus>
+            </label>
+        
+            <button>Search</button>
+        </form>
+        
+        <div>    
+            <img id="cover">
+        </div>
+        <div>
+            <h3 id="title"></h3>
+        </div>
+        <div>
+            <h4 id="author"></h4>
+        </div>
+        <div>
+            <p id="description"></p>
+        </div>
+        <!-- <div class="cover"><img src="img/medium-is-the-massage.jpg" alt="medium-is-the-massage"/></div> -->
+    </div>
+    <!-- The script is at the bottom so we can finish lodading the DOM -->
+    <script src="js/googlebooks.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<h1><%= @album.title %></h1>
+
+<%= image_tag @album.image, :class => 'feature' %>
+
+<ul>
+    <li>Title: <%= @album.title %></li>
+    <li>Year: <%= @album.year %></li>
+    <li>Single: <%= @album.single %></li>
+</ul>
+
+<div class="controls">
+<%# <%= link_to "Edit", albums_edit_path(@edit) %> 
+<%= link_to "Delete", albums_path(@album), :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@700&display=swap');
+
+body {
+    background-image: url(https://pbs.twimg.com/media/C_Qsi9hUAAA-JOM?format=jpg&name=4096x4096);
+    background-size: cover;
+    font-family: 'Glegoo', serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 3em;
+    background-color: #ebebebc4;
+}
+
+.feature {
+    max-width: 750px;
+    border-radius: 2em;
+    border: solid 1px #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+.feature_flag {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+}
+
+a {
+    color: #21307a;
+    font-size: 20px;
+    padding: 5px;
+}
+
+label {
+    display: block;
+}
+
+.create_update {
+    display: block;
+    margin-top: 2em;
+    color: #e3e4ec;;
+    background-color: rgb(74, 74, 82);
+    font-family: 'Glegoo', serif;
+    border-radius: 5px;
+}
+
+.delete {
+    display: block;
+    margin-top: 2em;
+    color: #e3e4ec;;
+    background-color: #ae0830;
+    font-family: 'Glegoo', serif;
+    border-radius: 5px;
+}
+
+.title {
+    text-align: center;
+}
+
+.thumb {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.controls {
+    padding-top: 2em;
+}
+
+
+
+
+

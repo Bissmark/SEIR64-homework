@@ -1,0 +1,32 @@
+<h1><%= @brewery.name %></h1>
+
+    <%= image_tag @brewery.image, :class => 'logo' if @brewery.image.present? %>
+
+    <ul>
+        <li>Name: <%= @brewery.name %></li>
+        <li>Founder: <%= @brewery.founder %></li>
+        <li>Establish: <%= @brewery.establish%></li>
+        <li>Origin: <%= @brewery.origin %> ml</li>
+    </ul>
+
+    <div class="controls">
+        <%=  link_to "Edit brewery", edit_brewery_path(@brewery), :class => "mod-key"  %>
+        <%=  link_to "Delete brewery", @brewery, :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => "mod-key"  %>
+    </div>
+
+
+    <% @brewery.beers.each do |beer| %>
+        <div class="inline">
+            <div class="block">
+                <%= link_to image_tag(beer.image, :class => 'thumb adj'), beer %>
+            </div>
+            <div class="block">
+            <%= link_to beer.name %>
+            </div>
+        </div>
+    <% end %>
+
+    <div class="bottom_link controls">
+    <%= link_to "Add Beer", new_beer_path, :class => "mod-key"  %>
+    </div>
+

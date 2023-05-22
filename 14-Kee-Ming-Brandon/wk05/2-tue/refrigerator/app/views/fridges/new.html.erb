@@ -1,0 +1,42 @@
+<h1>
+    New Fridge
+</h1>
+
+<form action="<%= fridges_path %>" method="post">
+    <label>
+        Brand:
+        <input type="text" name="brand" required>
+    </label>
+    <br>
+    <label>
+        Model:
+        <input type="text" name="model" required>
+    </label>
+    <br>
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+    <br>
+    <label>
+        Color:
+        <input type="text" name="color">
+    </label>
+    <br>
+    <label>
+        Volumn (L):
+        <input type="number" name="volumn" required>
+    </label>
+    <br>
+    <label>
+        Weight (kg):
+        <input type="number" name="weight" required>
+    </label>
+    <br>
+    <label>
+        Energy rating:
+        <input type="number" name="energy" required>
+    </label>
+    <br>
+    <button>Create Fridge</button>
+</form>

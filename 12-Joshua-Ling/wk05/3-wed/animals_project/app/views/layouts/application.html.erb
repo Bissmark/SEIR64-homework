@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnimalsProject</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container">
+    <nav>
+      <%= link_to "All Animals", animals_path %>
+      <%= link_to "New Animal", new_animal_path %>
+      |
+      <%= link_to "All Meals", meals_path %>
+      <%= link_to "New Meal", new_meal_path %>
+    </nav>
+  
+    <%= yield %>
+  </div>
+  </body>
+</html>

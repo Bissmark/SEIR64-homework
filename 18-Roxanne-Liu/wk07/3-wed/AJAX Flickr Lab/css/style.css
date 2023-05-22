@@ -1,0 +1,48 @@
+body {
+    background-color:lightsteelblue;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#search {
+    display: flex;
+    color:darkolivegreen
+}
+
+h1 {
+    text-align: center;
+    color:darkolivegreen
+}
+
+label {
+    margin-top: 20px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+}
+
+#search > button {
+    margin-top: 43px;
+    height:43px;
+    color: darkolivegreen;
+}
+
+#images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#images > img {
+    border: 2px solid darkolivegreen;
+    border-radius: 0.5em;
+    margin-top: 10px;
+}

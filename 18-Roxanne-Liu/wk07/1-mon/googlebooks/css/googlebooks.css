@@ -1,0 +1,81 @@
+body {
+    background-image: url("https://rivetedlit.b-cdn.net/wp-content/uploads/2018/09/summer-bird-blue-9781481487757_hr-678x1024.jpg");
+    color:cornflowerblue;
+   
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 110vh;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+h1 {
+    margin-top: 70px;
+    color:darkolivegreen;
+    text-align: center;
+}
+
+h2 {
+    margin-top: auto;
+}
+
+#book_title {
+    margin-top: auto;
+    height: 35px;
+    width: 350px;
+    margin-left: 230px;
+    border-radius: 0.5em;
+}
+
+#search {
+    display: inline;
+    margin-left: 200px;
+    margin-top: 30px;
+    color:cornflowerblue;
+}
+
+button {
+    margin-left: 25px;
+    margin-top: 62px;
+    width: 150px;
+    height: 40px;
+    color: darkolivegreen;
+    font-size:medium;
+    border-radius: 0.5em;
+}
+
+label {
+    color:darkolivegreen;
+    font-size: 25px;
+}
+
+
+#title {
+    margin-top: 50px;
+    margin-left: 15px;
+    color: darkolivegreen;
+    line-height: 36px;
+    width: 280px;
+    border-radius: 0.5em;
+}
+
+#author {
+    text-align: center;
+    color: darkolivegreen;
+    margin-bottom: 40px;
+}
+
+#cover {
+    margin-top: 45px;
+    margin-left: 415px;
+    border-radius: 1em;
+}
+
+#description {
+    margin: 0 70px 0 70px;
+    line-height: 1.5em;
+}

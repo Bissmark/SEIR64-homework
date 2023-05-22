@@ -1,0 +1,20 @@
+<h1>
+<%= @manufacturer.name %>
+</h1>
+
+<h2>About</h2>
+<ul>
+<li> Country of Origin: <%= @manufacturer.country %> </li>
+<li> Year Founded : <%= @manufacturer.yearfounded %> </li>
+<li> Founder : <%= @manufacturer.founder %> </li>
+<li> Website : <%= @manufacturer.website %> </li>
+</ul>
+
+<% if  @manufacturer.logo.present? %>
+<img class="feature" src="<%= @manufacturer["logo"]%>" alt="<%= @manufacturer.name%>">
+<% end %>
+
+<div class="controls">
+    <a href="/manufacturers/<%= @manufacturer.id %>/edit">Edit Manufacturer</a>
+    <a href="/manufacturers/<%= @manufacturer.id %>/delete">Delete Manufacturer</a>
+</div>

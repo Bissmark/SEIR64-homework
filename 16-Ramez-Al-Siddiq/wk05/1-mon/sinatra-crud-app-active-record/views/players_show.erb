@@ -1,0 +1,16 @@
+<h1>
+    <%= @player.name %>
+</h1>
+
+<h2>
+    Birthplace: <%= @player.birthplace %>
+</h2>
+
+<% if @player.image.present?%>
+    <img class="feature" src="<%= @player.image %>" alt="<%= @player.name%>">
+<% end %>
+
+<div class="controls">
+    <a href="/players/<%= @player.id %>/edit">Edit player</a>
+    <a href="/players/<%= @player.id %>/delete">Delete player</a>
+</div>

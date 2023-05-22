@@ -1,0 +1,68 @@
+/*  
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300&display=swap');
+    </style>
+*/
+
+/* size of content  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* all website  */
+body {
+    background: url(https://img.freepik.com/free-photo/smooth-white-stucco-wall_1194-6786.jpg?w=2000);
+}
+
+/*  fonts */
+h1 {
+    font-family: 'Pacifico', Helvetica, sans-serif;
+    text-align: center;
+    color:rgb(40, 40, 40);
+    margin-bottom: -22px;
+}
+
+.underline {
+    width: 336px;
+    height: 14px;
+    background-color: #ffd146;
+    margin: 0 auto;
+
+}
+
+label, input, button {
+    font-family: 'Raleway light', Helvetica, sans-serif;
+    margin-top: 28px;
+    margin-bottom: 50px;
+}
+
+
+/* search areas */
+input {
+    width: 200px;
+    padding: 5px;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #ffd146;
+    color: rgb(16, 16, 16);
+    transition: 0.5s;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.search_functions {
+    text-align: center;
+}
+
+/* results */
+img {
+    padding: 10px;
+}

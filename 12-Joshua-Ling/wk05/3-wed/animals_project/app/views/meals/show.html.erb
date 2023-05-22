@@ -1,0 +1,13 @@
+<h1><%= @meal.name %></h1>
+
+<%= image_tag @meal.image, :class => 'feature' %>
+
+<ul>
+    <li>Name: <%= @meal.name %></li>
+    <li>Calories: <%= @meal.calories %></li>
+</ul>
+
+<div class="control">
+    <%= link_to "Edit meal", edit_meal_path(@meal), :class => "link" %>
+    <%= button_to "Delete meal", @meal, :method => :delete, :class => "link", :data => {:confirm => "u sure?"} %>
+</div>

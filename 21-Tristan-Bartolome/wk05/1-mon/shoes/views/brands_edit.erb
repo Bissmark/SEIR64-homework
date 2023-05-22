@@ -1,0 +1,20 @@
+<h1>Edit Brand</h1>
+
+<form action="/brands/<%= @brand["id"] %>" method="post">
+    <label>
+        Company:
+        <input name="company" required placeholder="Nike" value="<%= @brand["company"] %>">
+    </label>
+
+    <label>
+        Category:
+        <input name="category" placeholder="sportswear" value="<%= @brand["category"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image">
+    </label>
+
+    <button>Create brand</button>
+</form>

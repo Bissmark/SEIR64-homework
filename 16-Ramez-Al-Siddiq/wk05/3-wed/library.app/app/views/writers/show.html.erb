@@ -1,0 +1,13 @@
+<h1><%= @writer.name %></h1>
+
+<%= image_tag @writer.image, :class => 'feature' if @writer.image.present? %>
+<ul>
+    <li>Name: <%= @writer.name %></li>
+     <li>Date of birth: <%= @writer.dob.strftime '%A, %B %e, %Y' unless @writer.dob.nil? %></li>
+    <li>Nationality: <%= @writer.nationality %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to "Edit writer", edit_writer_path(@writer) %>
+    <%= link_to "Delete writer", @writer, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

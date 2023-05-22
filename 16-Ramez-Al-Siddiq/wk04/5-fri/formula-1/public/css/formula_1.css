@@ -1,0 +1,18 @@
+body {
+    background-color: silver;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature {
+    max-width: 100%;
+}

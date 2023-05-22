@@ -1,0 +1,23 @@
+
+<h2>
+    <%= @astronomical_item['name'] %> - <%= @astronomical_item['type'] %> 
+</h2>
+
+<p>
+    <%= @astronomical_item['summary'] %>
+</p>
+
+<% unless @astronomical_item['image'].nil? || @astronomical_item['image'].empty? %>
+    <img id="astronomical_image" src="<%= @astronomical_item['image'] %>">
+<% end %>
+
+<div id="change_data">
+<a href="/astronomy-database/<%= @astronomical_item['id'] %>/edit">Edit entry</a>
+
+<form id="delete_form" action="/astronomy-database/<%= @astronomical_item['id'] %>" method="post">
+<%# HTML only supports GET and POST requests, the line below is used to override the form's method and instruct the route handler to treat the request as a different HTTP method%>
+    <input type="hidden" name="_method" value="delete">
+
+    <button id="delete_button">Delete item</button>
+</form>
+</div>

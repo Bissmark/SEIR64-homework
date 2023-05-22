@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Armory</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav>
+        <%= link_to "Home", root_path %> |
+        <%= link_to "All Firearms", firearms_path %> |
+        <%= link_to "New Firearm", new_firearm_path %> |
+      </nav>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>

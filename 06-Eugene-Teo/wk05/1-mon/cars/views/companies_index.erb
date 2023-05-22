@@ -1,0 +1,9 @@
+<h1>All companies</h1>
+
+<% @companies.each do |company| %>
+    <p>
+        <a href="/companies/<%= company["id"] %>">
+            <%= company["name"] %>
+        </a>
+    </p>
+<% end %>

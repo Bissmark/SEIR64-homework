@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liquor</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to "All Brewery", breweries_path %>
+        <%= link_to "Add Brewery", new_brewery_path %>
+        <%= link_to "All Beer", beers_path %>
+        <%= link_to "Add Beer", new_beer_path %>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>

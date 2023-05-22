@@ -1,0 +1,11 @@
+<h1>Auto companies</h1>
+<p>Find me in app/views/company/index.html.erb</p>
+
+<% @companies.each do |company| %>
+    <%= image_tag company.image, :class => 'thumb' if company.image.present? %>
+    <ul>
+        <li><%= link_to company.name, company_path(company.id) %></li> 
+        <li>Headquarters: <%= company.headquarters %></li>
+        <li>Year founded: <%= company.founded %></li>
+    </ul>
+<% end %>

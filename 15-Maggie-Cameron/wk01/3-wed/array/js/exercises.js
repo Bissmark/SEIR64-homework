@@ -30,21 +30,22 @@ console.log(`The greater number of 23, 44 and 72 is ${ maxOfThreeNumbers(23, 44,
 console.log(`The greater number of 3, 40 and 9 is ${ maxOfThreeNumbers(3, 40, 9) }.`);
 
 
-
-
-//CANNOT GET ANYTHING BELOW TO WORK :(
-
 //VOWEL FINDER
-const vowelFinder =  'FINDMYVOWELS';
-for (let i = 0; i < vowelFinder.length; i  ++){
-        if (i === 'a','e','i','o','u') {
+const vowelFinder =  function(a){
+        if (a === 'a' || a ==='e'|| a ==='i'|| a ==='o'|| a ==='u') {
            return 'true'; 
         } else { 
             return 'false';
         }
-    console.log(vowelFinder);  
-    }
+}
+    console.log(vowelFinder("o"));  
+
+
+
+//CANNOT GET ANYTHING BELOW TO WORK :(
     
+
+/*
 //SUM ARRAY
     const sumArray = [1,2,3,4]
     for (let i= 0; i < sumArray.length; i ++) {
@@ -53,4 +54,4 @@ for (let i = 0; i < vowelFinder.length; i  ++){
 
 
 //filter long words
-const filterLongWords = function (arr,num) 
+const filterLongWords = function (arr,num)*/

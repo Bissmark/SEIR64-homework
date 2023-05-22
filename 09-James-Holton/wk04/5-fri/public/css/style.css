@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dongle:wght@300&display=swap');
+
+body {
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+span {
+    font-weight: normal;
+    color: rgb(3, 119, 137);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    margin: 10px;
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+p {
+    margin: 10px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+<h1><%= @exhibit.title %></h1>
+
+<%= image_tag @exhibit.image, :class => 'feature' %>
+
+<ul>
+<li>Title: <%= @exhibit.title %></li>
+<li>Year: <%= @exhibit.year %></li>
+<li>Medium: <%= @exhibit.medium %></li>
+<li>Style: <%= @exhibit.style %></li>
+</ul>
+
+<div class="controls">
+<%= link_to "Edit exhibit", edit_exhibit_path(@exhibit) %>
+<%= link_to "Delete exhibit", @exhibit, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+</div>

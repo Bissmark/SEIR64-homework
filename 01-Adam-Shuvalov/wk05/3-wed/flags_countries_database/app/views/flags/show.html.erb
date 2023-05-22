@@ -1,0 +1,12 @@
+<h1><%= @flag.state %></h1>
+
+<p>Adopted: <%= @flag.adoption_date %></p>
+<p>Description: <%= @flag.design %></p>
+
+<%= image_tag @flag.image, :class => 'feature_flag' if @flag.image.present? %>
+
+<div class="controls">
+    <%= link_to "Edit Flag", edit_flag_path(@flag.id) %>
+    <%= button_to "Delete Flag", @flag, :class => "delete" ,:method => :delete, :data => { :confirm => "Are you sure?"} %>
+</div>
+

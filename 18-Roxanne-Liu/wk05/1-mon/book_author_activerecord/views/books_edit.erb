@@ -1,0 +1,25 @@
+<h1>Edit book</h1>
+
+<form action="/books/<%= @book.id %>" method="post">
+    <label>
+        Title:
+        <input title="title" required placeholder="A Tale of Two Cities" value="<%= @book.title %>">
+    </label>
+
+    <label>
+        Author ID:
+        <input author_id="author_id" required placeholder="1" value="<%= @book.author_id %>">
+    </label>
+ 
+    <label>
+        Publish Time:
+        <input published_at="published_at" required placeholder="1859" value="<%= @book.published_at %>">
+    </label>
+
+    <label>
+        Book Cover:
+        <input type="url" name="image" value="<%= @book.image %>">
+    </label>
+
+    <button>Update book</button>
+</form>

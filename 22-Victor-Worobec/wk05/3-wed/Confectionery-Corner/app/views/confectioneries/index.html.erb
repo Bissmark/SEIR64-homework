@@ -1,0 +1,13 @@
+<h1>All confectionery</h1>
+
+<% @confectioneries.each do |confectionery| %>
+
+    <div class="listing">
+        <% if confectionery.image.present?  %>
+            <%= link_to image_tag(confectionery.image, :alt => "#{ confectionery.name }", :class => 'thumbnail'), confectionery %> </br>
+        <% end %>
+
+        <%= link_to confectionery.name, confectionery, :class => 'name-link' %>
+    </div>
+
+<% end %>

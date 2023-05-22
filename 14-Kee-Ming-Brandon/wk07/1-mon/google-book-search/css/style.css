@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    background-color: rgb(233, 233, 233);
+    margin: 20px;
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 40px;
+}
+
+input {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#book-title {
+    width: 250px;
+}
+
+.cover-image {
+    max-width: 250px;
+    box-shadow: 5px 5px 10px;
+}

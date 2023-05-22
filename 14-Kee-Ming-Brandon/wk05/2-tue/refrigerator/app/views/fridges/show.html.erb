@@ -1,0 +1,19 @@
+<h1>
+    <%= @fridge.brand%> <%= @fridge.model %>
+</h1>
+
+<%= image_tag @fridge.image if @fridge.image.present? %>
+
+<ul>
+    <li>Brand: <%= @fridge.brand %></li>
+    <li>Model: <%= @fridge.model %></li>
+    <li>Color: <%= @fridge.color %></li>
+    <li>Volumn: <%= @fridge.volumn %> L</li>
+    <li>weight: <%= @fridge.weight %> kg</li>
+    <li>Enery rating: <%= pluralize @fridge.energy, 'star' %></li>
+</ul>
+
+<div class="control">
+    <%= link_to "Edit fridge", edit_fridge_path(@fridge.id) %>
+    <%= link_to "Delete fridge", delete_fridge_path(@fridge.id) %>
+</div>

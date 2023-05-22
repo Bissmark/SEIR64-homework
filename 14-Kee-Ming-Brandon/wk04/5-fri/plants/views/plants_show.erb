@@ -1,0 +1,16 @@
+<h1><%= @plant['name'] %></h1>
+
+<% unless @plant["image"].nil? || @plant["image"].empty? %>
+    <img src="<%= @plant["image"] %>" alt="photo of <%= @plant["name"] %>" class="feature">
+<% end %>
+
+<p>Family: <a href="/families/<%= @plant["family"] %>" class="mod-key"><%= @plant["family"] %></a></p>
+
+<p>Light required:  <%= @plant["light"] %></p>
+
+<p>Humidity Level:  <%= @plant["humidity"] %></p>
+
+<div class="controls">
+    <a href="/plants/<%= @plant["id"] %>/edit" class="mod-key">Edit Details</a>
+    <a href="/plants/<%= @plant["id"] %>/delete" class="mod-key">Delete Plant</a>
+</div>

@@ -1,0 +1,21 @@
+<h1>
+    <%= @character["name"]%>
+
+
+
+</h1>
+
+
+<h2>
+    House: <%= @character["house"]%>
+    </br>
+    </br>
+    Blood Type: <%= @character["bloodtype"]%>
+</h2>
+
+<div class="controls">  
+    <a href="/harrypotter/<%= @character["id"] %>/edit">Edit Character</a>
+    <a href="/harrypotter/<%= @character["id"] %>/delete">Delete Character</a>
+
+
+</div>

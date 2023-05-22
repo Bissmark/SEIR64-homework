@@ -1,0 +1,10 @@
+<h1>All models</h1>
+
+<% @models.each do |model| %>
+    <p>
+        <a href="/models/<%= model.id %>">
+            <%= model.name %>
+        </a>
+    </p>
+<% end %>
+

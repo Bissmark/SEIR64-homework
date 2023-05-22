@@ -1,0 +1,20 @@
+<h1>Edit color</h1>
+
+<form action="/colors/<%= @color.id %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%=  @color.name%>">
+    </label>
+
+    <label>
+        Likeability:
+        <input name="likeability" required value="<%=  @color.likeability%>">
+    </label>
+
+    <label>
+        Image:
+        <input type="url" name="image" value="<%=  @color.image%>">
+    </label>
+
+    <button>Update</button>
+</form>

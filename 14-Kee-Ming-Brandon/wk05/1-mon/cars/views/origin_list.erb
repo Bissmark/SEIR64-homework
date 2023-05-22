@@ -1,0 +1,13 @@
+<h1>Brand Origin List</h1>
+
+<% origins = Array.new %>
+<% @brands.each do |brand| %>
+    <% unless origins.include? brand["origin"] %>
+        <p>
+            <a href="/origins/<%= brand["origin"] %>">
+                <%= brand["origin"] %>
+            </a>
+        </p>
+        <% origins << brand["origin"] %>
+    <% end %>
+<% end %>

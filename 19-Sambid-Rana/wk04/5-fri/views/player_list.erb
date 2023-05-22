@@ -1,0 +1,24 @@
+
+<h1>Manchester United players</h1>
+
+<div>
+    <% @players.each do |player|  %>
+        
+        <p>
+            <%# When clicked on the player link it should take you to the page with player/id  %>
+            <a href="/player/list/<%= player["id"] %>"> 
+            
+                <%=  "#{ player["first_name"] } #{ player["last_name"]}"  %>     
+                
+            </a> 
+        </p>
+        
+    <% end  %>
+
+</div>
+
+<div>
+    <form action="/player/add">
+    <button type="submit">Add Player</button>
+    </form>
+</div>

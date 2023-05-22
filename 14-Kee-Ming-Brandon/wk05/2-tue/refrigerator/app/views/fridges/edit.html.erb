@@ -1,0 +1,42 @@
+<h1>
+    Edit Fridge Info
+</h1>
+
+<form action="<%= fridge_path(@fridge.id) %>" method="post">
+    <label>
+        Brand:
+        <input type="text" name="brand" required value="<%= @fridge.brand %>">
+    </label>
+    <br>
+    <label>
+        Model:
+        <input type="text" name="model" required value="<%= @fridge.model %>">
+    </label>
+    <br>
+    <label>
+        Image:
+        <input type="url" name="image" value="<%= @fridge.image %>">
+    </label>
+    <br>
+    <label>
+        Color:
+        <input type="text" name="color" value="<%= @fridge.color %>">
+    </label>
+    <br>
+    <label>
+        Volumn (L):
+        <input type="number" name="volumn" required value="<%= @fridge.volumn %>">
+    </label>
+    <br>
+    <label>
+        Weight (kg):
+        <input type="number" name="weight" required value="<%= @fridge.weight %>">
+    </label>
+    <br>
+    <label>
+        Energy rating:
+        <input type="number" name="energy" required value="<%= @fridge.energy %>">
+    </label>
+    <br>
+    <button>Update Fridge</button>
+</form>
