@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Books</title>
+    <link rel="stylesheet" href="css/googlebooks.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Cover Searcher</h1>
+        <form id="search" action="/" method="get">
+            <label>
+                Book title:
+                <input id="title" name="bookTitle" placeholder="Jaws">
+            </label>
+            <button>Search</button>
+        </form>
+        
+        <div>    
+            <img id="cover" src=<%= cover %>>
+        </div>
+
+        <div>
+            <h4 id="author"><%= book_author %></h4>
+        </div>
+        
+        <div>
+            <p id="description"><%= book_info %></p>
+        </div>
+    </div>
+</body>
+</html>
