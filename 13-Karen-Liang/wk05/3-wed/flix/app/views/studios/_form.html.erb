@@ -1,0 +1,15 @@
+<%= form_for @studio do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, :placeholder => "Studio Ghibli", :class => "form_size"  %>
+
+    <%= f.label :founded %>
+    <%= f.text_field :founded, :placeholder => "YYYY", :class => "form_size"  %>
+
+    <%= f.label :image %> 
+    <%= f.url_field :image, :placeholder => "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Studio_Ghibli_logo.svg/1200px-Studio_Ghibli_logo.svg.png", :class => "form_size"  %>
+    
+    <%= image_tag @studio.image, :class => 'edit_image' if @studio.image.present? %>
+
+
+    <%= f.submit :class => "edit_buttons" %>
+<% end %>

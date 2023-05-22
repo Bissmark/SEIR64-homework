@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300&family=Roboto+Condensed:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+body{
+    background-color: navy;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 5em;
+    background-image:url("../img/b-gimage.png");
+    background-repeat: repeat;
+    border-radius: 2em 2em 0 0;
+}
+
+header{
+    background-color:navy;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color:bisque;
+    margin: 0;
+    padding:0.1em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+ul a{
+    color: rgb(183, 0, 255);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: bisque;
+    position: relative;
+    bottom: -5px;
+}
+li{
+    list-style-type: none;
+}
+
+main{
+    padding-top: 2em;
+}
+h2 {
+    text-align: left;
+    font-weight:bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    color: #ffe4c4;
+    border-radius: 3em;
+    margin-top: 0;
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding: 1em; 
+    background-color: navy;
+    width:40%;
+}
+
+h2:hover{
+    background-image: linear-gradient(319deg, #ba2d0b 0%, #fe7f2d 37%, #f8b231 100%);
+    transition: 8s all;
+}
+
+
+.watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+@keyframes flash{
+    50%{
+        opacity: 0;
+    }
+}
+small{
+    font-weight: bold;
+    font-size: 16px;
+    padding:1.5em;
+    background-color: #ffe4c4;
+    border-radius: 50%;
+}
+
+small:hover{
+    color:#f8b231;
+    animation: flash 2s;
+}
+
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    gap:3em;
+}
+
+iframe{
+    border: solid bisque 10px;
+    border-radius: 2em;
+}
+
+h3{
+    padding-top: 0.5em;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap:5em;
+    margin-top: 2em;
+}
+h3 {
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    color: navy;
+}
+
+p{
+    font-size: 20px;
+    color:#ffe4c4;
+    padding:0 1em;
+}
+
+article{
+    width:45%;
+    padding-bottom: 0.5em;
+    border-radius: 2em;
+}
+.quotes{
+    background-color: teal;
+}
+
+.facts{
+    background-color: #f8b231;   
+}
+
+footer{
+    height: 70px;
+    color: navy;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+}

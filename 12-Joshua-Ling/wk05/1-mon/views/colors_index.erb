@@ -1,0 +1,9 @@
+<h1>All Colors</h1>
+
+<% @colors.each do |color| %>
+    <p>
+        <a href="/colors/<%=color.id%>">
+            <%=color.name%>
+        </a>
+    </p>
+<% end %>

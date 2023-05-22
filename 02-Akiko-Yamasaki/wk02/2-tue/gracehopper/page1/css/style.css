@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300&family=Roboto+Condensed:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+body{
+    background-color: navy;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 5em;
+    background-color: aqua;
+    border-radius: 2em 2em 0 0;
+}
+
+header{
+    background-color: navy;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color:bisque;
+    margin: 0;
+    padding:0.1em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+ul a{
+    color: rgb(183, 0, 255);
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: bisque;
+    position: relative;
+    bottom: -5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.banner{
+    filter: brightness(60%); 
+    background-image: url("../img/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:300px;
+    padding-top:1em;
+}
+
+.banner h2{
+    text-align: left;
+    font-weight:bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    width:40%;
+    color: bisque;
+    margin-top: 0;
+    padding-left: 1em;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: bisque;
+    border-radius: 0 0 2em 2em;
+}
+
+article img{
+    border-radius: 2em;
+    box-shadow: 0 5px 3px navy;
+}
+
+p{
+    font-size: 20px;
+    color: navy;
+}
+
+.bio a {
+    text-decoration: none;
+    color:rgb(183, 0, 255);
+}
+
+small{
+    color: navy;
+}
+
+footer{
+    height: 70px;
+    color: navy;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+}

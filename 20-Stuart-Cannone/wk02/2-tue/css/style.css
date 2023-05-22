@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+/* import of font type */  @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');
+
+body {
+    background-image: url(..//images/matrix\ digital\ rain.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', sans-serif; /* calls the imported fonts */
+    
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #eee;
+    padding: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+nav {
+    background-color: black;
+    text-align: right;
+    }
+nav a {
+    padding: 10px;
+    color: pink
+    
+}
+a:link { text-decoration: none; }
+
+h1 {
+    text-align: center;
+    background-color: #222;
+    color: #ccc;
+    font-size: 400%;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+main {
+    display: inline-block;
+    width: 75%;
+    padding: 1em;
+}
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+aside {
+    display: inline-block;
+    width: 21%;
+    vertical-align: top;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0px 15px 15px black;
+}
+aside ul {
+    padding-left: 15px;
+}
+
+.title2 { 
+    opacity: 0;
+    transition: 2s;
+  }
+  .title2:hover {
+    opacity: 1;
+    color: green;
+    transition: 2s;
+  }

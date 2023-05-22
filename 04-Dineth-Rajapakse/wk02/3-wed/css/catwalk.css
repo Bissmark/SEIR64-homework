@@ -1,0 +1,14 @@
+body {
+    background-color: green;
+}
+
+#container {
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+#animate-cat {
+    width: 75px;
+    position: absolute;
+}

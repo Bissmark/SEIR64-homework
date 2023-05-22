@@ -1,0 +1,18 @@
+<h1>Play or Buy</h1>
+
+<div class="show-container">
+    
+    <div class="data-container">
+        <div class="titleandartist">
+            <h2 class="song art"> <%= @song["artist"]%></h2>
+            <h2 class="song name"> <%= @song["title"] %></h2>
+        </div>
+        <% unless @song["image"].nil? || @song["image"].empty? %>
+        <img class="feature" src="<%= @song["image"]%>" alt="<%= @song["title"]%>">
+        <% end %>
+    </div>
+    <div class="edit_delete">
+        <a class ="editanddelet" href="/playlist/<%= @song["id"] %>/edit">Add Edit</a>
+        <a class ="editanddelet" href="/playlist/<%= @song["id"] %>/delete">Delete This</a>
+    </div>
+</div>

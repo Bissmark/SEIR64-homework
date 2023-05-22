@@ -1,0 +1,48 @@
+
+<nav>
+    <a href="/players/list"> Players List</a>
+</nav>
+
+<h1>Form to add new players</h1>
+
+<div>
+
+    <form action='/players/list' method='post'>
+       
+        <label for="name">
+        Name:
+            <input type="text" name="name" required placeholder="Given name">
+        </label>
+
+        <label for="age">
+        Age:
+            <input type="number" name="age"  placeholder="Age">
+        </label>
+
+        <label for="nationality">
+        Nationality:
+            <input type="text" name="nationality"  placeholder="Nationality">
+        </label>
+
+        <label for="position">
+        Position:
+            <input type="text" name="position"  placeholder="e.g. CDM, FW">
+        </label>
+
+        <label for="goals_scored">
+        Goals Scored:
+            <input type="INTEGER" name="goals_scored" placeholder="Goals scored in 22/23">
+        </label>
+
+         <label for="image">
+        Image URL:
+            <input type="url" name="image" placeholder="url">
+        </label>
+    
+        <div>
+            <button>Add Player</button>
+        </div>
+    
+    </form>
+
+</div>

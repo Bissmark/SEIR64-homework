@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+/* 
+* {
+    border: 1px solid red;
+} */
+
+body {
+    background-color: rgb(233, 233, 233);
+    margin: 20px;
+    font-family: "Helvetica", sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+}
+
+input  {
+    width: 75%;
+    padding: 5px 20px;
+    border-radius: 50px;
+    height: 50px;
+    font-size: large;
+}
+
+button {
+    border-radius: 50%;
+    padding: 7px;
+    height: 68px;
+    margin-left: 20px;
+    font-size: large;
+}
+
+.present {
+    max-width: 70%;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.present > * {
+    width: 100%;
+    position: relative;
+}
+
+.photo-frame {
+    width: 22%;
+    display: inline-block;
+    padding: 1.5%;
+    vertical-align: top;
+}
+
+.photo-frame > * {
+    width: 100%;
+    cursor: pointer;
+}
+
+#source {
+    color: grey;
+    font-style: none;
+    font-weight: 800;
+}
+
+footer {
+    border-top: 1px solid grey;
+    margin: 20px;
+}
+
+#error-message {
+    font-size: 20px;
+    color: brown;
+}

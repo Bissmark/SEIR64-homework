@@ -1,0 +1,23 @@
+
+<h1>Edit club information</h1>
+
+<div>
+    <form action="/clubs/<%= @club.id%>" method="post">
+
+        <label for="club_name">
+        Club Name:
+            <input name="club_name" value="<%= @club.club_name%>" placeholder="Club Name">
+        </label>
+
+        <label for="image_logo">
+        Club Logo URL:
+            <input name="image_logo" value="<%= @club.image_logo%> " placeholder="URL">
+        </label>
+    
+    <div>
+        <button>Update Club</button>
+    </div>
+    
+    </form>
+
+</div>

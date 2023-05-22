@@ -1,0 +1,20 @@
+
+<h1>All About Mountains</h1>
+
+ 
+<% @mountains.each do |mountain|%>
+    <p>
+
+    <%= link_to mountain.name, mountain_path(mountain.id) %>
+
+    </p>
+
+<% end%>
+
+<%# 
+
+The first argument for link_to is the text on the link.
+
+The second argument - It’s the URL you’re linking to. 
+
+%>

@@ -1,0 +1,6 @@
+<h1>All Wrestlers</h1>
+
+<% @wrestlers.each do |wrestler| %>
+    <%= image_tag wrestler.image, :class => 'thumb' if wrestler.image.present? %>
+    <div class="name"><%= link_to wrestler.name, wrestler %></div>
+<% end %>

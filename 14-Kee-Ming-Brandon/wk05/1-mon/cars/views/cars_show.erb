@@ -1,0 +1,17 @@
+<h1><%= @car.model %></h1>
+
+<% unless @car.image.empty? %>
+    <img src="<%= @car.image %>" alt="photo of <%= @car.model %>" class="feature">
+<% end %>
+
+<p>
+    Brand: 
+    <a href="/brands/<%= @car.brand %>">
+        <%= @car.brand %>
+    </a>
+</p>
+
+<div class="controls">
+    <a href="/cars/<%= @car.id %>/edit" class="mod-key">Edit Info</a>
+    <a href="/cars/<%= @car.id %>/delete" class="mod-key">Delete Car</a>
+</div>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@100;400&display=swap');
+
+/*
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(50,50,50);
+    opacity: 0.8;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    line-height: 1.2;
+    margin: 0;
+    max-width: none;
+    text-align: left;
+    color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+header:hover {
+    opacity: 1;
+    transition: 1s all;
+}
+
+header h1 {
+    float:left;
+    margin: 10px 30px;
+}
+
+.menu {
+    color: lightblue;
+    text-decoration: none;
+    margin: 1.5em;
+    float: right;
+}
+
+.head {
+    height: 100px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+    max-width: none;
+    padding: 10vw 2em;
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 700px;
+    margin: 2em auto;
+    background-color: #480000;
+    padding: 1em 5em;
+    border-radius: 1em;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+img, iframe {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: black;
+}

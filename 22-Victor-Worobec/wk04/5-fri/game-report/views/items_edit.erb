@@ -1,0 +1,27 @@
+<h1>Edit game</h1>
+
+<form action="/items/<%= @item["id"] %>" method="post">
+
+    <label>
+        Name:
+        <input name="name" value="<%= @item["name"] %>" required>
+    </label>
+
+    <label>
+        Genre:
+        <input name="genre" value="<%= @item["genre"] %>" required>
+    </label>
+
+    <label>
+        Played:
+        <input name="played" placeholder="true or false" value="<%= @item["played"] %>">
+    </label>
+
+    <label>
+        Image:
+        <input name="image" placeholder="URL" value="<%= @item["image"] %>" type="url">
+    </label>
+
+    <button>Apply changes</button>
+
+</form>

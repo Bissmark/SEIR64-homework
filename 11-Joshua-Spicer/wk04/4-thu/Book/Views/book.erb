@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @book["title"] %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body>
+    <h1><%= @book["title"] %></h1>
+    <% if @book["imageLinks"] %>
+      <img src="<%= @book["imageLinks"]["thumbnail"] %>" alt="Cover image">
+    <% end %>
+    <% if @book["description"] %>
+      <p><%= @book["description"] %></p>
+    <% end %>
+  </body>
+</html>

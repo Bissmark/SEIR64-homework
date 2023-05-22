@@ -1,0 +1,12 @@
+<h1><%= @country.name %></h1>
+
+<p>Population: <%= number_to_human(@country.population)  %></p>
+<p>Capital: <%= @country.capital %></p>
+<p>States/Provinces etc: <%= @country.states %></p>
+
+<%= image_tag @country.image, :class => 'feature' if @country.image.present? %>
+
+<div class="controls">
+    <%= link_to "Edit Country", edit_country_path(@country) %>
+    <%= button_to "Delete Entry", @country, :class => "delete", :method => :delete, :data => { :confirm => "Are you sure?"}%>
+</div>

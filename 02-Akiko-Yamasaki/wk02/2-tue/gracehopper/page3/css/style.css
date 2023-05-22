@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,700;1,300&family=Roboto+Condensed:wght@400;700&display=swap');
+/* font-family: 'Karla', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+body{
+    background-image: url("../img/b-gimage\ copy\ 2.png");
+    background-repeat: repeat;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 2em 5em;
+    background-color: teal;
+    border-radius: 0 0 2em 2em;
+   
+}
+
+header{
+    background-color: navy;
+}
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    color:bisque;
+    margin: 0;
+    padding:0.1em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+ul a{
+    color: rgb(183, 0, 255);
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: bisque;
+    position: relative;
+    bottom: -5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+h2{
+    text-align: left;
+    font-weight:bold;
+    font-size: 40px;
+    width:40%;
+    color: #f8b231;
+    margin-top: 0;
+    padding-left: 1em;
+    margin-bottom: 0;
+}
+
+.markpic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.markpic img{
+    width: 250px;
+    border: solid rgb(110, 86, 55) 1em;
+    border-radius: 2em;
+}
+small {
+    font-weight: bold;
+    font-size: 16px;
+    padding:1.5em;
+    background-color: #ffe4c4;
+    border-radius: 50%;
+    text-align: center;
+    width:100px;  
+}
+.imgcontainer{
+    display: flex;
+    gap: 2em;
+}
+p{
+    font-size: 20px;
+    color: navy;
+}
+
+.language img{
+    border-radius: 2em;
+}
+
+.language{
+    display: flex;
+    gap:2em;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer{
+    height: 70px;
+}
+footer p{
+    color: #ffe4c4;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+}
+}

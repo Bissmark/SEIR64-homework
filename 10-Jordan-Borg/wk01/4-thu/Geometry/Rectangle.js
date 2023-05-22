@@ -11,9 +11,14 @@ const isSquare = function (object) {
     }
 }
 
-const area = {
+const squareA = {
     length: 4,
     width: 4
 };
 
-console.log(isSquare(area));
+// const 
+
+
+console.log(isSquare(squareA));
+
+

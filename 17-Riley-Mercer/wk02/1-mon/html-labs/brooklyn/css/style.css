@@ -1,0 +1,33 @@
+
+/* ## Style Hints: 
+
+
+Link Hover Color = #20222a */
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 12px;
+	line-height: 17px;
+	color: #656565;
+	
+}
+
+#container {
+	max-width: 500px;
+	margin: 0 auto; 
+}
+
+img {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.bar {
+	width: 120px;
+	margin: 0 auto;
+	border: black;
+	border-width: 50px;
+}

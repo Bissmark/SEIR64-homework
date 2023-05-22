@@ -1,0 +1,29 @@
+<h1><%= @wrestler.name %></h1>
+
+<h2>Edit wrestler</h2>
+
+<form action="<%= wrestler_path(@wrestler.id) %>" method="post">
+
+    <label>
+        Name: <input type="text" name="name" required value="<%= @wrestler.name %>">
+    </label>
+
+    <label>
+        Image: <input type="text" name="image" value="<%= @wrestler.image %>">
+    </label>
+
+    <label>
+        Height (cm): <input type="number" name="height" value="<%= @wrestler.height %>">
+    </label>
+
+    <label>
+        Weight (kg): <input type="number" name="weight" value="<%= @wrestler.weight %>">
+    </label>
+
+    <label>
+        Experience (years): <input type="number" name="exp" value="<%= @wrestler.exp %>">
+    </label>
+
+    <button>Update Wrestler</button>
+
+</form>

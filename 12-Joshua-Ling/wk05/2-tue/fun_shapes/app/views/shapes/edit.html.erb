@@ -1,0 +1,21 @@
+<h1>New Shape</h1>
+
+<form action="<%= shape_path(@shape.id) %>" method="post">
+    <label>
+        Name:
+        <input name="name" required value="<%= @shape.name %>">
+    </label>
+
+    <label>
+        Number of Corners:
+        <input type="number" name="corners" required value="<%= @shape.corners %>">
+    </label>
+
+    <label>
+        Number of Edges:
+        <input type="number" name="edges" required value="<%= @shape.edges %>">
+    </label>
+
+    <button>edit <%= @shape.name %></button>
+
+</form>

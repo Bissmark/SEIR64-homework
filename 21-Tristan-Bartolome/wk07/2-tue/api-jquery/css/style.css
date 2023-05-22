@@ -1,0 +1,134 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set font and background color for body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Add padding and max-width to container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style heading */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Style form */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #d65db1;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #b3438d;
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #d65db1;
+    }
+  
+  /* Style waifu section */
+  #waifu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(141, 150, 150);
+    margin-top: 1em;
+    margin-bottom: 5em;
+    margin-right: 10em;
+    margin-left: 10em;
+    border-radius: 1em;
+    border: 3px solid white;
+  }
+
+  #waifu h3 {
+    margin-top: 2em;
+  }
+
+  #waifu img {
+    border: 3px solid white;
+  }
+  
+  /* Style joke section */
+  .joke {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style image */
+  img {
+    max-width: 250px;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    display: flex;
+  }
+
+  img:focus, img:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px white;
+  }
+  
+  /* Style joke question */
+  #jokeQuestion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #b3438d;
+  }
+
+  .minions {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    width: 4em;
+  }
+
+  #translateResult {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #inputBox {
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 15em;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 1rem;
+    margin-top: 3px;
+    }

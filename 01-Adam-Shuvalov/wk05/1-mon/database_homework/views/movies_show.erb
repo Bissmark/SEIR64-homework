@@ -1,0 +1,13 @@
+<h3>
+    <%= @movie.name %> - <%= @movie.year %> 
+</h3>
+<p>
+    <%= @movie.plot %> 
+</p>
+
+<img src="<%= @movie.poster %>">
+
+<div id="data_changers">
+    <a href="/movies/<%= @movie.id %>/edit">Edit entry</a>
+    <a href="/movies/<%= @movie.id %>/delete">Delete entry</a>
+</div>

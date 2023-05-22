@@ -1,0 +1,43 @@
+<h1 class="new_dish_heading">Edit dish</h1>
+
+<form action="/dishes/<%= @dish["id"] %>" method="post">
+
+    <%# input name REQUIRED %>
+    <label class="input_heading">
+        Name:
+        <input name="name" required placeholder="Har Gow" value="<%= @dish['name'] %>">
+    </label>
+
+    <%# category from dropdown %>
+    <label class="input_heading"><br>
+         Enter a category (Dumpling, Roll, Bun, Cake, Meat, Seafood, Vegetable, Rice, Dessert, Tea):
+        <input name="category" required placeholder="Dumpling" value="<%= @dish['category']%>">
+    </label>
+    
+    <%# image link %>
+    <label class="input_heading"><br>
+        Image link:
+        <input class="img_link" name="image" type="url" value="<%= @dish['image'] %>">
+    </label>
+
+    <%# dish description %>
+     <label class="input_heading"><br>
+        Describe the dish: <br>
+        <textarea name="description" rows="2" cols="114" placeholder="Cantonese dumpling characterised by a delicate, translucent wrapper enveloped around a shrimp filling."><%= @dish['description'] %></textarea>
+
+    </label><br>
+
+    <button class="edit_buttons">Update dish</button>
+    
+
+</form>
+
+    <%# OLD
+        <label class="input_heading">
+        Choose a category:
+        <input name="category" required placeholder="Dumpling" value="<%= @dish['category']%>
+    
+    
+    
+    
+ 

@@ -1,0 +1,28 @@
+.thumbnail {
+    max-height: 128px;
+}
+
+.feature {
+    max-height: 20em;
+}
+
+.listing {
+    display: inline-block;
+    margin: 1em;
+}
+
+h1 {
+    margin: 2em;
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+a {
+    margin: 2em;
+}
+
+.name-link {
+    margin-left: 3em;
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252 252 252);
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.donald-banner {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 46px;
+}
+
+h3 {
+    color: black;
+}
+
+nav {
+    background-color: black;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+nav a {
+    visibility: visible;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    margin: 0em 3em;
+}
+
+nav a:hover {
+    color: grey;
+    transition: 1s all;
+}
+
+aside {
+    display: inline-block;
+    max-width: 25%;
+    padding: 2em;
+}
+
+aside h4 {
+    color: grey;
+}
+
+aside h4:hover {
+    color: black;
+    transition: 1s all;
+}
+
+.main-content {
+    display: inline-block;
+    max-width: 50%;
+    vertical-align: top;
+    border-left: solid;
+    padding: 0em 2em;
+    margin: 2em;
+}
+
+#biography {
+    visibility: visible;
+}
+
+
+#toggle:checked ~ #biography {
+    visibility: hidden;   
+    color: yellow;
+}
+
+.random-fact {
+    display: inline-block;
+    max-width: 25%;
+    vertical-align: top;
+    border: solid 2px black;
+    border-radius: 2em;
+    padding: 1em;
+    margin-top: 2em;
+    box-shadow: 0px 10px 10px black;
+}
+
+.random-fact h3 {
+    margin-left: 2em;
+}
+
+footer {
+    background-color: black;
+    padding: 4em 6em;
+}
+
+footer h3 {
+    display: inline-block;
+    color: white;
+}
+
+footer h4 {
+    color: grey;
+}
+
+footer h4:hover {
+    color: white;
+    transition: 1s all;
+}
+
+iframe {
+    border-radius: 2em;
+}
+
+.video {
+    max-width: 100%;
+}

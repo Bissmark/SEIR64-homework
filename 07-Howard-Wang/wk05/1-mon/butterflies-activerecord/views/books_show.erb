@@ -1,0 +1,18 @@
+<h1>
+    <%= @book["name"]%>
+
+
+
+</h1>
+
+
+<h2>
+    Author: <%= @book["author"]%>
+</h2>
+
+<div class="controls">  
+    <a href="/books/<%= @book["id"] %>/edit">Edit Book</a>
+    <a href="/books/<%= @book["id"] %>/delete">Delete Book</a>
+
+
+</div>

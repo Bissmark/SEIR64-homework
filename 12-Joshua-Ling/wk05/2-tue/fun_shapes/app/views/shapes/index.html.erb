@@ -1,0 +1,7 @@
+<h1>All Shapes</h1>
+
+<% @shapes.each do |shape| %>
+    <p>
+        <%= link_to shape.name, shape_path(shape.id) %>
+    </p>
+<% end %>

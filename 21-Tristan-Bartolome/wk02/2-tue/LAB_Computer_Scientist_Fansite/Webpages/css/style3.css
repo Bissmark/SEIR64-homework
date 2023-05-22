@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* 123 expands to #112233 */
+    background-color: #222;  /*222222*/
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    width: 60em;
+    text-align: center;
+    display: block;
+    padding: 1em;
+    position: fixed;
+    margin-bottom: 1em;
+}
+
+nav a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0 1em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.container {
+    max-width: 960px; 
+    margin: 0 auto; /*centers content*/
+    background-color: #dadada;
+    
+}
+
+img {
+    border-radius: 1em;
+    max-width: 950px;
+    margin: 30px auto;
+    box-shadow: 0px 15px 15px black
+}
+
+header {
+    color: #5e5e5e;
+    font-size: 2em;
+    padding: 1em;
+    max-width: 950px;
+    margin: 10 auto;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    /* text-shadow: 0px 0px 10px black; */
+}
+
+a:hover {
+    color: grey;
+}
+
+.hometown {
+    max-width: 950px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 17em;
+}
+
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+}
+
+.info {
+    padding: 2em;
+    text-align: center;
+}

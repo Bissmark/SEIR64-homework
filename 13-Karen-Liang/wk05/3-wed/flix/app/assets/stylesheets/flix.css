@@ -1,0 +1,190 @@
+/* entire website updates */
+body {
+    background: #f4f4f4;
+    margin: -10px -10px 0 -10px;
+}
+
+/* layout inc body, nav, header etc */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Headings*/
+h1 {
+    color: rgb(61 61 61);
+    font-size: 28pt;
+    margin-bottom: -4px;
+}
+
+/* font family storage */
+p {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+}
+
+/* index page list */
+.show_list {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: #2baaff;
+    text-decoration: none;
+}
+
+.show_list:hover {
+    color: orange;
+    transition: 0.6s;
+}
+
+a, nav {
+    text-decoration: none;
+}
+
+/* top_banner */
+.top_banner {
+    padding-top: 20px;
+    background: rgb(236,80,193);
+    background: radial-gradient(circle, rgba(236,80,193,1) 0%, rgba(195,34,181,1) 48%, rgba(35,86,246,1) 87%);
+    display: block;
+    height: 30px;
+    border: 1px solid rgb(30, 30, 30);
+    
+}
+
+.banner_text {
+    text-align: center;
+    margin: -3px;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    color: white;
+    
+}
+
+/* nav effect */
+.nav_effect {
+    text-decoration: none;;
+    box-shadow: inset 0 0 0 0 #0055ff;
+    color: #0055ff;
+    margin: 0;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.nav_effect:hover {  
+    box-shadow: inset 150px 0 0 0 #0055ff;
+    color: white;
+}
+
+/* navigation bar */
+nav {
+    text-align: left;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+
+    font-size: 20px;
+    display: inline-block;
+}
+
+.nav_background {
+    background-color: white;
+    border: 1px solid rgb(30, 30, 30);
+    border-top: none;
+}
+
+/* logo and nav formatting */
+.nav_width {
+    padding: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* image in show */
+.feature {
+    max-width: 40%;
+    /*border: 1px solid rgb(41, 41, 41); */
+    border-radius: 0.8em;
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    line-height: 39px;
+}
+
+/* forms input text areas */
+input {
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+}
+
+input {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.form_size {
+    width: 22.9%;
+}
+
+/* edit and delete */
+.edit_buttons {
+    background-color: #ffa12f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Red Hat Display', Helvetica, sans-serif;
+    font-size: 12pt;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.edit_buttons:hover {
+    background-color: #fe83177c;
+    color: #ffffff;
+}
+
+/* index image */
+.index_image {
+    display: block;
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+/* edit page image preview */
+.edit_image {
+    display: block;
+    width: 20%;
+    border-radius: 0.5em;
+    margin: 20px 0 20px 0;
+}
+
+
+/* input form edits*/
+input, textarea {
+    font-family: 'Thasadith', Helvetica, sans-serif;
+    font-size: 12pt;
+    background-color: rgba(255, 255, 255, 0.769);
+    border: 1.2px solid rgb(186, 186, 186);
+    border-radius: 0.2em;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+/* anime index page */
+.thumb {
+    height: 12em;
+}
+
+/* SHOW heading */
+.name_heading {
+    color: #2baaff;
+}
+
+/* form heading */
+.form_heading {
+    margin-bottom: 20px;
+    color: #D232B9;
+}

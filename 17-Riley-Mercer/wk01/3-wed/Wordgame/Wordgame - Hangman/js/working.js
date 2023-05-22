@@ -51,10 +51,10 @@ if (deadCount === 0) {
 }
 
 console.log(guessLetter("W"))
+console.log(guessLetter("A"))
 console.log(guessLetter("T"))
-console.log(guessLetter("P"))
-console.log(guessLetter("P"))
-console.log(guessLetter("P"))
+console.log(guessLetter("T"))
+console.log(guessLetter("R"))
 console.log(guessLetter("P"))
 console.log(guessLetter("P"))
 console.log(guessLetter("P"))

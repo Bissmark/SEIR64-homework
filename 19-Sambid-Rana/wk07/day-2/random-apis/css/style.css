@@ -1,0 +1,64 @@
+
+* {
+    /* border: 1px solid black; */
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: antiquewhite;
+
+}
+
+header {
+    padding: 10px;
+    margin: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em;
+    min-height: 80vh;
+}
+
+aside > div {
+    background-color: #383a4a5c;
+    padding: 0.5em;
+}
+
+#dogLink {
+    max-width: 300px;
+}
+
+@media (min-width: 540px) {
+    nav {
+        display: block;
+    }
+
+    aside {
+        display: flex;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        display: flex;
+    }
+
+    main {
+        flex-basis: 0;
+        flex-grow: 2; /* 2/3rds */
+    }
+
+    aside {
+        flex-basis: 0;
+        flex-grow: 1; /* 1/3rd */
+        display: block;        
+    }
+}
+
+@media (min-width: 1000px) {
+    aside {
+        display: flex;
+    }
+}

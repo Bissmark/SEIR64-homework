@@ -1,12 +1,12 @@
-// DeEvil
-function deEvil(amount) {
+// DrEvil
+function drEvil(amount) {
     if (amount === 1000000) {
         console.log(`${ amount } dollars (pinky).`);
     } else {
         console.log(`${ amount } dollars.`);
     }
 };
-deEvil(1000);
+drEvil(1000);
 
 // MixUp
 function mixUp(strA, strB) {

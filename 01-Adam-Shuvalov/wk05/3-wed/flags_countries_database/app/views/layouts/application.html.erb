@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlagsCountriesDatabase</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <div class="container"> 
+    
+    <nav>
+    <h1 class="title">State/Province Flags of Countries</h1>
+      <%=link_to "All Countries", countries_path %>
+      <%=link_to "New Country", new_country_path %>
+      |
+      <%=link_to "All Flags", flags_path %>
+      <%=link_to "New Flag", new_flag_path  %>
+    </nav>
+    <body>
+      <%= yield %>
+    </body>
+  </div>
+</html>

@@ -1,0 +1,9 @@
+<h1>All Studios</h1>
+
+<% @studios.each do |studio| %>
+    <p>
+        <%= link_to studio.name, studio, :class => "show_list" %>
+    </p>
+<% end %>
+
+

@@ -1,0 +1,23 @@
+<form action="/astronomy-database" method="post">
+    <label>
+        Name:
+        <input name="name" placeholder="Sun" required>
+    </label>
+
+    <label>
+        Type:
+        <input name="type" placeholder="G-type main-sequence star" required>
+    </label>
+
+    <label>
+        Summary:
+        <textarea name="summary" cols="45" rows="10" placeholder="Brief description"></textarea>
+    </label>
+
+    <label>
+        Image:
+        <textarea type="url" name="image" cols="60" rows="1" placeholder="image URL"></textarea>
+    </label>
+
+    <button>Add to database</button>
+</form>

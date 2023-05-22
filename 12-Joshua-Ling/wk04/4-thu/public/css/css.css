@@ -1,0 +1,40 @@
+body {
+    background-color: antiquewhite;
+    background-image: url(/img/book.jpg);
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #bbfbff;
+    text-shadow: 1px 2px #000;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(212,173,126,0.6) 
+}
+
+span {
+    font-weight: bolder;
+    font-size: 120%;
+    text-transform: capitalize;
+}
+
+button {
+    color: aqua;
+    background-color: black;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+button:hover {
+    background-color: rgb(52, 52, 52);
+}
+
+input {
+    border-radius: 3px;
+    background-color: #fcfcfc;
+    padding: 3px;
+}
+
