@@ -1,0 +1,9 @@
+img {
+    border: 1px solid white;
+    padding: 2px;
+    margin: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
