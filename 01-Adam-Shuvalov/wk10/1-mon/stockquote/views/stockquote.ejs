@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockquote</title>
+</head>
+<body>
+    <p>Stockquote</p>
+    <form action="/quote" method="get">
+        <label>
+            Get Stock Quote
+            <input name="stock" placeholder="GOOG">
+        </label>
+        <button>Submit</button>
+    </form>
+
+    <p>The price for <%= code %> is: <%= price %></p>
+
+</body>
+</html>
