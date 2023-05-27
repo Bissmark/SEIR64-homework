@@ -66,8 +66,16 @@ class LinkedList{
             return;
         } else { 
             let temp = this.head;
-            // while ()
-            //
+            if (temp.next == null) {
+                let headNode = temp;
+                this.head = null;
+                return headNode;
+            }
+            while (temp.next != null) {
+                let headNode = temp;
+                this.head = temp.next;
+                return headNode;
+            }
         }
     }
     insertAt(X, data){
