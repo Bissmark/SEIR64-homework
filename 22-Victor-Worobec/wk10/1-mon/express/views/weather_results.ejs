@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Weather Results</title>
+</head>
+<body>
+    <h1>Weather Results</h1>
+
+    <% data.forEach(item => { %>
+        <p>The weather for <%= item.location.name %> is <%= item.current.skytext %> with a temperature of <%= item.current.temperature %>°C.</p>
+    <% }) %>
+</body>
+</html>

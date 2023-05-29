@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Quote</title>
+</head>
+<body>
+    <h1>Stock Quote</h1>
+
+    <form method="POST" action="/">
+    <label for="stockCode">Stock Code:</label>
+    <input type="text" id="stockCode" name="stockCode" required>
+
+    <button type="submit">Get Quote</button>
+    </form>
+
+    <% if (error) { %>
+    <p>Error: <%= error %></p>
+    <% } else if (quote) { %>
+    <h2>Current Price for <%= stockCode %>:</h2>
+    <p><%= quote %></p>
+    <% } %>
+</body>
+</html>
